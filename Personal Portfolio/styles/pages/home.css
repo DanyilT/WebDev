@@ -1,0 +1,224 @@
+/* Home Page */
+
+/* Intro */
+.intro {
+    display: flex;
+    width: 1130px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro .text-block {
+    display: flex;
+    flex-direction: column;
+    width: 555px;
+    gap: 3rem;
+}
+
+.intro .photo-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro .photo-block .photo {
+    position: relative;
+    width: 32rem;
+    height: 32rem;
+    background-image: url(/images/Venera.png);
+    background-size: cover;
+}
+
+.intro .photo-block .photo .line {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.intro .photo-block .photo .dot {
+    position: relative;
+    width: 4px;
+    height: 4px;
+    background-color: var(--gray);
+    border-radius: 2px;
+}
+
+.dots-1, .dots-2, .dots-3 {
+    display: flex;
+    flex-direction: column;
+    width: 84px;
+    height: 84px;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.intro .photo-block .photo .dots-1 {
+    top: 90px;
+    left: 368px;
+}
+
+.intro .photo-block .photo .dots-2 {
+    top: 338px;
+    left: 70px;
+}
+
+.intro .photo-block .photo .dots-3 {
+    top: 398px;
+    left: 308px;
+}
+
+.intro .photo-block .under-photo {
+    display: flex;
+    width: 23rem;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid var(--gray);
+    transition: all 0.5s;
+}
+
+.intro .photo-block .under-photo .point {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 3px;
+    border: 1px solid var(--gray);
+    background: var(--purple);
+    transition: 0.5s;
+}
+
+.intro .photo-block .under-photo span {
+    color: var(--white);
+    transition: 0.5s;
+}
+
+.intro .photo-block .under-photo:hover .point {
+    background: var(--gray);
+}
+
+.intro .photo-block .under-photo:hover span {
+    color: var(--purple);
+}
+
+.intro .photo-block .under-photo:active {
+    border-color: var(--purple);
+}
+
+/* Projects */
+.projects {
+    display: flex;
+    flex-direction: column;
+    width: 1130px;
+    gap: 2rem;
+}
+
+.projects .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects .items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects .items .project {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.projects .items .project img {
+    width: 360px;
+    height: 225px;
+}
+
+.projects .items .project .main-text {
+    display: flex;
+    padding: 0rem 0.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid var(--gray);
+    transition: all 0.5s;
+}
+
+.projects .items .project .main-text:hover {
+    border-color: var(--purple);
+    transform: scale(1.05);
+}
+
+.projects .items .project .main-text:active {
+    border-color: var(--black);
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.projects .items .project .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects .items .project .buttons .other-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+/* Skills */
+.skills {
+    width: 1130px;
+}
+
+.skills .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills .items {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.skills .items .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.skills .items .main {
+    display: flex;
+    gap: 0.5rem;
+    align-self: stretch;
+}
+
+.skills .items .main .block {
+    display: flex;
+    padding: 0.5rem 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+    height: fit-content;
+    border-radius: 10px;
+    border: 1px solid var(--gray);
+    transition: all 0.5s;
+}
+
+.skills .items .main .block:hover {
+    border-color: var(--purple);
+    transform: scale(1.05);
+}
+
+.skills .items .main .block:active {
+    border-color: var(--black);
+    transform: scale(0.95) rotateZ(1.7deg);
+}

@@ -1,0 +1,115 @@
+/* Contacts Page */
+
+/* Contacts */
+.contacts {
+    display: flex;
+    flex-direction: column;
+    width: 1130px;
+    gap: 2rem;
+}
+
+.contacts .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contacts .main .items {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contacts .main .items .contact-form, .media-links {
+    display: flex;
+    width: 32rem;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid var(--gray);
+    transition: 0.5s;
+}
+
+.contacts .main .items .media-links {
+    width: 10rem;
+}
+
+.contacts .main .items .contact-form:hover,
+.contacts .main .items .media-links:hover {
+    border: 1px solid var(--black);
+}
+
+/* Contact Form */
+.contacts .main .items .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.contacts .main .items .contact-form form input,
+.contacts .main .items .contact-form form textarea {
+    height: 2.5rem;
+    padding-left: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--gray);
+    background: none;
+    transition: 300ms;
+}
+
+.contacts .main .items .contact-form form input:hover,
+.contacts .main .items .contact-form form textarea:hover {
+    border: 1px solid var(--purple);
+}
+
+.contacts .main .items .contact-form form button {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--purple);
+    color: var(--black);
+    transition: 300ms;
+}
+
+.contacts .main .items .contact-form form button:hover {
+    background: var(--purple);
+    border: 1px solid var(--purple);
+    color: var(--white);
+}
+
+/* Media Links */
+.contacts .main .items .links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contacts .links .icon-link {
+    position: relative;
+}
+
+.contacts .links .icon-link .default-icon, .contacts .icon-link .hover-icon {
+    transition: opacity 0.3s ease;
+    height: 3rem;
+}
+
+.contacts .links .icon-link .hover-icon {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.contacts .links .icon-link:hover .default-icon {
+    opacity: 0;
+}
+
+.contacts .links .icon-link:hover .hover-icon {
+    opacity: 1;
+}

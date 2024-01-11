@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/scripts/assets/load-assets.js"></script>
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="/styles/pages/contacts.css">
+    <link rel="shortcut icon" href="/images/Logo.png" type="image/png">
+    <title>Contact</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="sidebar"></div>
+    <main>
+        <section class="contacts">
+            <div class="title">
+                <h1>Welcome to My Portfolio</h1>
+            </div>
+            <div class="main">
+                <h2>Contact me</h2>
+                <div class="items">
+                    <div class="contact-form">
+                        <p>If you'd like to get in touch with me, please fill out the form below:</p>
+                        <form id="contact-form" action="https://formspree.io/f/meqwvpov" method="POST">
+                            <input type="hidden" name="_subject" value="New message from your Personal Portfolio page">
+                            <input type="email" name="_replyto" placeholder="Your email" required>
+                            <textarea name="message" placeholder="Your message" required></textarea>
+                            <button type="submit">Send</button>
+                        </form>                
+                    </div>
+                    <div class="media-links">
+                        <h3>I'm here</h3>
+                        <div class="links">
+                            <a class="icon-link" href="https://www.instagram.com/dany_tymchuk/">
+                                <img class="default-icon" src="/images/icons/svg/Sidebar/gray/Instagram.svg" alt="Instagram">
+                                <img class="hover-icon" src="/images/icons/svg/Sidebar/purple/Instagram.svg" alt="Instagram">
+                            </a>
+                            <a class="icon-link" href="https://github.com/">
+                                <img class="icon-link default-icon" src="/images/icons/svg/Sidebar/gray/Github.svg" alt="GitHub">
+                                <img class="hover-icon" src="/images/icons/svg/Sidebar/purple/Github.svg" alt="GitHub">
+                            </a>
+                            <a class="icon-link" href="https://www.linkedin.com/">
+                                <img class="default-icon" src="/images/icons/svg/Sidebar/gray/Linkedin.svg" alt="LinkedIn">
+                                <img class="hover-icon" src="/images/icons/svg/Sidebar/purple/Linkedin.svg" alt="LinkedIn">
+                            </a>
+                            <a class="icon-link" href="https://twitter.com/?lang=en">
+                                <img class="default-icon" src="/images/icons/svg/Sidebar/gray/Twitter.svg" alt="Twitter">
+                                <img class="hover-icon" src="/images/icons/svg/Sidebar/purple/Twitter.svg" alt="Twitter">
+                            </a>
+                            <a class="icon-link" href="https://telegram.org/">
+                                <img class="default-icon" src="/images/icons/svg/Sidebar/gray/Telegram.svg" alt="Telegram">
+                                <img class="hover-icon" src="/images/icons/svg/Sidebar/purple/Telegram.svg" alt="Telegram">
+                            </a>
+                            <a class="icon-link" href="mailto:example@email.com">
+                                <img class="default-icon" src="/images/icons/svg/Sidebar/gray/Message.svg" alt="Email">
+                                <img class="hover-icon" src="/images/icons/svg/Sidebar/purple/Message.svg" alt="Email">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer"></div>
+</body>
+
+</html>
