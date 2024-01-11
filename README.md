@@ -17,3 +17,6 @@ https://danyt-spherechain.online
 
 >ChillZone Website
 https://danyt-chillzone.com
+
+>Portfolio Website
+https://dany-portfolio.netlify.app/
