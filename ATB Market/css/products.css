@@ -78,7 +78,7 @@
     width: 100%;
 }
 
-button {
+.product-container button {
     height: 40px;
     width: 80%;
     border-radius: 10px;
@@ -89,7 +89,7 @@ button {
     border: none;
 }
 
-button:hover {
+.product-container button:hover {
     height: 40px;
     width: 80%;
     border-radius: 10px;
