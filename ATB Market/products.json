@@ -1,0 +1,100 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Donut",
+            "price": 0.70,
+            "imageUrl": "images/products/Donut.webp",
+            "link": "https://www.atbmarket.com/product/donatc-73g-z-polunicnou-nacinkou-ta-sokoladnim-pokrittam-l-bup-gp",
+            "description": "Nice fresh donut"
+        },
+        {
+            "id": 2,
+            "name": "Coca-Cola",
+            "price": 1.00,
+            "imageUrl": "images/products/Coca-Cola.webp",
+            "link": "https://www.atbmarket.com/product/napij-2-l-coca-cola-bezalkogolnij-silnogazovanij",
+            "description": "Just Coke not Pepsi (2L)"
+        },
+        {
+            "id": 3,
+            "name": "Candy",
+            "price": 4.50,
+            "imageUrl": "images/products/Romashka.webp",
+            "link": "https://www.atbmarket.com/product/cukerki-rosen-romaska",
+            "description": "Romashka Roshen"
+        },
+        {
+            "id": 4,
+            "name": "Cookies",
+            "price": 0.50,
+            "imageUrl": "images/products/Cookies.webp",
+            "link": "https://www.atbmarket.com/product/pecivo-185g-rosen-do-kavi-z-aromatom-prazenogo-moloka",
+            "description": "Do Kavi"
+        },
+        {
+            "id": 5,
+            "name": "Candy with liqueur",
+            "price": 1.50,
+            "imageUrl": "images/products/Candy.webp",
+            "link": "https://www.atbmarket.com/product/cukerki-150g-rosen-shooters-sokoladni-z-brendi-likerom",
+            "description": "A bit of %"
+        },
+        {
+            "id": 6,
+            "name": "Wafers",
+            "price": 1.00,
+            "imageUrl": "images/products/Wafers.webp",
+            "link": "https://www.atbmarket.com/product/vafli-216g-rosen-wafers-hazelnut",
+            "description": "Wafers Hazelnut Roshen"
+        },
+        {
+            "id": 7,
+            "name": "Mandarin",
+            "price": 2.00,
+            "imageUrl": "images/products/Mandarin.webp",
+            "link": "https://www.atbmarket.com/product/mandarin-murkott-1-gat",
+            "description": "What you want to know about mandarin?"
+        },
+        {
+            "id": 8,
+            "name": "Bitten Donut",
+            "price": 0.50,
+            "imageUrl": "images/products/DonutB.webp",
+            "link": "https://www.atbmarket.com/product/donatc-56-g-z-podribnenim-draze-ta-glazuru-konditerskou-l-bup-gp",
+            "description": "Another donut"
+        },
+        {
+            "id": 9,
+            "name": "Pepper",
+            "price": 0.20,
+            "imageUrl": "images/products/Pepper.webp",
+            "link": "https://www.atbmarket.com/product/perec-cornij-20-g-mria-melenij",
+            "description": "Spicy"
+        },
+        {
+            "id": 10,
+            "name": "Water",
+            "price": 0.40,
+            "imageUrl": "images/products/Water.webp",
+            "link": "https://www.atbmarket.com/product/voda-075-l-morsinska-mineralna-negazovana",
+            "description": "Really desc for water? (0,75L)"
+        },
+        {
+            "id": 11,
+            "name": "Coffee",
+            "price": 0.20,
+            "imageUrl": "images/products/Coffee.webp",
+            "link": "https://www.atbmarket.com/product/napij-kavovij-15g-jacobs-z-kristalami-naturalnoi-rozcinnoi-kavi-3-v-1",
+            "description": "Я ригаю кава (3in1)"
+        },
+        {
+            "id": 12,
+            "name": "Buckwheat",
+            "price": 1.00,
+            "imageUrl": "images/products/Buckwheat.webp",
+            "link": "https://www.atbmarket.com/product/krupa-1-kg-rozumnij-vibir-grecana",
+            "description": "Grechka (1Kg)"
+        }
+    ]
+}

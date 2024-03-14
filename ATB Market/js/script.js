@@ -1,6 +1,14 @@
 let cart = [];
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', ()=> {
+    // Get a reference to the products element
+    fetch('products.json')
+    .then(response => response.json())
+    .then(data => {
+        displayProducts(data.products);
+    })
+    .catch(error => console.error('Error loading the products:', error));
+
     // Opening the cart popup
     var btnCart = document.getElementById("cart-popup-button");
     var modalCart = document.getElementById("cart-popup");
@@ -46,32 +54,6 @@ document.addEventListener('DOMContentLoaded', function() {
         updateCartDisplay();
     }
 
-    // Add to cart functionality
-    document.querySelectorAll('.add-to-cart-btn').forEach(button => {
-        button.addEventListener('click', function() {
-            const productId = this.getAttribute('data-product-id');
-            const productName = this.getAttribute('data-product-name');
-            const productPrice = parseFloat(this.getAttribute('data-product-price'));
-            const productImgSrc = this.getAttribute('data-product-img-src');
-    
-            // Hide the 'Add to Cart' button and show the 'View Cart' button
-            this.style.display = 'none';
-            this.nextElementSibling.style.display = 'inline-block';
-    
-            // Add the product to the cart (simplified logic)
-            const cartItem = {
-                id: productId,
-                name: productName,
-                price: productPrice,
-                quantity: 1,
-                imgSrc: productImgSrc
-            };
-            
-            addToCart(cartItem);
-            updateCartDisplay();
-        });
-    });
-
     $(document).ready(function() {
         // Form submission with validation
         $('#contact-form').submit(function(event) {
@@ -95,6 +77,137 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+function displayProducts(products) {
+    const productsContainer = document.querySelector('.products');
+    productsContainer.innerHTML = ''; // Clear existing products (if any)
+    
+    products.forEach(product => {
+        // Determine an emoji based on the product name
+        let emoji = '';
+        switch (product.name) {
+            case 'Donut':
+            case 'Bitten Donut':
+                emoji = '🍩';
+                break;
+            case 'Coca-Cola':
+                emoji = '🥤';
+                break;
+            case 'Candy':
+            case 'Candy with liqueur':
+                emoji = '🍬';
+                break;
+            case 'Cookies':
+                emoji = '🍪';
+                break;
+            case 'Wafers':
+                emoji = '🧇';
+                break;
+            case 'Mandarin':
+                emoji = '🍊';
+                break;
+            case 'Pepper':
+                emoji = '🌶️';
+                break;
+            case 'Water':
+                emoji = '💧';
+                break;
+            case 'Coffee':
+                emoji = '☕';
+                break;
+            case 'Buckwheat':
+                emoji = '🌾';
+                break;
+            default:
+                emoji = '🛍️';
+        }
+
+        const productHTML = `
+            <div class="product-container">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="${product.imageUrl}" alt="${product.name}">
+                        <a href="${product.link}">${product.name}</a>
+                        <span>&euro; ${product.price}</span>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>${emoji}<br>${product.description}</p>
+                        <div class="price-container">
+                            <button class="add-to-cart-btn" data-product-id="${product.id}" data-product-name="${product.name}" data-product-price="${product.price}" data-product-img-src="${product.imageUrl}">Add to Cart</button>
+                            <button class="view-cart-btn" style="display: none;" onclick="viewCart()">View Cart</button>
+                            <a href="${product.link}">${product.name}</a>
+                            <span>&euro; ${product.price}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+        productsContainer.innerHTML += productHTML;
+    });
+    attachEventListenersToButtons();
+}
+
+// Add to cart functionality
+function attachEventListenersToButtons() {
+    document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const productId = this.getAttribute('data-product-id');
+            const productName = this.getAttribute('data-product-name');
+            const productPrice = parseFloat(this.getAttribute('data-product-price'));
+            const productImgSrc = this.getAttribute('data-product-img-src');
+    
+            // Hide the 'Add to Cart' button and show the 'View Cart' button
+            this.style.display = 'none';
+            this.nextElementSibling.style.display = 'block';
+    
+            // Add the product to the cart
+            const cartItem = {
+                id: productId,
+                name: productName,
+                price: productPrice,
+                quantity: 1,
+                imgSrc: productImgSrc
+            };
+            
+            addToCart(cartItem);
+            updateCartDisplay();
+        });
+    });
+}
+
+function addToCart(item) {
+    // Check if cart already has the item and update quantity if it does
+    let itemIndex = cart.findIndex(cartItem => cartItem.id === item.id);
+    if (itemIndex !== -1) {
+        cart[itemIndex].quantity += 1;
+    } else {
+        cart.push(item);
+    }
+
+    // Save updated cart to localStorage
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateCartDisplay();
+}
+
+function viewCart() {
+    // Logic to display the cart popup
+    document.getElementById('cart-popup').style.display = 'block';
+}
+
+function clearCart() {
+    cart = [];
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateCartDisplay();
+}
+
+function openContactInfoModal() {
+    if (cart.length === 0) {
+        alert('Cart is Empty');
+    } else {
+        document.getElementById('cart-popup').style.display = 'none';
+        document.getElementById('contact-popup').style.display = 'block';
+    }
+}
 
 function updateCartDisplay() {
     const cartTableBody = document.querySelector('.cart-items tbody');
@@ -152,39 +265,5 @@ function updateCartDisplay() {
         document.querySelector('.shipping-cost').textContent = ``;
         document.querySelector('.total-price').innerHTML = 'Cart is Empty';
         document.querySelector('.total-price').title = "Free shipping for orders over €50";
-    }
-}
-
-function addToCart(item) {
-    // Check if cart already has the item and update quantity if it does
-    let itemIndex = cart.findIndex(cartItem => cartItem.id === item.id);
-    if (itemIndex !== -1) {
-        cart[itemIndex].quantity += 1;
-    } else {
-        cart.push(item);
-    }
-
-    // Save updated cart to localStorage
-    localStorage.setItem('cart', JSON.stringify(cart));
-    updateCartDisplay();
-}
-
-function viewCart() {
-    // Logic to display the cart popup
-    document.getElementById('cart-popup').style.display = 'block';
-}
-
-function clearCart() {
-    cart = [];
-    localStorage.setItem('cart', JSON.stringify(cart));
-    updateCartDisplay();
-}
-
-function openContactInfoModal() {
-    if (cart.length === 0) {
-        alert('Cart is Empty');
-    } else {
-        document.getElementById('cart-popup').style.display = 'none';
-        document.getElementById('contact-popup').style.display = 'block';
     }
 }
