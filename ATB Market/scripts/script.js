@@ -5,7 +5,17 @@ let cart = [];
 document.addEventListener('DOMContentLoaded', ()=> {
     // Fetch and display products from 'products.json'
     fetch('../data/products.json')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        // If the fetch fails, try to load the products from products.json on a GitHub pages URL
+        .catch(() => {
+            return fetch('https://danyilt.github.io/WebDev/ATB%20Market/data/products.json')
+                .then(response => response.json());
+        })
         .then(data => {
             displayProducts(data.products);
         })
