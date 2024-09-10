@@ -151,14 +151,14 @@ function displayProducts(products) {
             <div class="product-container">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="${product.imageUrl}" alt="${product.name}">
+                        <img src="../${product.imageUrl}" alt="${product.name}">
                         <a href="${product.link}">${product.name}</a>
                         <span>&euro; ${product.price}</span>
                     </div>
                     <div class="flip-card-back">
                         <p>${emoji}<br>${product.description}</p>
                         <div class="price-container">
-                            <button class="add-to-cart-btn" data-product-id="${product.id}" data-product-name="${product.name}" data-product-price="${product.price}" data-product-img-src="${product.imageUrl}">Add to Cart</button>
+                            <button class="add-to-cart-btn" data-product-id="${product.id}" data-product-name="${product.name}" data-product-price="${product.price}" data-product-img-src="../${product.imageUrl}">Add to Cart</button>
                             <button class="view-cart-btn" style="display: none;" onclick="viewCart()">View Cart</button>
                             <a href="${product.link}">${product.name}</a>
                             <span>&euro; ${product.price}</span>
