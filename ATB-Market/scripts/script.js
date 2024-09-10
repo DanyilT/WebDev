@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
         })
         // If the fetch fails, try to load the products from products.json on a GitHub pages URL
         .catch(() => {
-            return fetch('https://danyilt.github.io/WebDev/ATB%20Market/data/products.json')
+            return fetch('https://danyilt.github.io/WebDev/ATB-Market/data/products.json')
                 .then(response => response.json());
         })
         .then(data => {
@@ -237,16 +237,24 @@ function openContactInfoModal() {
     }
 }
 
+// Function to determine if the current page is the home page
+function isHomePage() {
+    return window.location.pathname.endsWith('index.html');
+}
+
 // Function to update the cart display
 function updateCartDisplay() {
     const cartTableBody = document.querySelector('.cart-items tbody');
     cartTableBody.innerHTML = ''; // Clear existing cart items
 
     cart.forEach((item, index) => {
+        // Adjust image URL based on the current page
+        let imageUrl = isHomePage() ? item.imgSrc : `../${item.imgSrc}`;
+
         const row = cartTableBody.insertRow();
 
         const cellImage = row.insertCell(0);
-        cellImage.innerHTML = `<img src="../${item.imgSrc}" alt="${item.name}" style="width:50px;"> ${item.name}`;
+        cellImage.innerHTML = `<img src="${imageUrl}" alt="${item.name}" style="width:50px;"> ${item.name}`;
 
         const cellPrice = row.insertCell(1);
         cellPrice.textContent = `€${item.price}`;
