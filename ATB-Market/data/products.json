@@ -3,7 +3,7 @@
         {
             "id": 1,
             "name": "Donut",
-            "price": 100000.70,
+            "price": 0.70,
             "imageUrl": "images/products/Donut.webp",
             "link": "https://www.atbmarket.com/product/donatc-73g-z-polunicnou-nacinkou-ta-sokoladnim-pokrittam-l-bup-gp",
             "description": "Nice fresh donut"
