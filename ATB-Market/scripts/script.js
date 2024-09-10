@@ -158,7 +158,7 @@ function displayProducts(products) {
                     <div class="flip-card-back">
                         <p>${emoji}<br>${product.description}</p>
                         <div class="price-container">
-                            <button class="add-to-cart-btn" data-product-id="${product.id}" data-product-name="${product.name}" data-product-price="${product.price}" data-product-img-src="../${product.imageUrl}">Add to Cart</button>
+                            <button class="add-to-cart-btn" data-product-id="${product.id}" data-product-name="${product.name}" data-product-price="${product.price}" data-product-img-src="${product.imageUrl}">Add to Cart</button>
                             <button class="view-cart-btn" style="display: none;" onclick="viewCart()">View Cart</button>
                             <a href="${product.link}">${product.name}</a>
                             <span>&euro; ${product.price}</span>
@@ -246,7 +246,7 @@ function updateCartDisplay() {
         const row = cartTableBody.insertRow();
 
         const cellImage = row.insertCell(0);
-        cellImage.innerHTML = `<img src="${item.imgSrc}" alt="${item.name}" style="width:50px;"> ${item.name}`;
+        cellImage.innerHTML = `<img src="../${item.imgSrc}" alt="${item.name}" style="width:50px;"> ${item.name}`;
 
         const cellPrice = row.insertCell(1);
         cellPrice.textContent = `€${item.price}`;
