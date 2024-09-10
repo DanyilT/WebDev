@@ -1,13 +1,16 @@
+/* Container for the gallery format */
 .ag-format-container {
   width: 600px;
   margin: auto;
 }
 
+/* Reset margin and padding for unordered lists */
 .layout ul {
   margin: 0;
   padding: 0;
 }
 
+/* Style for images in the slider */
 .slider img {
   max-height: 600px;
   max-width: 600px;
@@ -15,15 +18,18 @@
   width: 100%;
 }
 
+/* Style for the dots navigation in the slider */
 .slick-dots {
   display: flex;
   gap: 10px;
 }
 
+/* Style for each dot in the navigation */
 .slick-dots li {
   display: inline-block;
 }
 
+/* Style for images inside the dots */
 .slick-dots li img {
   height: 100%;
   width: 100%;
@@ -31,23 +37,27 @@
   opacity: 0.3;
 }
 
+/* Style for the active dot */
 .slick-dots .slick-active img {
   cursor: default;
   opacity: 1;
 }
 
+/* Style for the previous arrow button */
 .slick-prev {
   position: absolute;
   top: 45%;
-  left: -10%
+  left: -10%;
 }
 
+/* Style for the next arrow button */
 .slick-next {
   position: absolute;
   top: 45%;
   right: -10%;
 }
 
+/* Style for the navigation icons */
 .icon {
   height: 50px;
   width: 50px;
@@ -55,35 +65,43 @@
   border-radius: 25px;
 }
 
+/* Hover effect for the navigation icons */
 .icon:hover {
   background-color: #333;
 }
 
+/* Container for the icon content */
 .icon__cnt {
   height: 100%;
   width: 100%;
 }
 
+/* Style for the left and right arrow icon */
 #ei-arrow-left-icon,
 #ei-arrow-right-icon {
   fill: #fefeff;
 }
 
+/* Responsive styles for screens with a max width of 760px */
 @media (max-width: 760px) {
+  /* Make the gallery container full width */
   .ag-format-container {
     width: 100%;
   }
 
+  /* Hide the navigation icons */
   .icon {
-      display: none;
+    display: none;
   }
 
+  /* Adjust the dots navigation for smaller screens */
   .slick-dots {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
+  /* Adjust the size of each dot for smaller screens */
   .slick-dots li {
     width: 50px;
   }

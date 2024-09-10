@@ -1,3 +1,4 @@
+/* General styles for the body */
 body {
     font-family: Arial, sans-serif;
     background: #fefefe;
@@ -6,6 +7,7 @@ body {
     padding: 0;
 }
 
+/* Styles for header and footer */
 header, footer {
     background-color: #333;
     color: #fefefe;
@@ -13,10 +15,12 @@ header, footer {
     padding: 10px;
 }
 
+/* Styles for navigation inside the header */
 header nav {
     padding: 10px;
 }
 
+/* Styles for links inside the header navigation */
 header nav a {
     color: #fefefe;
     text-decoration: none;
@@ -24,36 +28,44 @@ header nav a {
     margin: 10px;
 }
 
+/* Hover effect for header navigation links */
 header nav a:hover {
     color: #ddd;
 }
 
+/* Styles for the hamburger menu icon */
 .hamburger {
     display: none;
     font-size: 30px;
     cursor: pointer;
 }
 
+/* Styles for the main content area */
 main {
     background: #fefefe;
 }
 
+/* Styles for footer links */
 .footer-link {
     grid-area: footer-top;
 }
 
+/* Styles for footer contact section */
 .footer-contact {
     grid-area: footer-left;
 }
 
+/* Styles for footer address section */
 .footer-address {
     grid-area: footer-right;
 }
 
+/* Styles for footer copyright section */
 .footer-copy {
     grid-area: footer-bottom;
 }
 
+/* Grid layout for the footer */
 footer {
     display: grid;
     grid-template-areas:
@@ -64,10 +76,12 @@ footer {
     gap: 20px;
 }
 
+/* Styles for links inside the footer */
 footer a {
     color: #fefefe;
 }
 
+/* General grid layout */
 .grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -75,38 +89,46 @@ footer a {
     gap: 20px;
 }
 
+/* Styles for sections */
 section {
     padding: 30px;
 }
 
+/* Styles for the welcome section */
 .welcome {
     grid-column: 1 / 2;
     grid-row: 1;
 }
 
+/* Styles for the contact section */
 .contact {
     grid-column: 2 / 3;
     grid-row: 1;
 }
 
+/* Styles for the location section */
 .location {
     grid-column: 1 / 3;
     grid-row: 2;
 }
 
+/* Styles for headings */
 h1, h2 {
     text-align: center;
 }
 
+/* General styles for links */
 a {
     text-decoration: none;
     color: #333;
 }
 
+/* Hover effect for links */
 a:hover {
     color: darkblue;
 }
 
+/* Styles for forms */
 form {
     display: flex;
     flex-direction: column;
@@ -117,10 +139,12 @@ form {
     padding: 20px;
 }
 
+/* Styles for form labels */
 form label {
     font-weight: 600;
 }
 
+/* Styles for text, email, and telephone inputs */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -132,10 +156,12 @@ textarea {
     color: #333;
 }
 
+/* Styles for text-areas */
 textarea {
     height: 150px;
 }
 
+/* Styles for buttons */
 button {
     background-color: blue;
     color: #fefefe;
@@ -147,11 +173,13 @@ button {
     border-radius: 10px;
 }
 
+/* Hover effect for buttons */
 button:hover {
     background-color: darkblue;
     width: 100%;
 }
 
+/* Styles for cart and contact popups */
 .cart-popup, .contact-popup {
     display: none;
     position: fixed;
@@ -162,6 +190,7 @@ button:hover {
     background-color: rgba(0,0,0,0.4);
 }
 
+/* Styles for cart and contact popup content */
 .cart-content, .contact-content {
     position: absolute;
     background-color: #f9f9f9;
@@ -174,12 +203,14 @@ button:hover {
     transform: translate(-50%, -50%);
 }
 
+/* Styles for close buttons in cart and contact popups */
 .close-cart, .close-contact {
     color: #ddd;
     float: right;
     font-size: 2rem;
 }
 
+/* Hover effect for close buttons */
 .close-cart:hover,
 .close-cart:focus,
 .close-contact:hover,
@@ -188,6 +219,7 @@ button:hover {
     cursor: pointer;
 }
 
+/* Styles for tables inside the cart popup */
 .cart-popup table {
     width: 100%;
     border-collapse: collapse;
@@ -196,18 +228,21 @@ button:hover {
     border: 1px solid #ddd;
 }
 
+/* Styles for table headers and cells */
 .cart-popup th, td {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: left;
 }
 
+/* Styles for images inside the cart popup table */
 .cart-popup table img {
     width: 50px;
     margin-right: 10px;
     vertical-align: middle;
 }
 
+/* Styles for number inputs inside the cart items */
 .cart-items input[type=number] {
     height: 20px;
     border-radius: 5px;
@@ -215,14 +250,15 @@ button:hover {
     padding: 3px;
 }
 
+/* Styles for table headers and cells inside the cart items */
 .cart-items th, .cart-items td {
     padding: 10px;
 }
 
+/* Styles for specific columns inside the cart items */
 .cart-items th:nth-child(2), .cart-items td:nth-child(2) {
     width: 80px;
     text-align: center;
-
 }
 
 .cart-items th:nth-child(3), .cart-items td:nth-child(3) {
@@ -235,26 +271,31 @@ button:hover {
     text-align: end;
 }
 
+/* Styles for the bottom section of the cart */
 .cart-bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+/* Styles for buttons inside the cart */
 .buttons {
     display: flex;
     gap: 10px;
 }
 
+/* Styles for the price section inside the cart */
 .price-section {
     display: flex;
     gap: 50px;
 }
 
+/* Styles for spans inside the price section */
 .price-section span {
     font-size: 1.2rem;
 }
 
+/* Styles for the clear button */
 .clear-btn {
     background-color: #ddd;
     color: #333;
@@ -262,12 +303,14 @@ button:hover {
     font-size: 1.2rem;
 }
 
+/* Hover effect for the clear button */
 .clear-btn:hover {
     background-color: #333;
     color: #fefefe;
     width: 150px;
 }
 
+/* Styles for the checkout button */
 .checkout-btn {
     background-color: blue;
     color: #fefefe;
@@ -275,11 +318,13 @@ button:hover {
     font-size: 1.2rem;
 }
 
+/* Hover effect for the checkout button */
 .checkout-btn:hover {
     background-color: darkblue;
     width: 150px;
 }
 
+/* Styles for tooltip text */
 .tooltip-text {
     visibility: hidden;
     width: 120px;
@@ -293,21 +338,24 @@ button:hover {
     bottom: 10%;
 }
 
+/* Show tooltip text on hover */
 .shipping-cost:hover .tooltip-text {
     visibility: visible;
 }
 
+/* Media query for screens wider than 769px */
 @media (min-width: 769px) {
     header nav {
         display: block;
     }
 }
 
+/* Media query for screens narrower than 768px */
 @media (max-width: 768px) {
     header nav {
         display: none;
     }
-    
+
     header nav.active {
         display: flex;
         flex-direction: column;
@@ -341,7 +389,7 @@ button:hover {
     .grid {
         grid-template-columns: 1fr;
     }
-    
+
     .welcome, .contact, .location {
         grid-column: auto / auto;
         grid-row: auto;
