@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EspressoEmpire - Assortment</title>
+	<link rel="shortcut icon" href="../images/logo.svg" type="image/svg">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/header-footer.css">
+	<script type="text/javascript" src="../scripts/script.js"></script>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="../index.html"><img src="../images/logo.svg" alt="logo"></a>
+			<h1>EspressoEmpire</h1>
+		</div>
+		<nav class="menubar">
+			<ul>
+				<!-- <li><a href="index.html"><i class="fas fa-home"></i></a></li> -->
+				<li><a href="assortment.html"><i class="fas fa-coffee"></i></a></li>
+				<li><button class="open-account-modal" data-modal="account"><i class="fas fa-user"></i></button></li>
+				<li><button class="open-map-modal" data-modal="location"><i class="fas fa-map-marker-alt"></i></button></li>
+				<li><button class="open-support-modal" data-modal="chat"><i class="fas fa-comments"></i></button></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h2 class="product-items-title">Make your choice</h2>
+		<section class="products-container">
+			<div class="product-item" data-name="Americano" data-description="Espresso + Water" data-price="$9.99" data-image="../images/assortment/Americano.png">
+				<img src="../images/assortment/Americano.png" alt="Americano">
+				<h3>Americano</h3>
+				<p>Espresso + Water</p>
+				<p>Price: $9.99</p>
+			</div>
+			<div class="product-item" data-name="Cappuccino" data-description="Espresso + Milk" data-price="$10.99" data-image="../images/assortment/Cappuccino.png">
+				<img src="../images/assortment/Cappuccino.png" alt="Cappuccino">
+				<h3>Cappuccino</h3>
+				<p>Espresso + Milk</p>
+				<p>Price: $10.99</p>
+			</div>
+			<div class="product-item" data-name="Frappe" data-description="Like Cappuccino, but better" data-price="$11.99" data-image="../images/assortment/Frappe.png">
+				<img src="../images/assortment/Frappe.png" alt="Frappe">
+				<h3>Frappe</h3>
+				<p>Like Cappuccino, but better</p>
+				<p>Price: $11.99</p>
+			</div>
+			<div class="product-item" data-name="Latte" data-description="Very nice" data-price="$12.99" data-image="../images/assortment/Latte.png">
+				<img src="../images/assortment/Latte.png" alt="Latte">
+				<h3>Latte</h3>
+				<p>Very nice</p>
+				<p>Price: $12.99</p>
+			</div>
+			<div class="product-item" data-name="Mocha" data-description="Coffee with cacao" data-price="$13.99" data-image="../images/assortment/Mocha.png">
+				<img src="../images/assortment/Mocha.png" alt="Mocha">
+				<h3>Mocha</h3>
+				<p>Coffee with cacao</p>
+				<p>Price: $13.99</p>
+			</div>
+			<div class="product-item" data-name="Raf" data-description="Coffee with ice" data-price="$14.99" data-image="../images/assortment/Raf.png">
+				<img src="../images/assortment/Raf.png" alt="Raf">
+				<h3>Raf</h3>
+				<p>Coffee with ice</p>
+				<p>Price: $14.99</p>
+			</div>
+		</section>
+
+		<div id="order-modal" class="modal">
+			<div class="modal-content">
+				<span id="order-modal-close" class="close">&times;</span>
+				<h2 id="order-product-name">Product Name</h2>
+				<div class="order-modal-content">
+					<div class="order-modal-img">
+						<img id="order-product-image" src="" alt="Product Image">
+					</div>
+					<div class="order-modal-content-details">
+						<p id="order-product-description" class="descr">Product Description</p>
+						<p id="order-product-price">Price: $0.00</p>
+						<p>
+							<label for="milk-type">95 types of milk: </label>
+							<select id="milk-type">
+								<option value="whole">Whole Milk</option>
+								<option value="semi_skimmed">Semi-Skimmed Milk</option>
+								<option value="skimmed">Skimmed Milk</option>
+								<option value="lactose_free">Lactose-Free Milk</option>
+								<option value="goat">Goat Milk</option>
+								<option value="sheep">Sheep Milk</option>
+								<option value="buffalo">Buffalo Milk</option>
+								<option value="camel">Camel Milk</option>
+								<option value="almond">Almond Milk</option>
+								<option value="cashew">Cashew Milk</option>
+								<option value="coconut">Coconut Milk</option>
+								<option value="hazelnut">Hazelnut Milk</option>
+								<option value="macadamia">Macadamia Milk</option>
+								<option value="oat">Oat Milk</option>
+								<option value="pea">Pea Milk</option>
+								<option value="quinoa">Quinoa Milk</option>
+								<option value="rice">Rice Milk</option>
+								<option value="soy">Soy Milk</option>
+								<option value="spelt">Spelt Milk</option>
+								<option value="flax">Flax Milk</option>
+								<option value="hemp">Hemp Milk</option>
+								<option value="sunflower">Sunflower Milk</option>
+								<option value="walnut">Walnut Milk</option>
+								<option value="pistachio">Pistachio Milk</option>
+								<option value="tigernut">Tigernut Milk</option>
+								<option value="peanut">Peanut Milk</option>
+								<option value="banana">Banana Milk</option>
+								<option value="barley">Barley Milk</option>
+								<option value="brazil_nut">Brazil Nut Milk</option>
+								<option value="pecan">Pecan Milk</option>
+								<option value="pine_nut">Pine Nut Milk</option>
+								<option value="pumpkin_seed">Pumpkin Seed Milk</option>
+								<option value="rye">Rye Milk</option>
+								<option value="sesame">Sesame Milk</option>
+								<option value="sorghum">Sorghum Milk</option>
+								<option value="sunflower_seed">Sunflower Seed Milk</option>
+								<option value="teff">Teff Milk</option>
+								<option value="chia">Chia Milk</option>
+								<option value="poppy_seed">Poppy Seed Milk</option>
+								<option value="buckwheat">Buckwheat Milk</option>
+								<option value="corn">Corn Milk</option>
+								<option value="fava_bean">Fava Bean Milk</option>
+								<option value="garbanzo_bean">Garbanzo Bean Milk</option>
+								<option value="green_pea">Green Pea Milk</option>
+								<option value="lentil">Lentil Milk</option>
+								<option value="mung_bean">Mung Bean Milk</option>
+								<option value="navy_bean">Navy Bean Milk</option>
+								<option value="pinto_bean">Pinto Bean Milk</option>
+								<option value="red_bean">Red Bean Milk</option>
+								<option value="adzuki_bean">Adzuki Bean Milk</option>
+								<option value="black_bean">Black Bean Milk</option>
+								<option value="black_eyed_pea">Black-Eyed Pea Milk</option>
+								<option value="cannellini_bean">Cannellini Bean Milk</option>
+								<option value="kidney_bean">Kidney Bean Milk</option>
+								<option value="lima_bean">Lima Bean Milk</option>
+								<option value="great_northern_bean">Great Northern Bean Milk</option>
+								<option value="runner_bean">Runner Bean Milk</option>
+								<option value="split_pea">Split Pea Milk</option>
+								<option value="white_bean">White Bean Milk</option>
+								<option value="yellow_bean">Yellow Bean Milk</option>
+								<option value="chickpea">Chickpea Milk</option>
+								<option value="cowpea">Cowpea Milk</option>
+								<option value="edamame">Edamame Milk</option>
+								<option value="green_bean">Green Bean Milk</option>
+								<option value="green_gram">Green Gram Milk</option>
+								<option value="soy_bean">Soy Bean Milk</option>
+								<option value="yardlong_bean">Yardlong Bean Milk</option>
+								<option value="broad_bean">Broad Bean Milk</option>
+								<option value="common_bean">Common Bean Milk</option>
+								<option value="field_bean">Field Bean Milk</option>
+								<option value="mare">Mare's Milk</option>
+								<option value="reindeer">Reindeer Milk</option>
+								<option value="yak">Yak Milk</option>
+								<option value="donkey">Donkey Milk</option>
+								<option value="muskox">Muskox Milk</option>
+								<option value="water_buffalo">Water Buffalo Milk</option>
+								<option value="high_protein">High-Protein Milk</option>
+								<option value="ultra_filtered">Ultra-Filtered Milk</option>
+								<option value="evaporated">Evaporated Milk</option>
+								<option value="condensed">Condensed Milk</option>
+								<option value="powdered">Powdered Milk</option>
+								<option value="raw">Raw Milk</option>
+								<option value="pasteurized">Pasteurized Milk</option>
+								<option value="homogenized">Homogenized Milk</option>
+								<option value="fortified">Fortified Milk</option>
+								<option value="vitamin_d">Vitamin D Milk</option>
+								<option value="sterilized">Sterilized Milk</option>
+								<option value="scalded">Scalded Milk</option>
+								<option value="clabbered">Clabbered Milk</option>
+								<option value="soured">Soured Milk</option>
+								<option value="egg">qwerty</option>
+								<option value="cow">Cow's Milk</option>
+							</select>
+						</p>
+						<p>
+							<label for="order-size">Size: </label>
+							<select id="order-size">
+								<!-- Absolutely correct vales... -->
+								<option value="2" data-size="125ml">125ml</option>
+								<option value="1" data-size="250ml" selected>250ml</option>
+								<option value="0.5" data-size="500ml">500ml</option>
+							</select>
+						</p>
+						<p>
+							<label for="order-portion">Portions: </label>
+							<input type="number" id="order-portion" min="1" max="10" value="1">
+						</p>
+						<button id="place-order-btn">Place Order</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="account-modal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<h2>Account</h2>
+				<div class="account-container">
+					<div class="form-container" id="login-form-container">
+						<h3>Login</h3>
+						<form id="login-form">
+							<label for="login-email">Email</label>
+							<input type="email" id="login-email" placeholder="Enter your email" required>
+							<label for="login-password">Password</label>
+							<input type="password" id="login-password" placeholder="Enter your password" required>
+							<button type="submit">Login</button>
+						</form>
+					</div>
+					<div class="form-container" id="signup-form-container">
+						<h3>Sign Up</h3>
+						<form id="signup-form">
+							<label for="signup-email">Email</label>
+							<input type="email" id="signup-email" placeholder="Enter your email" required>
+							<label for="signup-password">Password</label>
+							<input type="password" id="signup-password" placeholder="Enter your password" required>
+							<label for="signup-confirm-password">Confirm Password</label>
+							<input type="password" id="signup-confirm-password" placeholder="Confirm your password" required>
+							<button type="submit">Sign Up</button>
+						</form>
+					</div>
+					<button id="toggle-forms-btn">Don't have an account? Sign Up</button>
+				</div>				
+			</div>
+		</div>		
+
+		<div id="location-modal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<h2>Our Location</h2>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9529.255226668929!2d-6.2286322!3d53.3376386!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485ab4af636e3bcb%3A0xc4c697949b4049f6!2sGoogle!5e0!3m2!1suk!2sie!4v1681724244229!5m2!1suk!2sie" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+
+		<div id="chat-modal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<h2>Support Chat</h2>
+				<div class="chat-container">
+					<!-- Chat content will go here -->
+				</div>
+				<div class="chat-input-container">
+					<input type="text" placeholder="Type your message..." class="chat-input">
+					<button class="send-btn">Send</button>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="row">
+			<div>
+				<h4>Opening Hours</h4>
+				<p>Monday - Friday: 7am - 9pm</p>
+				<p>Saturday - Sunday: 8am - 10pm</p>
+			</div>
+			<div>
+				<h4>Contact Us</h4>
+				<p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Anytown USA</p>
+				<p><i class="fas fa-phone"></i> (555) 555-5555</p>
+				<p><i class="fas fa-envelope"></i> info@yourcoffeeshop.com</p>
+			</div>
+			<div>
+				<h4>Follow Us</h4>
+				<ul class="social-media">
+					<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="column">
+			<div>
+				<h4>About Us</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod est vel libero bibendum, ut ullamcorper dolor commodo.</p>
+			</div>
+			<div>
+				<ul class="footer-links">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Menu</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Terms of Service</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<div class="copy">
+			<p>&copy; 2023-2024 Dany</p>
+		</div>
+	</footer>
+</body>
+</html>
