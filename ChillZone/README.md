@@ -85,5 +85,5 @@ Ask Google... Oh wait, you don't have a browser...
     - Script: `https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js`
 - FancyBox Gallery:
     - Style: `https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css`
-    - jQuery: `https://code.jquery.com/jquery-3.6.0.min.js`
     - Script: `https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js`
+- jQuery: `https://code.jquery.com/jquery-3.6.0.min.js`
