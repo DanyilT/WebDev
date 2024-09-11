@@ -10,6 +10,7 @@ This is a website for the ChillZone game. You can also download the game from th
 - FAQ Section - super very useful.
 - Contact Section with contact form and social media links.
 - Privacy Policy.
+- You can find an ester egg.
 
 ## Requirements
 
