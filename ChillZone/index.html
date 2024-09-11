@@ -1,207 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/logo.png" type="image/png">
-    <title>DanyT - ChillZone</title>
-    <link rel="stylesheet" href="testimonials.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="#">
-                    <img src="img/logo.png" alt="Logo">
-                </a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#screenshots">Screenshots</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Contacts</a></li>
-            </ul>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="media/images/logo/logo_no_bg.png" type="image/png">
+        <title>DanyT - ChillZone</title>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="video-container">
-                <video autoplay muted loop>
-                    <source src="video/videoblocks-a-man-throws-a-full-trash-bag-into-a-bin-closeup_sdnvdfdcw.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="hero-content">
-                <h1>Just Chill</h1>
-                <a href="#" class="cta-button" id="download-btn">Download Now</a>
-            </div>
-        </section>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
 
-        <!-- Game Features -->
-        <section id="features" class="features">
-            <h2>Game Features</h2>
-            <div class="features-grid">
-                <div class="feature-item">
-                    <div class="img-wrapper">
-                        <img src="img/Screenshots/Screenshot-1.jpg" alt="Android version">
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+        <!-- My css and js -->
+        <link rel="stylesheet" href="css/styles.css">
+        <script type="text/javascript" src="scripts/script.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="#">
+                        <img src="media/images/logo/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#screenshots">Screenshots</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="video-container">
+                    <video autoplay muted loop>
+                        <!-- Stock Video -->
+                        <source src="media/videos/videoblocks-a-man-throws-a-full-trash-bag-into-a-bin-closeup-stock.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="hero-content">
+                    <h1>Just Chill</h1>
+                    <a href="#" class="hero-button" id="download-btn">Download Now</a>
+                </div>
+            </section>
+
+            <!-- Game Features -->
+            <section id="features" class="features">
+                <h2>Game Features</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="img-wrapper">
+                            <img src="media/images/screenshots/Screenshot-1-Android.png" alt="Android version (Screenshot 1)">
+                        </div>
+                        <h3>Exclusive mechanic</h3>
+                        <p>You can throw the ball into the bin or not, as you wish</p>
                     </div>
-                    <h3>Exclusive mechanic</h3>
-                    <p>You can throw the ball into the bin or not, as you wish</p>
-                </div>
-                <div class="feature-item">
-                    <video src="video/ChillZone_720.mp4" controls width="100%" height="auto" preload="auto" poster="video/preload-1.png"></video>
-                    <h3>Just watch</h3>
-                    <p>Amazing video</p>
-                </div>
-                <div class="feature-item">
-                    <div class="img-wrapper">
-                        <img src="img/Screenshots/Screenshot-1.png" alt="iOS version">
+                    <div class="feature-item">
+                        <video src="media/videos/ChillZone_720.mp4" controls width="100%" height="auto" preload="auto"  poster="media/videos/preview/ChillZone_720.png"></video>
+                        <h3>Just watch</h3>
+                        <p>Amazing video</p>
                     </div>
-                    <h3>Good UI and UX</h3>
-                    <p>It's look good</p>
+                    <div class="feature-item">
+                        <div class="img-wrapper">
+                            <img src="media/images/screenshots/Screenshot-1-iOS.png" alt="iOS version (Screenshot 1)">
+                        </div>
+                        <h3>Good UI and UX</h3>
+                        <p>It's look good</p>
+                    </div>
                 </div>
-                <!-- Add more feature items as needed -->
-            </div>
-        </section>
+            </section>
 
-        <!-- Gameplay Screenshots or Video -->
-        <section id="screenshots" class="gameplay">
-            <h2>Gameplay Screenshots & Videos</h2>
-            <div class="carousel">
-                <div class="slide">
-                    <div class="responsive-iframe-container">
-                        <iframe src="https://www.youtube.com/embed/1zRJ66FfypU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>                    
-                    <!-- <video src="video/DanyT_720.mp4" preload="auto" poster="video/preload-2.png" controls></video> -->
+            <!-- Gameplay screenshots or Video -->
+            <section id="screenshots" class="gameplay">
+                <h2>Gameplay</h2>
+                <div class="f-carousel" id="carousel">
+                    <div class="f-carousel__viewport">
+                        <div class="f-carousel__track">
+                            <div class="f-carousel__slide">
+                                <div class="responsive-iframe-container">
+                                    <iframe src="https://www.youtube.com/embed/1zRJ66FfypU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                                <!-- <video src="media/videos/DanyT_720.mp4" preload="auto" poster="videos/preload-2.png" controls></video> -->
+                            </div>
+                            <div class="f-carousel__slide">
+                                <a href="media/images/screenshots/Screenshot-2.png" data-fancybox="gallery">
+                                    <img src="media/images/screenshots/cropped/Screenshot-2_cropped.png" alt="Screenshot 2">
+                                </a>
+                            </div>
+                            <div class="f-carousel__slide">
+                                <a href="media/images/screenshots/Screenshot-3.png" data-fancybox="gallery">
+                                    <img src="media/images/screenshots/cropped/Screenshot-3_cropped.png" alt="Screenshot 3">
+                                </a>
+                            </div>
+                            <div class="f-carousel__slide">
+                                <a href="media/images/screenshots/Screenshot-4.png" data-fancybox="gallery">
+                                    <img src="media/images/screenshots/cropped/Screenshot-4_cropped.png" alt="Screenshot 4">
+                                </a>
+                            </div>
+                            <div class="f-carousel__slide">
+                                <a href="media/images/screenshots/Screenshot-5.png" data-fancybox="gallery">
+                                    <img src="media/images/screenshots/cropped/Screenshot-5_cropped.png" alt="Screenshot 5">
+                                </a>
+                            </div>
+                            <div class="f-carousel__slide">
+                                <a href="media/images/screenshots/Screenshot-6.png" data-fancybox="gallery">
+                                    <img src="media/images/screenshots/cropped/Screenshot-6_cropped.png" alt="Screenshot 6">
+                                </a>
+                            </div>
+                            <div class="f-carousel__slide">
+                                <a href="media/images/screenshots/Screenshot-7.png" data-fancybox="gallery">
+                                    <img src="media/images/screenshots/cropped/Screenshot-7_cropped.png" alt="Screenshot 7">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="slide">
-                    <a href="img/Screenshots/Screenshot-2.jpg" data-fancybox="gallery">
-                        <img src="img/Screenshots/Cropped/Screenshot-2_cropped.jpeg" alt="Screenshot 1">
-                    </a>
-                </div>
-                <div class="slide">
-                    <a href="img/Screenshots/Screenshot-3.png" data-fancybox="gallery">
-                        <img src="img/Screenshots/Cropped/Screenshot-3_cropped.png" alt="Screenshot 2">
-                    </a>
-                </div>
-                <div class="slide">
-                    <a href="img/Screenshots/Screenshot-4.png" data-fancybox="gallery">
-                        <img src="img/Screenshots/Cropped/Screenshot-4_cropped.png" alt="Screenshot 3">
-                    </a>
-                </div>
-                <div class="slide">
-                    <a href="img/Screenshots/Screenshot-5.png" data-fancybox="gallery">
-                        <img src="img/Screenshots/Cropped/Screenshot-5_cropped.png" alt="Screenshot 3">
-                    </a>
-                </div>
-                <div class="slide">
-                    <a href="img/Screenshots/Screenshot-6.png" data-fancybox="gallery">
-                        <img src="img/Screenshots/Cropped/Screenshot-6_cropped.png" alt="Screenshot 3">
-                    </a>
-                </div>
-                <div class="slide">
-                    <a href="img/Screenshots/Screenshot-7.png" data-fancybox="gallery">
-                        <img src="img/Screenshots/Cropped/Screenshot-7_cropped.png" alt="Screenshot 3">
-                    </a>
-                </div>
-                <!-- Add more slides as needed -->
-            </div>
-        </section>
+            </section>
 
-        <!-- Download Section -->
-        <div id="download-section" class="download-section">
-            <h2>Download and Play Now</h2>
-            <div class="download-buttons">
-                <a href="https://play.google.com/store/apps/details?id=com.DanyT.ChillZone" target="_blank">
-                    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" />
-                </a>
-                <a href="https://apps.apple.com/us/app/chillzone-danyt/id6448560219" target="_blank">
-                    <img src="https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg" alt="Download on the App Store" />
-                </a>
-            </div>
-            <div class="qr-codes">
-                <img src="img/qrcode_play.google.com.png" alt="Android QR Code" />
-                <img src="img/qrcode_apps.apple.com.png" alt="iOS QR Code" />
-            </div>
-        </div>
-        
-        <!-- FAQ Section -->
-        <section id="faq">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <h3>How do I play the game?</h3>
-                    <p>To play the game, simply download it from the App Store or Google Play Store, install it on your device, and follow the on-screen instructions.</p>
+            <!-- Download Section -->
+            <section id="download-section" class="download-section">
+                <h2>Download and Chill</h2>
+                <div class="download-container">
+                    <div class="android-download">
+                        <a class="download-button" href="https://play.google.com/store/apps/details?id=com.DanyT.ChillZone" target="_blank">
+                            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" />
+                        </a>
+                        <a class="download-qr-code" href="https://play.google.com/store/apps/details?id=com.DanyT.ChillZone" target="_blank">
+                            <img src="media/images/qr_codes/qrcode_play.google.com.png" alt="Android QR Code" />
+                        </a>
+                    </div>
+                    <div class="ios-download">
+                        <a class="download-button" href="https://apps.apple.com/us/app/chillzone-danyt/id6448560219" target="_blank">
+                            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=2023-01-01" alt="Download on the App Store" />
+                        </a>
+                        <a class="download-qr-code" href="https://apps.apple.com/us/app/chillzone-danyt/id6448560219" target="_blank">
+                            <img src="media/images/qr_codes/qrcode_apps.apple.com.png" alt="iOS QR Code" />
+                        </a>
+                    </div>
                 </div>
-                <div class="faq-item">
-                    <h3>What are the technical requirements for the game?</h3>
-                    <p>The game is compatible with iOS and Android devices. Please check the App Store or Google Play Store for specific device requirements.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Are there any in-app purchases?</h3>
-                    <p>No, but you can support us on <a href="https://www.buymeacoffee.com/DanyT">Buy me a coffee</a>.</p>
-                    <a href="https://www.buymeacoffee.com/DanyT"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=DanyT&button_colour=000000&font_colour=ffffff&font_family=Comic&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
-                    <a href="img/bmc_qr.png" data-fancybox="gallery">
-                        <img src="img/bmc_qr.png" alt="buymeacoffee">
-                    </a>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Contacts -->
-        <section id="contact">
-            <h2>Contact and Social Media</h2>
-            <div class="contact-container">
-                <div class="contact-form">
-                    <h3>Contact Us</h3>
-                    <form id="contact-form" action="https://formspree.io/f/meqwvpov" method="POST">
-                        <input type="hidden" name="_subject" value="New message from your ChillZone page">
-                        <input type="email" name="_replyto" placeholder="Your email" required>
-                        <textarea name="message" placeholder="Your message" required></textarea>
-                        <button type="submit">Send</button>
-                    </form>                
-                </div>
-            <div class="social-media">
-                <h3>Follow Us</h3>
-                <!-- <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a> -->
-                <!-- <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a> -->
-                <a href="https://www.instagram.com/danyt.inc/" class="social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="https://youtube.com/@DanyT-inc" class="social-icon"><i class="fab fa-youtube"></i></a>
-                <!-- <a href="https://www.buymeacoffee.com/DanyT" class="social-icon"><i class="fab fa-buymeacoffee"></i></a> -->
-            </div>
-            </div>
-        </section>
-    </main>
+            </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2023 ChillZone. All rights reserved.</p>
-            <ul class="footer-links">
-                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                <!-- <li><a href="terms-of-service.html">Terms of Service</a></li> -->
-            </ul>
-            <ul class="footer-navigation">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#screenshots">Screenshots</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Contacts</a></li>
-            </ul>
-        </div>
-    </footer>
+            <!-- FAQ Section -->
+            <section id="faq" class="faq-section">
+                <h3>Frequently Asked Questions</h3>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <h4>How do I play the game?</h4>
+                        <p>To play the game, simply download it from the App Store or Google Play Store, install it on your device, and follow the on-screen instructions.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>What are the technical requirements for the game?</h4>
+                        <p>The game is compatible with iOS and Android devices. Please check the App Store or Google Play Store for specific device requirements.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Are there any in-app purchases?</h4>
+                        <p>No, but you can support us on <a href="https://www.buymeacoffee.com/DanyT">Buy me a coffee</a>.</p>
+                        <div class="buymeacoffee">
+                            <a href="https://www.buymeacoffee.com/DanyT"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=DanyT&button_colour=000000&font_colour=ffffff&font_family=Comic&outline_colour=ffffff&coffee_colour=FFDD00"></a>
+                            <a href="media/images/qr_codes/bmc_qr.png" data-fancybox="gallery">
+                                <img src="media/images/qr_codes/bmc_qr.png" alt="buymeacoffee">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <!-- Rest of the page content -->
+            <!-- Contacts -->
+            <section id="contact" class="contact-section">
+                <h3>Contact and Social Media</h3>
+                <div class="contact-container">
+                    <div class="contact-form">
+                        <h4>Contact Us</h4>
+                        <form id="contact-form" action="https://formspree.io/f/meqwvpov" method="POST">
+                            <input type="hidden" name="_subject" value="New message from your ChillZone page">
+                            <input type="email" name="_replyto" placeholder="Your email" required>
+                            <textarea name="message" placeholder="Your message" required></textarea>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                    <div class="social-media">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/dany_tymchuk" class="social-icon">
+                                <img src="media/images/icons/Instagram.svg" alt="Instagram">
+                            </a>
+                            <a href="https://youtube.com/@DanyT-inc" class="social-icon">
+                                <img src="media/images/icons/YouTube.svg" alt="YouTube">
+                            </a>
+                            <a href="https://www.buymeacoffee.com/DanyT" class="social-icon">
+                                <img src="media/images/icons/Hot-Drink.svg" alt="Buy me a coffee">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="DanyT" data-description="Support me on Buy me a coffee!" data-message="Can you buy me a coffee?)" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script></body>
+        <!-- Footer -->
+        <footer>
+            <a href="pages/privacy-policy.html">Privacy Policy</a>
+            <!-- <a href="terms-of-service.html">Terms of Service</a> -->
+            <p>&copy; 2023-2024 Dany ChillZone</p>
+        </footer>
+
+        <!-- <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="DanyT" data-description="Support me on Buy me a coffee!" data-message="Can you buy me a coffee?)" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script> -->
+    </body>
 </html>
