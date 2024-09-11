@@ -17,6 +17,8 @@ This is a website for the ChillZone game. You can also download the game from th
 - Web browser
 - Localhost server (optional) (you really don't need it)
 
+### Installation
+
 #### Web Browser
 
 I don't want to teach you how install a web browser. How you even got here without one?
