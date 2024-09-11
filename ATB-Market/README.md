@@ -73,7 +73,7 @@ Ok, you don't really need a local host server to run this project. Without a ser
         python3 -m http.server
         ```
 
-- open your web browser and go to [`http://localhost:8000`](http://localhost:8000).
+- Open your web browser and go to [`http://localhost:8000`](http://localhost:8000).
 
 #### Opening the `index.html` File in a Web Browser
 
