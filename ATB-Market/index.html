@@ -1,145 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>АТБ - Home</title>
-        <link rel="shortcut icon" href="images/logo.svg">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="scripts/script.js"></script>
-    </head>
-    <body>
-        <div id="cart-popup" class="cart-popup">
-            <div class="cart-content">
-                <span class="close-cart">&times;</span>
-                <h2>Your Cart</h2>
-                <table class="cart-items">
-                    <thead>
-                        <tr>
-                            <th>Item</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
-                            <th>Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Cart items will be dynamically inserted here -->
-                    </tbody>
-                </table>
-                <div class="cart-bottom">
-                    <div class="buttons">
-                        <button class="clear-btn" onclick="clearCart()">Clear Cart</button>
-                        <button class="checkout-btn" onclick="openContactInfoModal()">Checkout</button>
-                    </div>
-                    <div class="price-section">
-                        <span class="shipping-cost"></span>
-                        <span class="total-price"></span>
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АТБ - Home</title>
+    <link rel="shortcut icon" href="images/logo.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/script.js"></script>
+</head>
+<body>
+    <div id="cart-popup" class="cart-popup">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <table class="cart-items">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Cart items will be dynamically inserted here -->
+                </tbody>
+            </table>
+            <div class="cart-bottom">
+                <div class="buttons">
+                    <button class="clear-btn" onclick="clearCart()">Clear Cart</button>
+                    <button class="checkout-btn" onclick="openContactInfoModal()">Checkout</button>
+                </div>
+                <div class="price-section">
+                    <span class="shipping-cost"></span>
+                    <span class="total-price"></span>
                 </div>
             </div>
         </div>
-        <div id="contact-popup" class="contact-popup">
-            <div class="contact-content">
-                <span class="close-contact">&times;</span>
-                <h2>Contact Information</h2>
-                <form action="#" method="post" id="contact-form">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required title="Please enter your full name">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required title="Please enter a valid email address">
-                    <label for="tel">Phone:</label>
-                    <input type="tel" id="tel" name="tel" max="10" required pattern="[+]?[0-9]{1,4}[\s-]?[(]?[0-9]{1,3}[)]?[\s-]?[0-9]{1,4}[\s-]?[0-9]{1,4}[\s-]?[0-9]{1,9}" title="Please enter a valid telephone number">
-                    <label for="address">Address:</label>
-                    <input type="text" id="address" name="address" required title="Please enter your shipping address">
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-        </div>        
-        <header>
-            <a href="#"><img src="images/logo.svg" alt="logo"></a>
-            <hr>
-            <span class="hamburger">&#9776;</span>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="pages/products.html">Products</a>
-                <a href="pages/gallery.html">Gallery</a>
-                <a href="#" id="cart-popup-button">Cart</a>
-            </nav>
-        </header>
-        <main>
-            <h1>Home</h1>
-            <div class="grid">
-                <section class="welcome">
-                    <h2>Welcome to Our Company</h2>
-                    <p>Welcome to ATB-Market, your one-stop shop for all your grocery and household needs. We are excited to have you as a customer and we are committed to providing you with the best possible shopping experience.</p>
-                    <p>At ATB-Market, we offer a wide variety of products at competitive prices. We also have a team of friendly and knowledgeable staff members who are always happy to help you find what you need.</p>
-                    <p>We know that your time is valuable, so we make it easy to shop with us. You can shop online or in-store, and we offer a variety of convenient services, such as curbside pickup and delivery.</p>
-                    <p>We are always looking for ways to improve, so please don't hesitate to give us your feedback. We want to make sure that ATB-Market is the best place for you to shop.</p>
-                    
-                    <h3>Our Services</h3>
-                    <ul>
-                        <li>Product Sales</li>
-                        <li>Customer Support</li>
-                        <li>Shipping and Delivery</li>
-                        <li>Product Warranty</li>
-                    </ul>
-                    
-                    <h3>Latest News</h3>
-                    <p>Check out our latest products and promotions in the <a href="pages/products.html">Products</a> section. Don't miss out on our special offers!</p>
-                    <p>P.S: It's not a real ATB Market, it's just a fun project. And I'm off course not the owner of ATB logo and I don't have any rights to use it. It's just for educational purposes. This logo not under my copyright. Also, products images are from original website</p>
-                    <a href="https://www.atbmarket.com/">Visit real company's website</a>
+    </div>
+    <div id="contact-popup" class="contact-popup">
+        <div class="contact-content">
+            <span class="close-contact">&times;</span>
+            <h2>Contact Information</h2>
+            <form action="#" method="post" id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required title="Please enter your full name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required title="Please enter a valid email address">
+                <label for="tel">Phone:</label>
+                <input type="tel" id="tel" name="tel" max="10" required pattern="[+]?[0-9]{1,4}[\s-]?[(]?[0-9]{1,3}[)]?[\s-]?[0-9]{1,4}[\s-]?[0-9]{1,4}[\s-]?[0-9]{1,9}" title="Please enter a valid telephone number">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required title="Please enter your shipping address">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <header>
+        <a href="#"><img src="images/logo.svg" alt="logo"></a>
+        <hr>
+        <span class="hamburger">&#9776;</span>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="pages/products.html">Products</a>
+            <a href="pages/gallery.html">Gallery</a>
+            <a href="#" id="cart-popup-button">Cart</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class="grid">
+            <section class="welcome">
+                <h2>Welcome to Our Company</h2>
+                <p>Welcome to ATB-Market, your one-stop shop for all your grocery and household needs. We are excited to have you as a customer and we are committed to providing you with the best possible shopping experience.</p>
+                <p>At ATB-Market, we offer a wide variety of products at competitive prices. We also have a team of friendly and knowledgeable staff members who are always happy to help you find what you need.</p>
+                <p>We know that your time is valuable, so we make it easy to shop with us. You can shop online or in-store, and we offer a variety of convenient services, such as curbside pickup and delivery.</p>
+                <p>We are always looking for ways to improve, so please don't hesitate to give us your feedback. We want to make sure that ATB-Market is the best place for you to shop.</p>
 
-                    <h3>Contact Information</h3>
-                    <dl>
-                        <dd><strong>Address:</strong> <a href="https://maps.app.goo.gl/9si2EXqB5YXpQPvp8">123 Main Street, City, Country</a></dd>
-                        <dd><strong>Phone:</strong> <a href="tel:+123-456-7890">+123-456-7890</a></dd>
-                        <dd><strong>Email:</strong> <a href="mailto:info@example.com">info@example.com</a></dd>
-                    </dl>
-                </section>
-                <section class="contact">
-                    <h2>Contact Us</h2>
-                    <form action="#" method="post">
-                        <p>Have questions or feedback? Send us a message!</p>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-                        <button type="submit">Submit</button>
-                    </form>
-                </section>
-                <section class="location">
-                    <h2>Location</h2>
-                        <dl>
-                            <dd><a href="https://maps.app.goo.gl/FgC8eCwSFZUJWbQTA" target="_blank">Vasyl Poryk Avenue 13, Kyiv</a></dd>
-                            <dd><a href="https://maps.app.goo.gl/QSRZV4Mr3idsDPjq7" target="_blank">Vishneva Street 182, Vasylkiv, Kyiv</a></dd>
-                            <dd><a href="https://maps.app.goo.gl/2ApoofTLDhP7qWqU8" target="_blank">Orikhuvatskaya Street 11, Kyiv</a></dd>
-                        </dl>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d20327.709865366705!2d30.409811339516764!3d50.44177618271375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1satb-market!5e0!3m2!1suk!2sie!4v1696851914128!5m2!1suk!2sie" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </section>
-            </div> 
-        </main>
-        <footer>
-            <a href="https://www.atbmarket.com/" class="footer-link">Real ATB Market</a>
+                <h3>Our Services</h3>
+                <ul>
+                    <li>Product Sales</li>
+                    <li>Customer Support</li>
+                    <li>Shipping and Delivery</li>
+                    <li>Product Warranty</li>
+                </ul>
 
-            <div class="footer-contact">
+                <h3>Latest News</h3>
+                <p>Check out our latest products and promotions in the <a href="pages/products.html">Products</a> section. Don't miss out on our special offers!</p>
+                <p>P.S: It's not a real ATB Market, it's just a fun project. And I'm off course not the owner of ATB logo and I don't have any rights to use it. It's just for educational purposes. This logo not under my copyright. Also, products images are from original website</p>
+                <a href="https://www.atbmarket.com/">Visit real company's website</a>
+
                 <h3>Contact Information</h3>
                 <dl>
                     <dd><strong>Address:</strong> <a href="https://maps.app.goo.gl/9si2EXqB5YXpQPvp8">123 Main Street, City, Country</a></dd>
                     <dd><strong>Phone:</strong> <a href="tel:+123-456-7890">+123-456-7890</a></dd>
                     <dd><strong>Email:</strong> <a href="mailto:info@example.com">info@example.com</a></dd>
                 </dl>
-            </div>
-            <div class="footer-address">
-                <h3>Address</h3>
-                <dl>
-                    <dd><a href="https://maps.app.goo.gl/FgC8eCwSFZUJWbQTA" target="_blank">Vasyl Poryk Avenue 13, Kyiv</a></dd>
-                    <dd><a href="https://maps.app.goo.gl/QSRZV4Mr3idsDPjq7" target="_blank">Vishneva Street 182, Vasylkiv, Kyiv</a></dd>
-                    <dd><a href="https://maps.app.goo.gl/2ApoofTLDhP7qWqU8" target="_blank">Orikhuvatskaya Street 11, Kyiv</a></dd>
-                </dl>
-            </div>
-            <span class="footer-copy">&copy; 2024 Dany</span>
-        </footer>
-    </body>
+            </section>
+            <section class="contact">
+                <h2>Contact Us</h2>
+                <form action="#" method="post">
+                    <p>Have questions or feedback? Send us a message!</p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+            <section class="location">
+                <h2>Location</h2>
+                    <dl>
+                        <dd><a href="https://maps.app.goo.gl/FgC8eCwSFZUJWbQTA" target="_blank">Vasyl Poryk Avenue 13, Kyiv</a></dd>
+                        <dd><a href="https://maps.app.goo.gl/QSRZV4Mr3idsDPjq7" target="_blank">Vishneva Street 182, Vasylkiv, Kyiv</a></dd>
+                        <dd><a href="https://maps.app.goo.gl/2ApoofTLDhP7qWqU8" target="_blank">Orikhuvatskaya Street 11, Kyiv</a></dd>
+                    </dl>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d20327.709865366705!2d30.409811339516764!3d50.44177618271375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1satb-market!5e0!3m2!1suk!2sie!4v1696851914128!5m2!1suk!2sie" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <a href="https://www.atbmarket.com/" class="footer-link">Real ATB Market</a>
+
+        <div class="footer-contact">
+            <h3>Contact Information</h3>
+            <dl>
+                <dd><strong>Address:</strong> <a href="https://maps.app.goo.gl/9si2EXqB5YXpQPvp8">123 Main Street, City, Country</a></dd>
+                <dd><strong>Phone:</strong> <a href="tel:+123-456-7890">+123-456-7890</a></dd>
+                <dd><strong>Email:</strong> <a href="mailto:info@example.com">info@example.com</a></dd>
+            </dl>
+        </div>
+        <div class="footer-address">
+            <h3>Address</h3>
+            <dl>
+                <dd><a href="https://maps.app.goo.gl/FgC8eCwSFZUJWbQTA" target="_blank">Vasyl Poryk Avenue 13, Kyiv</a></dd>
+                <dd><a href="https://maps.app.goo.gl/QSRZV4Mr3idsDPjq7" target="_blank">Vishneva Street 182, Vasylkiv, Kyiv</a></dd>
+                <dd><a href="https://maps.app.goo.gl/2ApoofTLDhP7qWqU8" target="_blank">Orikhuvatskaya Street 11, Kyiv</a></dd>
+            </dl>
+        </div>
+        <span class="footer-copy">&copy; 2024 Dany</span>
+    </footer>
+</body>
 </html>
