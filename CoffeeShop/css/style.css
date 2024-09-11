@@ -1,16 +1,15 @@
 body {
 	margin: 0;
     font-family: Arial, sans-serif;
-	background: #000000cc;
-	background-image: radial-gradient(#1E1E1E, #292D32);
-	color: #D9D9D9;
+    background: #000000 radial-gradient(#1E1E1E, #292D32);
+    color: #D9D9D9;
 }
 
 #intro-section {
 	background-image: url("path/to/bg.webp");
 	background-size: cover;
 	background-position: center;
-	height: 100vh;
+	height: 94vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -34,7 +33,6 @@ body {
 	line-height: 1.5;
 }
 
-/* Add this to style the container */
 .container {
     display: flex;
     justify-content: center;
@@ -47,7 +45,7 @@ body {
     overflow: hidden;
     width: 720px;
     height: 480px;
-	border-radius: 10px; /* Add this to round the corners */
+	border-radius: 10px;
 }
 
 .carousel-inner {
@@ -72,17 +70,17 @@ body {
 	height: 480px;
 	border-radius: 5px;
     object-fit: cover;
-	opacity: 0.5; /* Add this to make the image slightly transparent */
+	opacity: 0.5;
 }
 
 .carousel-caption {
 	padding: 50px;
 	font-size: 16px;
     position: absolute;
-    top: 50%; /* Modify this to place the text in the center of the photo */
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Add this to place the text in the center of the photo */
-    z-index: 1; /* Add this to place the text on top of the photo */
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 .carousel-caption h3 {
@@ -163,11 +161,11 @@ body {
 
 .modal-content {
     background-color: #1E1E1E;
-    margin: 5% auto; /* Adjust this to change the top and bottom margin */
+    margin: 5% auto;
     padding: 10px;
 	border-radius: 10px;
-    width: 90%; /* Adjust this to change the width */
-	max-width: 800px; /* Adjust this to change the maximum width */
+    width: 90%;
+	max-width: 720px;
     position: relative;
 }
 
