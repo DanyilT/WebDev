@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
             }
 
             if (name === 'qwerty') {
-                alert('Really? It\'s not your name. \nWhy your name is a wonderful password?');
+                alert('Really? It\'s not your name. \nWhy your name is a wonderful password? 🤔');
             }
 
             // Display thank you message and clear cart
