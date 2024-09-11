@@ -1,21 +1,21 @@
 $(document).ready(function () {
-    $('.carousel').slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
+    const carousel = new Carousel(document.getElementById('carousel'), {
+        slidesToScroll: 1,
         slidesToShow: 1,
-        adaptiveHeight: true
+        infinite: true,
+        dots: true
     });
 
-    $('[data-fancybox="gallery"]').fancybox();
+    // Update header position on window scroll
+    $(window).scroll(updateHeader);
 
+    // Smooth scroll to download section on download button click
     $('#download-btn').click(function (event) {
         event.preventDefault();
         smoothScrollTo('#download-section');
     });
 
-    $(window).scroll(updateHeader);
-
+    // Smooth scroll to target section on navigation link click
     $('.nav-links a').click(function (event) {
         event.preventDefault();
         smoothScrollTo($(this).attr('href'));
@@ -23,6 +23,8 @@ $(document).ready(function () {
 });
 
 let lastScrollTop = 0;
+
+// Function to update header position based on scroll direction
 function updateHeader() {
     const header = $('header');
     const scrollPosition = $(window).scrollTop();
@@ -36,6 +38,7 @@ function updateHeader() {
     lastScrollTop = scrollPosition;
 }
 
+// Function to smooth scroll to the target element
 function smoothScrollTo(target) {
     const targetElement = $(target);
     $('html, body').animate({ scrollTop: targetElement.offset().top }, 500);
