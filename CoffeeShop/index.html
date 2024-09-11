@@ -1,32 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>EspressoEmpire - Home</title>
-	<link rel="shortcut icon" href="img/logo.svg" type="image/svg">
+	<link rel="shortcut icon" href="images/logo.svg" type="image/svg">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	<link rel="stylesheet" type="text/css" href="styles/headbar-footer.css">
+	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="scripts/script.js"></script>
-	<script>
-		document.querySelector('.menu-toggle').addEventListener('click', function () {
-			var menu = document.querySelector('.menubar ul');
-			menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-		});
-	</script>	  
 </head>
 <body>
-	<header class="headbar">
+	<header>
 		<div class="logo">
-			<img src="img/logo.svg" alt="logo">
+			<a href="index.html"><img src="images/logo.svg" alt="logo"></a>
 			<h1>EspressoEmpire</h1>
 		</div>
 		<nav class="menubar">
-			<button class="menu-toggle"><i class="fas fa-bars"></i></button>
 			<ul>
-				<li><a href="index.html"><i class="fas fa-home"></i></a></li>
-				<li><a href="assortiment.html"><i class="fas fa-coffee"></i></a></li>
+				<!-- <li><a href="index.html"><i class="fas fa-home"></i></a></li> -->
+				<li><a href="pages/assortment.html"><i class="fas fa-coffee"></i></a></li>
 				<li><button class="open-account-modal" data-modal="account"><i class="fas fa-user"></i></button></li>
 				<li><button class="open-map-modal" data-modal="location"><i class="fas fa-map-marker-alt"></i></button></li>
 				<li><button class="open-support-modal" data-modal="chat"><i class="fas fa-comments"></i></button></li>
@@ -40,26 +33,26 @@
 				<p>We are a premium coffee shop dedicated to providing high-quality coffee to our customers. Our expertly roasted coffee beans and carefully crafted beverages will give you the perfect start to your day.</p>
 			</div>
 		</section>
-		
-		<div class="container">
-			<section class="carousel">
+
+		<section class="container">
+			<div class="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active" style="background: radial-gradient(#7D5742, #000000);">
-						<img src="img/action1.png" alt="Action 1">
+						<img src="images/carousel/action1.png" alt="Action 1">
 						<div class="carousel-caption">
 							<h3>Promotion on the day of all lovered</h3>
 							<p>Buy one coffee and get a 15% discount on the second coffee</p>
 						</div>
 					</div>
 					<div class="carousel-item" style="background: radial-gradient(#A1482A, #000000);">
-						<img src="img/action2.png" alt="Action 2">
+						<img src="images/carousel/action2.png" alt="Action 2">
 						<div class="carousel-caption">
 							<h3>Friday evening Coffee</h3>
 							<p>10% discount on coffee on Friday from 8-10 pm</p>
 						</div>
 					</div>
 					<div class="carousel-item" style="background: radial-gradient(#B15AA1, #000000);">
-						<img src="img/action3.png" alt="Action 3">
+						<img src="images/carousel/action3.png" alt="Action 3">
 						<div class="carousel-caption">
 							<h3>Free Coffee</h3>
 							<p>Every seventh coffee is free</p>
@@ -68,8 +61,8 @@
 				</div>
 				<button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
 				<button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
-			</section>
-		</div>
+			</div>
+		</section>
 
 		<div id="account-modal" class="modal">
 			<div class="modal-content">
@@ -81,10 +74,8 @@
 						<form id="login-form">
 							<label for="login-email">Email</label>
 							<input type="email" id="login-email" placeholder="Enter your email" required>
-				
 							<label for="login-password">Password</label>
 							<input type="password" id="login-password" placeholder="Enter your password" required>
-				
 							<button type="submit">Login</button>
 						</form>
 					</div>
@@ -93,13 +84,10 @@
 						<form id="signup-form">
 							<label for="signup-email">Email</label>
 							<input type="email" id="signup-email" placeholder="Enter your email" required>
-				
 							<label for="signup-password">Password</label>
 							<input type="password" id="signup-password" placeholder="Enter your password" required>
-				
 							<label for="signup-confirm-password">Confirm Password</label>
 							<input type="password" id="signup-confirm-password" placeholder="Confirm your password" required>
-				
 							<button type="submit">Sign Up</button>
 						</form>
 					</div>
@@ -107,16 +95,15 @@
 				</div>				
 			</div>
 		</div>		
-		
+
 		<div id="location-modal" class="modal">
 			<div class="modal-content">
 				<span class="close">&times;</span>
 				<h2>Our Location</h2>
-				<!-- Embed Google Maps or any other map service here -->
-				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9529.255226668929!2d-6.2286322!3d53.3376386!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485ab4af636e3bcb%3A0xc4c697949b4049f6!2sGoogle!5e0!3m2!1suk!2sie!4v1681724244229!5m2!1suk!2sie" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9529.255226668929!2d-6.2286322!3d53.3376386!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485ab4af636e3bcb%3A0xc4c697949b4049f6!2sGoogle!5e0!3m2!1suk!2sie!4v1681724244229!5m2!1suk!2sie" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 		</div>
-		
+
 		<div id="chat-modal" class="modal">
 			<div class="modal-content">
 				<span class="close">&times;</span>
@@ -131,46 +118,49 @@
 			</div>
 		</div>
 	</main>
-	
+
 	<footer>
-		<div class="footer-container">
-			<div class="row">
-				<div class="col-md-4">
-					<h4>Contact Us</h4>
-					<p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Anytown USA</p>
-					<p><i class="fas fa-phone"></i> (555) 555-5555</p>
-					<p><i class="fas fa-envelope"></i> info@yourcoffeeshop.com</p>
-				</div>
-				<div class="col-md-4">
-					<h4>Follow Us</h4>
-					<ul class="social-media">
+		<div class="row">
+			<div>
+				<h4>Opening Hours</h4>
+				<p>Monday - Friday: 7am - 9pm</p>
+				<p>Saturday - Sunday: 8am - 10pm</p>
+			</div>
+			<div>
+				<h4>Contact Us</h4>
+				<p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Anytown USA</p>
+				<p><i class="fas fa-phone"></i> (555) 555-5555</p>
+				<p><i class="fas fa-envelope"></i> info@yourcoffeeshop.com</p>
+			</div>
+			<div>
+				<h4>Follow Us</h4>
+				<ul class="social-media">
 					<li><a href="#"><i class="fab fa-facebook"></i></a></li>
 					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
 					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
 					<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-					</ul>
-				</div>
-				<div class="col-md-4">
-					<h4>About Us</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod est vel libero bibendum, ut ullamcorper dolor commodo.</p>
-				</div>
+				</ul>
 			</div>
-			<hr>
-			<div class="row">
-				<div class="col-md-6">
-					<ul class="footer-links">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Menu</a></li>
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Contact Us</a></li>
-						<li><a href="#">Terms of Service</a></li>
-						<li><a href="#">Privacy Policy</a></li>
-					</ul>
-				</div>
-				<div class="col-md-6">
-					<p>&copy; 2023 EspressoEmpire. All rights reserved.</p>
-				</div>
+		</div>
+		<div class="column">
+			<div>
+				<h4>About Us</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod est vel libero bibendum, ut ullamcorper dolor commodo.</p>
 			</div>
+			<div>
+				<ul class="footer-links">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Menu</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Terms of Service</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<div class="copy">
+			<p>&copy; 2023-2024 Dany</p>
 		</div>
 	</footer>
 </body>
