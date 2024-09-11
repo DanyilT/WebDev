@@ -104,7 +104,7 @@ Ok, you don't really need a local host server to run this project. Without a ser
 
 ### Dependencies
 
+- jQuery: `https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js`
 - Gallery:
     - Style: `https://raw.githack.com/SochavaAG/example-mycode/master/pens/slick-slider/plugins/slick/slick.css`
     - Script: `https://raw.githack.com/SochavaAG/example-mycode/master/pens/slick-slider/plugins/slick/slick.min.js`
-- jQuery: `https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js`
