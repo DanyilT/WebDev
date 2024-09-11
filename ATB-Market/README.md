@@ -12,7 +12,7 @@ This is a fake website for the ATB Store. It is a simple e-commerce web applicat
 - Checkout with a contact form.
 - Responsive design with a hamburger menu for navigation.
 - Feedback form that doesn't take feedbacks.
-- You can find an ester egg.
+- You can find an  egg.
 
 ## Requirements
 
