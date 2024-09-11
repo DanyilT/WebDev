@@ -43,3 +43,14 @@ function smoothScrollTo(target) {
     const targetElement = $(target);
     $('html, body').animate({ scrollTop: targetElement.offset().top }, 500);
 }
+
+// Form Something
+$(document).ready(function () {
+    $('#contact-form').on('submit', function(event) {
+        const messageInput = $('#contact-form textarea[name="message"]').val();
+        if (messageInput === 'qwerty') {
+            alert('Really?\n You wanna share your password with me?\n Oh that\'s so sweet of you! 😊');
+            event.preventDefault();
+        }
+    });
+});
