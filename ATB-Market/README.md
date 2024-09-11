@@ -49,13 +49,13 @@ Ok, you don't really need a local host server to run this project. Without a ser
          ```
     - For macOS and Linux:
          ```sh
-         cd Python/ATB-Market
+         cd WebDev/ATB-Market
          ```
 
 #### Downloading the ZIP File
 
 1. Download the ZIP file from the [GitHub repository](https://github.com/DanyilT/WebDev.git) and extract it.
-2. Navigate to the project folder in the extracted directory (`Python/ATB-Market`).
+2. Navigate to the project folder in the extracted directory (`WebDev/ATB-Market`).
 
 ### Running the Project
 
