@@ -1,5 +1,5 @@
 /* headbar */
-.headbar {
+header {
     background-color: #1E1E1E;
     color: #D9D9D9;
     display: flex;
@@ -10,12 +10,12 @@
 
 .logo {
     display: flex;
+    gap: 10px;
     align-items: center;
 }
 
 .logo img {
-    height: 40px;
-    margin-right: 10px;
+    height: 32px;
 }
 
 .logo h1 {
@@ -26,29 +26,12 @@
     display: flex;
 }
 
-.menu-toggle {
-    display: none;
-    color: #D9D9D9;
-    border: none;
-    background-color: transparent;
-    font-size: 20px;
-    cursor: pointer;
-    outline: none;
-}
-
-.menu-toggle:hover {
-    color: #FFFFFF;
-}
-
 .menubar ul {
     display: flex;
+    gap: 10px;
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-.menubar li {
-    margin-right: 10px;
 }
 
 .menubar a,
@@ -73,33 +56,38 @@
 footer {
     background-color: #292D32;
     color: #D9D9D9;
-    padding: 50px 0;
+    padding: 20px 40px;
     font-size: 16px;
 }
 
 footer h4 {
     color: #FFFFFF;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 18px;
 }
 
-footer p {
-    margin-bottom: 20px;
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 footer hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
     border: none;
     border-bottom: 1px solid #D9D9D9;
 }
+
+footer .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
 footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 footer ul li {
     display: inline-block;
     margin-right: 10px;
@@ -114,10 +102,6 @@ footer ul li a:hover {
     color: #FFFFFF;
 }
 
-.footer-links {
-    text-align: right;
-}
-
 .footer-links li {
     display: inline-block;
     margin-left: 20px;
@@ -125,4 +109,8 @@ footer ul li a:hover {
 
 .footer-links li:first-child {
     margin-left: 0;
+}
+
+.copy {
+    text-align: center;
 }
