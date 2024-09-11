@@ -17,8 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (milkType === 'qwerty') {
             alert('Ok, here\'s your coffee with super fresh and strong passwo.. I mean milk! 🌌');
+            alert(`${productName} - ${productPrice}\nCoffee with egg\n ${orderSize}, ${orderPortion} cup`);
+        } else {
+            alert(`${productName} - ${productPrice}\n${milkType}\n ${orderSize}, ${orderPortion} cup`);
         }
-        alert(`${productName} - ${productPrice}\n${milkType}\n ${orderSize}, ${orderPortion} cup`);
     });
 });
 
