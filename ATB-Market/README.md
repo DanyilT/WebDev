@@ -92,7 +92,7 @@ Ok, you don't really need a local host server to run this project. Without a ser
 - `scripts/`: Directory containing JavaScript files.
     - `script.js`: Main JavaScript file.
     - `gallery.js`: The JavaScript file for gallery functionality.
-- `styles/`: Directory containing CSS files.
+- `css/`: Directory containing CSS files.
     - `style.css`: Main CSS file.
     - `products.css`: The CSS file for product cards.
     - `gallery.css`: The CSS file for gallery styling.
