@@ -9,6 +9,7 @@ Simple Blockchain Visualization in 3D using p5.js. Each block in the blockchain 
 - **Full-Screen Mode**: Enter full-screen mode to immerse completely.
 - **Rotation**: The blockchain rotates automatically, and can be manually rotated by dragging the mouse.
 - **Responsive Design**: The canvas resizes with the window.
+- You can find an ester egg.
 
 ## Installation
 
