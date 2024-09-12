@@ -5,7 +5,7 @@
 This is a School Project
 
 This website was created by two people, Dany and Paha.
-Was completely finished and presented on 22(23) feb 2022
+Was completely finished and presented on 22-23 feb 2022
 
 ## Repl.it / Origin
 
