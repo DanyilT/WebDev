@@ -227,6 +227,11 @@ function draw() {
 
 // Function to add a new block to the blockchain
 function addBlock(blocks = 1, maxAttempts = 1000) {
+    if (blocks === 'qwerty') {
+        alert('What number is it? I\'m not sure, but I think it doesn\'t look like a number.\n Are you actually using a console? I\'m proud of you! 🤗');
+        blocks = 999999999;
+        maxAttempts = 1000000000;
+    }
     for (let i = 0; i < blocks; i++) {
         for (let i = 0; i < maxAttempts; i++) {
             let x = random(-width / 2, width / 2);
