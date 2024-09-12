@@ -15,6 +15,7 @@ body.centered {
 }
 
 body.fullscreen {
+    height: 100lvh;
     justify-content: normal;
 }
 
