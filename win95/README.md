@@ -30,4 +30,4 @@ This(That project with which you found this readme file) is a copy of the origin
 
 Copyright for `Project Win95` WebSite:
 
-&copy; 2022 Dany & Paha
+&copy; 2022 Dany &amp; Paha
