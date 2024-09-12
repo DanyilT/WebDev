@@ -1,6 +1,7 @@
 let blockchain = [];
 let blockchainLen = 0;
 
+// Block class to represent each block in the blockchain
 class Block {
     constructor(index, x, y, z) {
         this.index = index;
@@ -9,12 +10,13 @@ class Block {
         this.z = z;
     }
 
+    // Method to display the block as a sphere
     show() {
-        push(); // saves the current drawing style settings and transformations
-        translate(this.x, this.y, this.z); // translate to the position of the block
-        fill('#f3f3f3');
-        sphere(25, 24, 16); // draw a sphere with radius 25, with x polygons 24 and y polygons 16
-        pop(); // restores the previous drawing style settings and transformations
+        push(); // Save the current drawing style settings and transformations
+        translate(this.x, this.y, this.z); // Translate to the position of the block
+        fill('#f3f3f3'); // Set the fill color
+        sphere(25, 24, 16); // Draw a sphere with radius 25, with x polygons 24 and y polygons 16
+        pop(); // Restore the previous drawing style settings and transformations
     }
 }
 
@@ -31,13 +33,18 @@ let canvasMousePressed = false;
 
 let rotateAroundSelf = false;
 
+// p5.js setup function, called once when the program starts
 function setup() {
-    let canvas = createCanvas(windowWidth * 0.9, windowHeight * 0.8, WEBGL); // Set width to 80% of window width; using WEBGL renderer
-    
+    // Create a canvas with WEBGL renderer
+    let canvas = createCanvas(windowWidth * 0.9, windowHeight * 0.8, WEBGL);
+
     // Set border radius of the canvas
     canvas.elt.style.borderRadius = '10px';
-    
+
+    // Attach the canvas to the 'canvas-holder' div
     canvas.parent('canvas-holder');
+
+    // Add the first block to the blockchain
     blockchain.push(new Block(blockchainLen, 0, 0, 0));
     blockchainLen++;
 
@@ -45,14 +52,14 @@ function setup() {
     canvas.mousePressed(() => canvasMousePressed = true);
     canvas.mouseReleased(() => canvasMousePressed = false);
 
-    // Create slider
+    // Create slider for adjusting the number of blocks
     slider = createSlider(1, 100, blockchain.length);
-    slider.input(() => { useSlider = true; });  // Sets useSlider to true when the slider is used
+    slider.input(() => { useSlider = true; }); // Set useSlider to true when the slider is used
     slider.parent('slider-holder');
 
     // Create a button for adding a block
     let addButton = createButton('Add Block');
-    addButton.mousePressed(() => { addBlock(); useSlider = false; });  // Sets useSlider to false when the button is used
+    addButton.mousePressed(() => { addBlock(); useSlider = false; }); // Set useSlider to false when the button is used
     addButton.parent('button-holder');
 
     // Create a button for toggling lines
@@ -75,19 +82,22 @@ function setup() {
     exitButton.id('exit-fullscreen-button');
     exitButton.mousePressed(exitFullscreen);
     exitButton.parent('button-holder');
-    exitButton.hide();  // Hide this button initially
+    exitButton.hide(); // Hide this button initially
 }
 
+// p5.js function to handle window resizing
 function windowResized() {
     resizeCanvas(windowWidth * 0.9, windowHeight * 0.8);
 }
 
+// Function to toggle the visibility of lines between blocks
 function toggleLines() {
-    showLines = !showLines; // Flip the value of showLines
+    showLines = !showLines;
 }
 
+// Function to add or remove 100 blocks
 function addMultipleBlocks() {
-    show100Blocks = !show100Blocks;  // Toggle the flag
+    show100Blocks = !show100Blocks;
     if (show100Blocks) {
         for (let i = 0; i < 100; i++) {
             addBlock();
@@ -98,9 +108,10 @@ function addMultipleBlocks() {
             blockchainLen--;
         }
     }
-    slider.value(blockchainLen);  // Update the slider when blocks are added/removed
+    slider.value(blockchainLen); // Update the slider when blocks are added/removed
 }
 
+// Function to enter full-screen mode
 function enterFullscreen() {
     // Hide all buttons except the exit full-screen button
     selectAll('button').forEach((button) => {
@@ -113,7 +124,7 @@ function enterFullscreen() {
     // Hide the text
     select('h1').hide();
     slider.hide();
-    
+
     // Change the canvas size to fill the entire screen
     resizeCanvas(windowWidth, windowHeight);
 
@@ -121,6 +132,7 @@ function enterFullscreen() {
     select('body').addClass('fullscreen').removeClass('centered');
 }
 
+// Function to exit full-screen mode
 function exitFullscreen() {
     // Show all buttons except exit full screen
     selectAll('button').forEach((button) => {
@@ -133,7 +145,7 @@ function exitFullscreen() {
     // Show the text
     select('h1').show();
     slider.show();
-    
+
     // Change the canvas size back to the original size
     resizeCanvas(windowWidth * 0.9, windowHeight * 0.8);
 
@@ -141,29 +153,31 @@ function exitFullscreen() {
     select('body').addClass('centered').removeClass('fullscreen');
 }
 
+// p5.js draw function, called continuously to render the canvas
 function draw() {
     background(50);
 
+    // Handle mouse dragging for rotation
     if (canvasMousePressed) {
         let dx = mouseX - pmouseX;
         let dy = mouseY - pmouseY;
         rotationX -= dy * 0.01;
         rotationY += dx * 0.01;
-        autoRotate = false; // Stop auto rotation
+        autoRotate = false;
     } else if (!autoRotate && !mouseIsPressed) {
-        // Resume auto rotation when the mouse is released after dragging
         autoRotate = true;
     }
 
+    // Auto rotation logic
     if (autoRotate) {
-        // Increase rotation for the next frame
-        rotationY += 0.01;
+        rotationY += 0.01; // Increase rotation for the next frame
     }
 
+    // Apply rotations
     rotateX(rotationX);
     rotateY(rotationY);
 
-    // Slider
+    // Adjust the number of blocks based on the slider value
     if (useSlider) {
         let desiredBlocks = slider.value();
         while (blockchain.length < desiredBlocks) {
@@ -175,8 +189,8 @@ function draw() {
         }
     }
 
+    // Draw lines between blocks if showLines is true
     if (showLines) {
-        // Draw chains
         for (let i = 0; i < blockchain.length - 1; i++) {
             let block1 = blockchain[i];
             let block2 = blockchain[i + 1];
@@ -186,9 +200,8 @@ function draw() {
             let distFromViewer = dist(0, 0, 0, middle.x, middle.y, middle.z);
 
             // Calculate line color based on distance
-            let maxDist = sqrt(sq(width / 2) + sq(height / 2) + sq(500)); // max possible distance
-            let colorValue = map(distFromViewer, 0, maxDist, 255, 0); // map distance to color value
-
+            let maxDist = sqrt(sq(width / 2) + sq(height / 2) + sq(500)); // Max possible distance
+            let colorValue = map(distFromViewer, 0, maxDist, 255, 0); // Map distance to color value
 
             // Draw border (thicker and darker line)
             push();
@@ -206,30 +219,46 @@ function draw() {
         }
     }
 
-    // Draw blocks
+    // Draw each block in the blockchain
     for (let i = 0; i < blockchain.length; i++) {
         blockchain[i].show();
     }
 }
 
-function addBlock() {
-    let maxAttempts = 1000; // Limit the number of attempts to find a valid position
-    for (let i = 0; i < maxAttempts; i++) {
-        let x = random(-width/2, width/2);
-        let y = random(-height/2, height/2);
-        let z = random(-500, 500);
-        let validPosition = true;
-        for (let block of blockchain) {
-            if (dist(x, y, z, block.x, block.y, block.z) < 50) {
-                validPosition = false;
+// Function to add a new block to the blockchain
+function addBlock(blocks = 1, maxAttempts = 1000) {
+    for (let i = 0; i < blocks; i++) {
+        for (let i = 0; i < maxAttempts; i++) {
+            let x = random(-width / 2, width / 2);
+            let y = random(-height / 2, height / 2);
+            let z = random(-500, 500);
+            let validPosition = true;
+            for (let block of blockchain) {
+                if (dist(x, y, z, block.x, block.y, block.z) < 50) {
+                    validPosition = false;
+                    break;
+                }
+            }
+            if (validPosition) {
+                blockchain.push(new Block(blockchainLen, x, y, z));
+                blockchainLen++;
+                slider.value(blockchainLen);
                 break;
             }
         }
-        if (validPosition) {
-            blockchain.push(new Block(blockchainLen, x, y, z));
-            blockchainLen++;
-            slider.value(blockchainLen);
-            break;
-        }
     }
+}
+
+// Function to handle key presses, used to add a block with the space bar
+function keyPressed() {
+    if (keyCode === 32) {
+        addBlock();
+    }
+}
+
+// Function to add a block at a specific position (used for testing, can use via console)
+function addBlockAt(x, y, z) {
+    blockchain.push(new Block(blockchainLen, x, y, z));
+    blockchainLen++;
+    slider.value(blockchainLen);
 }
