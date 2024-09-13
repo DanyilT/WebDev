@@ -1,0 +1,67 @@
+/* Header */
+header nav {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+header nav svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+header nav svg:hover {
+    transform: scale(1.1);
+}
+
+header nav svg path {
+    transition: stroke 0.3s ease;
+    /*transition: stroke 0.9s ease;*/
+}
+
+header nav svg:hover path {
+    stroke: #9747FF;
+}
+
+/* Sidebar */
+aside {
+    display: flex;
+    padding: 0.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: absolute;
+    left: 2rem;
+    border-radius: 0 0 10px 10px;
+}
+
+aside svg path {
+    transition: fill 0.3s ease;
+}
+
+aside svg:hover path {
+    fill: #9747FF;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+footer .media p {
+    text-align: center;
+    font-weight: 500;
+}
+
+footer aside {
+    padding: 0;
+    flex-direction: row;
+    position: relative;
+    left: 0;
+}
