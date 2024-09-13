@@ -108,4 +108,3 @@ Ok, you don't really need a local host server to run this project. Without a ser
 - Gallery:
     - Style: `https://raw.githack.com/SochavaAG/example-mycode/master/pens/slick-slider/plugins/slick/slick.css`
     - Script: `https://raw.githack.com/SochavaAG/example-mycode/master/pens/slick-slider/plugins/slick/slick.min.js`
-
