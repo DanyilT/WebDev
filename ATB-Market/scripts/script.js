@@ -239,7 +239,7 @@ function openContactInfoModal() {
 
 // Function to determine if the current page is the home page
 function isHomePage() {
-    return window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/#');
+    return window.location.pathname.endsWith('index.html');
 }
 
 // Function to update the cart display
