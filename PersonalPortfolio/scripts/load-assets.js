@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    const isHomePage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/';
+    const isHomePage = window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/');
 
     // Load the header
     fetch('pages/assets/header.html')
