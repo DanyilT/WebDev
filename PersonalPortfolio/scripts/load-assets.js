@@ -1,17 +1,18 @@
 document.addEventListener('DOMContentLoaded', (event) => {
+    const isHomePage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname === '';
+
     // Load the header
     fetch('pages/assets/header.html')
         .then(response => response.text())
         .then(data => {
             const header = new DOMParser().parseFromString(data, 'text/html').querySelector('header');
-            if (window.location.pathname.endsWith('index.html')) {
-                header.querySelectorAll('a').forEach((link, index) => {
-                    const href = link.getAttribute('href');
-                    if (href && index !== 0) {
-                        link.setAttribute('href', 'pages/' + href);
-                    }
-                });
-            } else {
+            header.querySelectorAll('a').forEach((link, index) => {
+                const href = link.getAttribute('href');
+                if (href && index !== 0) {
+                    link.setAttribute('href', (isHomePage ? 'pages/' : '../') + href);
+                }
+            });
+            if (!isHomePage) {
                 header.querySelector('a:first-child').setAttribute('href', '../index.html');
             }
 
@@ -25,7 +26,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         .then(data => {
             const footer = new DOMParser().parseFromString(data, 'text/html').querySelector('footer');
             const sitemapLink = footer.querySelector('a[href*="sitemap.html"]');
-            if (window.location.pathname.endsWith('index.html')) {
+            if (isHomePage) {
                 sitemapLink.setAttribute('href', 'pages/' + sitemapLink.getAttribute('href'));
             }
 
