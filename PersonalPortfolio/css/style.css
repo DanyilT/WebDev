@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&display=swap');
+@import "assets.css";
+/*@import url('assets.css');*/
 
-/* Default styles */
+/* Default css */
 :root {
     --black: #333333;
     --white: #f4f4f4;
     --gray: #d9d9d9;
     --purple: #9747ff;
+    --translucent-white: #f4f4f47f;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .black-background {
@@ -84,8 +88,12 @@ main {
     padding: 10vh 10vw;
 }
 
+
 /* Button */
 .button-purple, .button-gray {
+    font-family: 'Baloo 2', sans-serif;
+
+
     display: flex;
     width: fit-content;
     padding: 0.5rem 1rem;
