@@ -2,14 +2,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const isHomePage = window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/');
 
     // Load the header
-    fetch('pages/assets/header.html')
+    fetch(isHomePage ? 'pages/assets/header.html' : 'assets/header.html')
         .then(response => response.text())
         .then(data => {
             const header = new DOMParser().parseFromString(data, 'text/html').querySelector('header');
             header.querySelectorAll('a').forEach((link, index) => {
                 const href = link.getAttribute('href');
                 if (href && index !== 0) {
-                    link.setAttribute('href', (isHomePage ? 'pages/' : '../') + href);
+                    link.setAttribute('href', (isHomePage ? 'pages/' : '') + href);
                 }
             });
             if (!isHomePage) {
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     header.querySelectorAll('a').forEach((link, index) => {
                         const href = link.getAttribute('href');
                         if (href && index !== 0) {
-                            link.setAttribute('href', (isHomePage ? 'pages/' : '../') + href);
+                            link.setAttribute('href', (isHomePage ? 'pages/' : '') + href);
                         }
                     });
                     if (!isHomePage) {
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
 
     // Load the footer
-    fetch('pages/assets/footer.html')
+    fetch(isHomePage ? 'pages/assets/footer.html' : 'assets/footer.html')
         .then(response => response.text())
         .then(data => {
             const footer = new DOMParser().parseFromString(data, 'text/html').querySelector('footer');
@@ -70,14 +70,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
 
     // Load the sidebar
-    fetch('pages/assets/sidebar.html')
+    fetch(isHomePage ? 'pages/assets/sidebar.html' : 'assets/sidebar.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('sidebar').insertAdjacentHTML('beforebegin', data);
-            document.getElementById('links').insertAdjacentHTML('beforebegin', data);
-
             document.getElementById('sidebar').remove();
-            document.getElementById('links').remove();
+
+            document.querySelectorAll('#links').forEach(link => {
+                link.insertAdjacentHTML('beforebegin', data);
+                link.remove();
+            });
         })
         // Catch Sidebar from the GitHub Pages
         .catch(() => {
@@ -85,10 +87,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('sidebar').insertAdjacentHTML('beforebegin', data);
-                    document.getElementById('links').insertAdjacentHTML('beforebegin', data);
-
                     document.getElementById('sidebar').remove();
-                    document.getElementById('links').remove();
+
+                    document.querySelectorAll('#links').forEach(link => {
+                        link.insertAdjacentHTML('beforebegin', data);
+                        link.remove();
+                    });
                 });
         });
 });
