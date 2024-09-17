@@ -1,3 +1,5 @@
+/* Assets Style - Header / Aside / Footer */
+
 /* Header */
 header nav {
     display: flex;
@@ -17,12 +19,11 @@ header nav svg:hover {
 }
 
 header nav svg path {
-    transition: stroke 0.3s ease;
-    /*transition: stroke 0.9s ease;*/
+    transition: stroke 0.9s ease;
 }
 
 header nav svg:hover path {
-    stroke: #9747FF;
+    stroke: var(--purple);
 }
 
 /* Sidebar */
@@ -41,7 +42,7 @@ aside svg path {
 }
 
 aside svg:hover path {
-    fill: #9747FF;
+    fill: var(--purple);
 }
 
 /* Footer */
@@ -54,6 +55,10 @@ footer {
     align-items: center;
 }
 
+footer a:hover {
+    color: var(--white);
+}
+
 footer .media p {
     text-align: center;
     font-weight: 500;
@@ -64,4 +69,17 @@ footer aside {
     flex-direction: row;
     position: relative;
     left: 0;
+}
+
+.copy {
+    cursor: wait;
+}
+
+@media (max-width: 768px) {
+    body > aside {
+        display: none;
+        /*flex-direction: row;*/
+        /*left: 0;*/
+        /*border-radius: 0 0 10px 0;*/
+    }
 }
