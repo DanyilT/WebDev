@@ -261,6 +261,11 @@ main {
     background-color: #545454;
 }
 
+/* Footer */
+footer {
+    display: none;
+}
+
 /* Fade-In Animation*/
 @keyframes fadeIn {
     from { opacity: 0; }
