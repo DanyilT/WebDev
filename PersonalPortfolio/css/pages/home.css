@@ -132,8 +132,16 @@
     .intro .photo-block {
         position: absolute;
         opacity: 10%;
-        width: 15rem;
+        width: 18rem;
         right: 0;
+    }
+
+    .intro .photo-block .photo {
+        width: 100%;
+    }
+
+    .photo .dots-1, .photo .dots-2, .photo .dots-3 {
+        display: none;
     }
 
     .intro .photo-block .under-photo {
