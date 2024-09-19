@@ -39,6 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 const projects = tempDiv.querySelectorAll('.project');
                 const firstThreeProjects = Array.from(projects).slice(0, 3);
 
+                // Update image paths by removing '../' from the src attribute
+                firstThreeProjects.forEach(project => {
+                    const img = project.querySelector('img');
+                    if (img) {
+                        img.src = img.src.replace('../', '');
+                    }
+                });
+
                 // Insert the first three projects into the .projects section in index.html
                 const projectsContainer = document.querySelector('.projects .items');
                 firstThreeProjects.forEach(project => {
