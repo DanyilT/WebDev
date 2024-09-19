@@ -26,6 +26,16 @@ document.addEventListener('DOMContentLoaded', () => {
         photoElement.appendChild(createDots('dots-3', 5, 5));
     }
 
+    // Add event listener to the contact form
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', (event) => {
+        const message = form.querySelector('textarea[name="message"]').value;
+        if (message === 'qwerty') {
+            event.preventDefault();
+            alert('qwerty');
+        }
+    });
+
     // Function to load the projects.html file
     function loadProjects() {
         fetch('pages/projects.html')
