@@ -65,11 +65,11 @@ Ask Google... Oh wait, you don't have a browser...
 
 #### Using GitHub Pages
 
-- Go to the [ChillZone website](https://danyilt.github.io/WebDev/PersonalPortfolio/).
+- Go to the [Personal Portfolio website](https://danyilt.github.io/WebDev/PersonalPortfolio/).
 
 #### Using Netlify
 
-- Go to the [ChillZone website](https://dany-portfolio.netlify.app/).
+- Go to the [Personal Portfolio website](https://dany-portfolio.netlify.app/).
 
 ## Project Structure
 
