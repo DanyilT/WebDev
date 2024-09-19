@@ -84,7 +84,7 @@ Ok, you don't really need a local host server to run this project. Without a ser
 - Go to the [ATB Market website](https://danyilt.github.io/WebDev/ATB-Market/).
 
 ## File Structure
-- `design/figma.png`: The Figma design for the website.
+- `design/Figma.png`: The Figma design for the website.
 - `data/products.json`: The JSON file containing product data.
 - `images/`: Directory containing product images.
     - `logo.png`: The logo image for the website. All rights for logo image belong to [ATB](https://www.atbmarket.com/).
