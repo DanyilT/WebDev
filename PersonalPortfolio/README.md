@@ -9,7 +9,7 @@ Welcome to My Personal Portfolio. This project showcases my work as a Software, 
 - **Contact Form**: Includes a contact form, through which you can reach out to me.
 - **Animations**: Includes cool animations and transitions.
 - **Purple**: Do you like purple? I do. This website contains a lot of purple.
-- Easter Egg: Oopps, I forgot to add it, I hope i'll soon come back to this project and add it.
+- **Easter Egg**: Oopps, I've said too much.
 
 ## Requirements
 
