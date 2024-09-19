@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const message = form.querySelector('textarea[name="message"]').value;
         if (message === 'qwerty') {
             event.preventDefault();
-            alert('qwerty');
+            alert('🦄?');
         }
     });
 
