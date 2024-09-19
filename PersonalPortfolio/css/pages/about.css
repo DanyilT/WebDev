@@ -98,8 +98,8 @@
     gap: 0.5rem;
     border-radius: 10px;
     border: 1px solid var(--gray);
-    transition: all 0.5s;
     cursor: default;
+    transition: all 0.5s;
 }
 
 .intro .photo-block .under-photo .point {
@@ -128,7 +128,7 @@
     border-color: var(--purple);
 }
 
-.intro .photo-block .under-photo:hover ~ .speckled-photo .dot {
+.intro .main .photo-block .under-photo:hover ~ .speckled-photo .dot {
     background-color: var(--purple);
 }
 
@@ -209,6 +209,7 @@
             }
         }
     }
+
     @media (max-width: 768px) {
         .intro .photo-block {
             display: none;
