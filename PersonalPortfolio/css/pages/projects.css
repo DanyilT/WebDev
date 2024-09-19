@@ -4,16 +4,17 @@
 .projects {
     display: flex;
     flex-direction: column;
-    width: 1130px;
+    width: 100%;
+    max-width: 1130px;
     gap: 2rem;
 }
 
 .projects .items {
     display: flex;
-    justify-content: space-between;
     row-gap: 3rem;
-    align-self: stretch;
+    column-gap: 1rem;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .projects .items .project {
@@ -23,13 +24,14 @@
 }
 
 .projects .items .project img {
-    width: 360px;
-    height: 225px;
+    width: 100%;
+    max-width: 360px;
+    border-radius: 5px;
 }
 
 .projects .items .project .main-text {
     display: flex;
-    padding: 0rem 0.5rem;
+    padding: 0 0.5rem;
     flex-direction: column;
     gap: 0.5rem;
     border-radius: 10px;
@@ -73,6 +75,14 @@
 
 .git-hub .items .project img {
     height: 12rem;
+    width: 100%;
+    background-image: url("../../images/GitHub-IconlyPro/GitHub-white.svg");
+    opacity: 80%;
+    transition: all 0.5s;
+}
+
+.git-hub .items .project:hover img {
+    background-image: url("../../images/GitHub-IconlyPro/GitHub-black.svg");
 }
 
 .git-hub .items .project:hover {
