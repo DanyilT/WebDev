@@ -1,12 +1,11 @@
 /* About Page */
 
 /* Intro */
-
-/* Intro */
 .intro {
     display: flex;
     flex-direction: column;
-    width: 1130px;
+    width: 100%;
+    max-width: 1130px;
     gap: 2rem;
 }
 
@@ -24,69 +23,71 @@
 .intro .text-block {
     display: flex;
     flex-direction: column;
-    width: 555px;
+    max-width: 650px;
     gap: 2rem;
 }
 
 .intro .text-block p {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
 }
 
 .intro .photo-block {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
 }
 
 .intro .photo-block .photo {
     position: relative;
-    width: 32rem;
-    height: 32rem;
-    background-image: url(/images/Image.png);
+    width: 25rem;
+    height: 25rem;
+    background-image: url(../../images/Image.png);
     background-size: cover;
 }
 
-.intro .photo-block .photo .line {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    flex: 0 0 auto;
-}
+.speckled-photo {
+    .line {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        position: relative;
+        align-self: stretch;
+        width: 100%;
+        flex: 0 0 auto;
+    }
 
-.intro .photo-block .photo .dot {
-    position: relative;
-    width: 4px;
-    height: 4px;
-    background-color: var(--gray);
-    border-radius: 2px;
-}
+    .dot {
+        position: relative;
+        width: 2px;
+        height: 2px;
+        background-color: var(--gray);
+        border-radius: 2px;
+        transition: background-color 10s;
+    }
 
-.dots-1, .dots-2, .dots-3 {
-    display: flex;
-    flex-direction: column;
-    width: 84px;
-    height: 84px;
-    align-items: flex-start;
-    justify-content: space-between;
-    position: absolute;
-}
+    .dots-1, .dots-2, .dots-3 {
+        display: flex;
+        flex-direction: column;
+        width: 64px;
+        height: 64px;
+        align-items: flex-start;
+        justify-content: space-between;
+        position: absolute;
+    }
+    .dots-1 {
+        top: 10px;
+        right: 20px;
+    }
 
-.intro .photo-block .photo .dots-1 {
-    top: 90px;
-    left: 368px;
-}
+    .dots-2 {
+        top: 100px;
+        left: 70px;
+    }
 
-.intro .photo-block .photo .dots-2 {
-    top: 338px;
-    left: 70px;
-}
-
-.intro .photo-block .photo .dots-3 {
-    top: 398px;
-    left: 308px;
+    .dots-3 {
+        bottom: 20px;
+        right: 70px;
+    }
 }
 
 .intro .photo-block .under-photo {
@@ -98,6 +99,7 @@
     border-radius: 10px;
     border: 1px solid var(--gray);
     transition: all 0.5s;
+    cursor: default;
 }
 
 .intro .photo-block .under-photo .point {
@@ -126,9 +128,14 @@
     border-color: var(--purple);
 }
 
+.intro .photo-block .under-photo:hover ~ .speckled-photo .dot {
+    background-color: var(--purple);
+}
+
 /* Skills */
 .skills {
-    width: 1130px;
+    width: 100%;
+    max-width: 1130px;
 }
 
 .skills .title {
@@ -139,6 +146,7 @@
 
 .skills .items {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
 }
@@ -148,11 +156,12 @@
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    flex: 1;
+    flex: auto;
 }
 
 .skills .items .main {
     display: flex;
+    flex-wrap: wrap;
     gap: 0.5rem;
     align-self: stretch;
 }
@@ -162,11 +171,12 @@
     padding: 0.5rem 1rem;
     flex-direction: column;
     gap: 0.5rem;
-    flex: 1;
+    flex: auto;
     height: fit-content;
     border-radius: 10px;
     border: 1px solid var(--gray);
     transition: all 0.5s;
+    cursor: default;
 }
 
 .skills .items .main .block:hover {
@@ -177,4 +187,31 @@
 .skills .items .main .block:active {
     border-color: var(--black);
     transform: scale(0.95) rotateZ(1.7deg);
+}
+
+@media (max-width: 1024px) {
+    .intro .photo-block {
+        .photo {
+            width: 20rem;
+            height: 20rem;
+        }
+
+        .under-photo {
+            width: 10rem;
+
+            .point {
+                width: 0.8rem;
+                height: 0.8rem;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        .intro .photo-block {
+            display: none;
+        }
+    }
 }
