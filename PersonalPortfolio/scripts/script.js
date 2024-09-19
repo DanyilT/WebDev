@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 firstThreeProjects.forEach(project => {
                     const img = project.querySelector('img');
                     if (img) {
-                        img.src = img.src.replace('../', '');
+                        img.setAttribute('src', img.getAttribute('src').replace('../', ''));
                     }
                 });
 
