@@ -13,6 +13,10 @@ This project is a personal CV webpage that showcases my work experience, skills,
 
 You can view the CV webpage on GitHub Pages by following this link: [My CV](https://danyilt.github.io/WebDev/Resume/).
 
+### Netlify Server
+
+You can view the CV webpage on Netlify by following this link: [My CV](https://dany-cv.netlify.app/).
+
 ## File Structure
 
 - `images/..`: Contains images used in the CV.
