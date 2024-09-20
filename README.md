@@ -10,7 +10,7 @@ This repository contains various website projects. Below is a list of the projec
 
 ## Features / WebSites
 
-### [Portfolio Website](/PersonalPortfolio)
+### [Portfolio Website](PersonalPortfolio)
 A portfolio showcasing my projects and skills.
 - **URL:** [Portfolio Website](https://danyilt.github.io/WebDev/PersonalPortfolio/)
 
