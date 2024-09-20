@@ -3,10 +3,13 @@
 This repository contains various website projects. Below is a list of the projects along with their URLs.
 
 ## Table of Contents
-
-
-/PersonalPortfolio
-
+- [Table of Contents](#table-of-contents)
+- [Features / WebSites](#features--websites)
+- [Requirements](#requirements)
+- [Usage](#usage)
+- [File Structure](#file-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Features / WebSites
 
@@ -16,35 +19,35 @@ A portfolio showcasing my projects and skills.
 
 [//]: # (- **URL:** [Portfolio Website]&#40;https://dany-portfolio.netlify.app/&#41;)
 
-### ChillZone Website
+### [ChillZone Website](ChillZone)
 A website for a relaxation and entertainment zone.
 - **URL:** [ChillZone Website](https://danyilt.github.io/WebDev/ChillZone/)
 
 [//]: # (- **URL:** [ChillZone Website]&#40;https://danyt-chillzone.com&#41;)
 
-### Blockchain Visualisation
+### [Blockchain Visualisation](SphereChain)
 A visual representation of blockchain technology.
 - **URL:** [Blockchain Visualisation](https://danyilt.github.io/WebDev/SphereChain/)
 
 [//]: # (- **URL:** [Blockchain Visualisation]&#40;https://danyt-spherechain.online&#41;)
 
-### ATB Market
+### [ATB Market](ATB-Market)
 A website for the best grocery store.
 - **URL:** [ATB Market](https://danyilt.github.io/WebDev/ATB-Market/)
 
-### Coffee Shop Example
+### [Coffee Shop Example](CoffeeShop)
 A sample website for a coffee shop.
 - **URL:** [Coffee Shop Example](https://danyilt.github.io/WebDev/CoffeeShop/index.html)
 
 [//]: # (- **URL:** [Coffee Shop Example]&#40;https://espressoempire.000webhostapp.com&#41;)
 
-### Win95
+### [Win95](win95)
 A ~~nostalgic~~ recreation of the Windows 95 interface.
 - **URL:** [Win95](https://danyilt.github.io/WebDev/win95/)
 
 [//]: # (- **URL:** [Win95]&#40;https://project-win95.danytyma.repl.co/&#41;)
 
-### My CV
+### [My CV](Resume)
 An online resume showcasing my skills and experience.
 - **URL:** [My CV](https://danyilt.github.io/WebDev/Resume/)
 
@@ -122,37 +125,59 @@ You can use a localhost server to run the websites locally. Here are some option
 
 - Go to the [ChillZone website](https://danyilt.github.io/WebDev/).
 
+## File Structure
 
+The repository is structured as follows:
 
+- [`ATB-Market/..`](ATB-Market): ATB Market website project.
+    - [`index.html`](ATB-Market/index.html): Main HTML file for the website.
+    - [`README.md`](ATB-Market/README.md): Documentation for the ATB Market website.
 
+- [`ChillZone/..`](ChillZone): ChillZone website project.
+    - [`index.html`](ChillZone/index.html): Main HTML file for the website.
+    - [`README.md`](ChillZone/README.md): Documentation for the ChillZone website.
 
+- [`CoffeeShop/..`](CoffeeShop): Coffee Shop Example website project.
+    - [`index.html`](CoffeeShop/index.html): Main HTML file for the website.
+    - [`README.md`](CoffeeShop/README.md): Documentation for the Coffee Shop Example website.
+
+- [`PersonalPortfolio/..`](PersonalPortfolio): Portfolio Website project.
+    - [`index.html`](PersonalPortfolio/index.html): Main HTML file for the website.
+    - [`README.md`](PersonalPortfolio/README.md): Documentation for the Portfolio Website.
+
+- [`Resume/..`](Resume): My CV website project.
+    - [`index.html`](Resume/index.html): Main HTML file for the website.
+    - [`README.md`](Resume/README.md): Documentation for the My CV website.
+
+- [`SphereChain/..`](SphereChain): Blockchain Visualisation website project.
+    - [`index.html`](SphereChain/index.html): Main HTML file for the website.
+    - [`README.md`](SphereChain/README.md): Documentation for the Blockchain Visualisation website.
+
+- [`win95/..`](win95): Win95 website project.
+    - [`index.html`](win95/index.html): Main HTML file for the website.
+    - [`README.md`](win95/README.md): Documentation for the Win95 website.
+
+- [`.gitignore`](.gitignore): Git ignore file to exclude certain files and directories from version control.
+- [`LICENSE`](LICENSE): License information for the repository.
+- [`README.md`](README.md): Main documentation file for the repository.
+
+## Contributing
+
+1. Fork the repository.
+2. Create a new branch:
+    ```sh
+    git checkout -b feature-branch
+    ```
+3. Make your changes and commit them:
+    ```sh
+    git commit -m "Add some feature"
+    ```
+4. Push to the branch:
+    ```sh
+    git push origin feature-branch
+    ```
+5. Open a pull request.
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
-
-
-
-# WebDev
-My website projects
-
-  **url**
-
->Win95
-https://project-win95.danytyma.repl.co/
-
->My CV
-https://danyil-tymchuk-resume.netlify.app
-
->Coffee Shop Example
-https://espressoempire.000webhostapp.com
-
->Blockchain Visualisation
-https://danyt-spherechain.online
-
->ChillZone Website
-https://danyt-chillzone.com
-
->Portfolio Website
-https://dany-portfolio.netlify.app/
+This project is licensed under the MIT License. See the [`LICENSE`](LICENSE) file for details.
