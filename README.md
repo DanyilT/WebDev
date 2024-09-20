@@ -123,7 +123,7 @@ You can use a localhost server to run the websites locally. Here are some option
 
 #### Using GitHub Pages
 
-- Go to the [ChillZone website](https://danyilt.github.io/WebDev/).
+- Go to the [WebDev repo website](https://danyilt.github.io/WebDev/).
 
 ## File Structure
 
