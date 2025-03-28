@@ -6,245 +6,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <link rel="shortcut icon" href="images/Icon.jpg" type="image/jpg">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
+    <script type="text/javascript" src="scripts/loadContent.js" defer></script>
     <script type="text/javascript" src="scripts/script.js"></script>
 </head>
 <body>
     <!-- Main Container -->
     <div class="main">
+
         <!-- Main Content -->
         <main class="main_content">
+
             <!-- About Section -->
             <section class="about">
-                <h2>Software &amp; Web &amp; Game Developer</h2>
-                <!--<h2>Front-End and Back-end Developer &<br> Software Developer &<br>Game Designer / Developer</h2>-->
-                <h1>Danyil Tymchuk</h1>
-                <p>
-                    Ok, this is my resume. Idk how do you get here, but welcome!<br>
-                    I am a Software & Web & Game Developer, and this is where I showcase my work.<br>
-                    Even this poorly designed resume is a part of my work.<br>
-                </p>
-                <div id="about" hidden>
-                    <p>I am resourceful, goal-oriented, and excel at setting clear targets while effectively managing time, people, and materials. With a knack for problem-solving, I identify root causes and actively seek effective resolutions. I am adept at conducting research using valid sources, and thrive both independently and as a team player, often taking the initiative to make decisions and influence events.</p>
-                </div>
-                <button onclick="ButtonActivity('about')">For more</button>
+                <h2 id="subtitle"></h2>
+                <h1 id="name"></h1>
+                <p id="description">
+                <div id="about-container" hidden><p id="about"></div>
+                <button onclick="ButtonActivity('about-container')">For more</button>
             </section>
 
             <!-- Education Section -->
             <section class="education">
                 <h3 class="title">Education</h3>
-                <article>
-                    <h4 class="sub_title">Technological University Dublin (TUDublin)</h4>
-                    <div class="topic">
-                        <h5>Bachelor of Science (Honours) in Digital Forensics and Cyber Security</h5>
-                        <button onclick="ButtonActivity('1')">Subjects</button>
-                    </div>
-                    <p>September 2023 - 2027 | Ireland</p>
-                    <div id="1" hidden>
-                        <dl>
-                            <dt class="sub_title">First Year</dt>
-                            <dd><h5>First Semester</h5></dd>
-                            <dd><h6>Computer System<span>[A]</span></h6></dd>
-                            <dd><h6>Network Basics<span>[B+]</span></h6></dd>
-                            <dd><h6>Web Development Fundamentals<span>[A]</span></h6></dd>
-                            <dd><h6>Fundamentals of Programming 1<span>[A]</span></h6></dd>
-                            <dd><h6>Personal and Professional Development<span>[A]</span></h6></dd>
-                            <dd><h6>Algorithmic Problem Solving<span>[A]</span></h6></dd>
-                            <dd><h5>Second Semester</h5></dd>
-                            <dd><h6>Fundamentals of Programming 2<span>[A]</span></h6></dd>
-                            <dd><h6>Computer Architecture<span>[B+]</span></h6></dd>
-                            <dd><h6>Mathematics for Computing<span>[B]</span></h6></dd>
-                            <dd><h6>Routers and Routing Basics<span>[A]</span></h6></dd>
-                            <dd><h6>Web Development Client-Side<span>[A]</span></h6></dd>
-                            <dt><a href="https://www.tudublin.ie/study/undergraduate/courses/computing-dig-forensics-and-cyber-sec-tu863/?keywords=cyber%20security&courseType=Undergraduate">Course info page</a></dt>
-                        </dl>
-                    </div>
-                </article>
-                <article>
-                    <h4 class="sub_title">Bray Institute of Further Education (BIFE)</h4>
-                    <div class="topic">
-                        <h5>Computer and Software Developer $ Certificate Grade - Distinction</h5>
-                        <button onclick="ButtonActivity('2')">Subjects</button>
-                    </div>
-                    <p>September 2022 - 2023 | Ireland</p>
-                    <div id="2" hidden>
-                        <dl>
-                            <dt class="sub_title">Subjects</dt>
-                            <dd><h6>Fundamentals of Object Orientated Programming<span>[Distinction]</span></h6></dd>
-                            <dd><h6>Mobile Technologies<span>[Distinction]</span></h6></dd>
-                            <dd><h6>Communications<span>[Distinction]</span></h6></dd>
-                            <dd><h6>Multimedia Authoring<span>[Distinction]</span></h6></dd>
-                            <dd><h6>Work Experience<span>[Merit]</span></h6></dd>
-                            <dd><h6>Maths for Information Technology<span>[Distinction]</span></h6></dd>
-                            <dd><h6>Software Architecture<span>[Pass]</span></h6></dd>
-                            <dd><h6>Program Design and Principles<span>[Distinction]</span></h6></dd>
-                            <!--<dt><a href="https://www.bife.ie/full-time-courses/computing-and-engineering/computer-software-development">Course info page</a></dt>-->
-                            <dt><a href="https://web.archive.org/web/20231109155715/https://www.bife.ie/full-time-courses/computing-and-engineering/computer-software-development">Course info page</a></dt>
-                        </dl>
-                    </div>
-                </article>
-                <article>
-                    <h4 class="sub_title">Secondary School</h4>
-                    <div class="topic">
-                        <h5>In-depth study of computer science $ Certificate Grade - A</h5> <!-- The average score of the certificate - 10.125 -->
-                        <button onclick="ButtonActivity('3')">Subjects</button>
-                    </div>
-                    <p>September 2011 - June 2022 | Ukraine</p>
-                    <div id="3" hidden>
-                        <dl>
-                            <dt class="sub_title">Subjects</dt>
-                            <dd><h5>The most suitable subjects for the resume</h5></dd>
-                            <dd><h6>Computer Since - (JAVA / PYTHON / HTML5 / CSS3)<span>[A]</span></h6></dd>
-                            <dd><h6>Math<span>[A]</span></h6></dd>
-                            <dd><h6>Physics<span>[A]</span></h6></dd>
-                            <!--<dt><a href="https://school3.kyiv.ua">School site</a></dt>-->
-                            <dt><a href="https://liceum3.kyiv.ua/">School site</a></dt>
-                        </dl>
-                    </div>
-                </article>
+                <!-- Want to add a sample (final project for each edu (year or semester) -->
             </section>
 
             <!-- Projects Section -->
             <section class="projects">
                 <h3 class="title">Own Projects</h3>
-                <ol>
-                    <li>
-                        <span><a href="https://danyilt.github.io/WebDev/PersonalPortfolio">Personal Portfolio</a>
-                        ...................................................................................................
-                        <span>[</span> HTML5 &amp; CSS3 &amp; JavaScript <span>]</span></span>
-                    </li>
-                    <li>
-                        <!--<span><a href="https://danyt-spherechain.online">Blockchain Visualization (Landing page)</a>-->
-                        <!--<span><a href="https://espressoempire.000webhostapp.com">Coffee shop Website (Online Shop)</a>-->
-                        <!--<span><a href="https://project-win95.danytyma.repl.co/#">Website like Windows 95 (Landing page)</a>-->
-                        <span><a href="https://danyilt.github.io/WebDev/">My WebSites</a>
-                        ..............................................................................................................
-                        <span>[</span> HTML5 &amp; CSS3 &amp; JavaScript <span>]</span></span>
-                    </li>
-                    <li>
-                        <!--<span><a href="https://danyt-chillzone.com">Website for my AR Game (Landing page)</a>-->
-                        <span><a href="https://danyilt.github.io/WebDev/ChillZone/">'ChillZone' - WebSite</a>
-                        ............................................................................................
-                        <span>[</span> HTML5 &amp; CSS3 &amp; JavaScript <span>]</span></span>
-                    </li>
-                    <li>
-                        <!--<span><a href="https://danyt-chillzone.com">Website for my AR Game (Landing page)</a>-->
-                        <span><a href="https://play.google.com/store/apps/details?id=com.DanyT.ChillZone">'Chill Zone' - AR Game (Play Marker)</a>
-                        ........................................................
-                        <span>[</span> Unity 3d &amp; AR Core <span>]</span></span>
-                    </li>
-                    <li>
-                        <span><a href="https://github.com/DanyilT?tab=repositories">A collection of my projects (Git Hub)</a>
-                        .......................................................
-                        <span>[</span> Java &amp; Python &amp; etc <span>]</span></span>
-                    </li>
-                </ol>
             </section>
 
             <!-- Work Experience Section -->
-            <section class="work">
+            <section class="experience">
                 <h3 class="title">Work Experience</h3>
-                <!-- Service Specialist -->
-                <article>
-                    <h4 class="sub_title"><span>Service Specialist</span> Restaurant</h4>
-                    <p>June 2021 - August 2021 <span>|</span> Ukraine</p>
-                    <ul>
-                        <li><span>Improved and acquired interpersonal skills.</span></li>
-                        <li><span>Learned to work under stressful conditions.</span></li>
-                        <li><span>Used to multitasking.</span></li>
-                    </ul>
-                </article>
-                <!-- Work Experience for Institute -->
-                <article>
-                    <h4 class="sub_title"><span>Work Experience</span> Practice for Institute</h4>
-                    <p>60 hours in 2023 <span>|</span> Ireland</p>
-                    <ul>
-                        <li><span>Improved my soft skills.</span></li>
-                        <li><span>Improved my hard skills.</span></li>
-                    </ul>
-                </article>
             </section>
 
             <!-- Hobbies and Interests Section -->
-            <section class="hobbies_and_interests">
+            <section class="hobbies-and-interests">
                 <h3 class="title">Hobbies and interests</h3>
-                <dl>
-                    <dd>I play musical instruments</dd>
-                    <dd>I like rock climbing</dd>
-                    <dd>Participated and placed in the top three in mathematics, physics and computer science olympiads</dd>
-                    <dd>idk why I'm writing this, but someone needs it 🤷</dd>
-                </dl>
             </section>
         </main>
 
         <!-- Sidebar -->
         <aside class="sidebar">
+
             <!-- Photo -->
-            <img src="images/Photo.jpeg" alt="My Photo" class="photo">
+            <img src="images/Photo.jpg" alt="My Photo" class="photo">
 
             <!-- Contacts -->
-            <div class="sidebar_text contacts">
+            <div class="sidebar-text contacts">
                 <h3 class="title">Contacts</h3>
-                <div>
-                    <p><span>C:</span>  <a href="https://wa.me/+353852882289">[WhatsApp]</a> <a href="https://telegram.me/dany_tymchuk">[Telegram]</a></p>
-                    <p><span>E:</span>  <a href="mailto:danytymchuk@gmail.com">danytymchuk@gmail.com</a></p>
-                </div>
             </div>
 
             <!-- Technical Skills -->
-            <div class="sidebar_text tech_skills">
+            <div class="sidebar-text hard-skills">
                 <h3 class="title">Technical Skills</h3>
-                <ul>
-                    <li><span>HTML</span></li>
-                    <li><span>CSS</span></li>
-                    <li><span>JavaScript</span></li>
-                    <li><span>Python</span></li>
-                    <li><span>Java</span></li>
-                    <li><span>C#</span></li>
-                    <li><span>C / C++</span></li>
-                    <li><span>Swift</span></li>
-                    <li><span>SQL</span></li>
-                    <li><span>GIT</span></li>
-                    <li><span>Unity 3d</span></li>
-                </ul>
             </div>
 
             <!-- Soft Skills -->
-            <div class="sidebar_text soft_skills">
+            <div class="sidebar-text soft-skills">
                 <h3 class="title">Soft Skills</h3>
-                <ul>
-                    <li><span>Multitasking</span></li>
-                    <li><span>Setting Priorities</span></li>
-                    <li><span>Time Management</span></li>
-                    <li><span>Teamwork</span></li>
-                    <li><span>Resilience</span></li>
-                </ul>
             </div>
 
             <!-- Languages -->
-            <div class="sidebar_text language">
+            <div class="sidebar-text language">
                 <h3 class="title">Languages</h3>
-                <ul>
-                    <li><span>Ukrainian - Native</span></li>
-                    <li><span>English - Intermediate</span></li>
-                </ul>
             </div>
 
             <!-- Links -->
-            <div class="sidebar_text link">
+            <div class="sidebar-text link">
                 <h3 class="title">Links</h3>
-                <ul>
-                    <li><span><a href="https://github.com/DanyilT">Git Hub</a></span></li>
-                    <li><span><a href="https://replit.com/@DanyTyma?tab=repls">Replit</a></span></li>
-                    <li><span><a href="https://linkedin.com/in/danyil-tymchuk">Linkedin</a></span></li>
-                </ul>
             </div>
-            <button onclick="qwerty()" style="position: absolute; top: 50px; z-index: -37;">qwerty</button>
+
+            <abbr onclick="qwerty()" style="position: absolute; top: 50px; z-index: -37;">qwerty</abbr>
         </aside>
     </div>
     <footer>
-        <p>&copy; 2022-2024 Danyil Tymchuk</p>
+        <p>&copy; 2022-2025 Danyil Tymchuk</p>
     </footer>
 </body>
 </html>

@@ -46,7 +46,7 @@ function hideElement(elementId) {
 }
 
 function ButtonActivity(index) {
-    const elementsToHide = ["about", "1", "2", "3"];
+    const elementsToHide = ["about-container", "1", "2", "3"];
     elementsToHide.forEach(id => {
         if (id !== index) {
             hideElement(id);

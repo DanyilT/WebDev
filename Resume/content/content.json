@@ -1,0 +1,248 @@
+{
+    "about": {
+        "subtitle": "Software & Web & Game Developer",
+        "name": "Danyil Tymchuk",
+        "description": "Welcome, I am a Software & Web & Game Developer, and this is my resume. You can see some of my project in Projects section and on my Portfolio Page. I am currently studying at Technological University Dublin (TUDublin) for a Bachelor of Science (Honours) in Digital Forensics and Cyber Security. I am also a Computer and Software Developer graduate from Bray Institute of Further Education (BIFE).",
+        "about": "I am resourceful, goal-oriented, and excel at setting clear targets while effectively managing time, people, and materials. With a knack for problem-solving, I identify root causes and actively seek effective resolutions. I am adept at conducting research using valid sources, and thrive both independently and as a team player, often taking the initiative to make decisions and influence events."
+    },
+    "education": [
+        {
+            "institution": "Technological University Dublin (TUDublin)",
+            "degree": "Bachelor of Science (Honours) in Digital Forensics and Cyber Security",
+            "date": "September 2023 - 2027",
+            "location": "Ireland",
+            "subjects": {
+                "First Year": {
+                    "First Semester": {
+                        "subject": [
+                            "Computer System",
+                            "Network Basics",
+                            "Web Development Fundamentals",
+                            "Fundamentals of Programming 1",
+                            "Personal and Professional Development",
+                            "Algorithmic Problem Solving"
+                        ],
+                        "grades": [
+                            "A",
+                            "B+",
+                            "A",
+                            "A",
+                            "A",
+                            "A"
+                        ]
+                    },
+                    "Second Semester": {
+                        "subject": [
+                            "Fundamentals of Programming 2",
+                            "Computer Architecture",
+                            "Mathematics for Computing",
+                            "Routers and Routing Basics",
+                            "Web Development Client-Side"
+                        ],
+                        "grades": [
+                            "A",
+                            "B+",
+                            "B",
+                            "A",
+                            "A"
+                        ]
+                    },
+                    "GPA": "3.83"
+                },
+                "Second Year": {
+                    "First Semester": {
+                        "subject": [
+                            "Database Fundamentals",
+                            "GUI Programming",
+                            "LAN Switching and Wireless",
+                            "Information Technology Mathematics",
+                            "Object Oriented Analysis and Design",
+                            "Interactive Multimedia"
+                        ],
+                        "grades": [
+                            "B",
+                            "A",
+                            "A",
+                            "B+",
+                            "A",
+                            "A"
+                        ],
+                        "GPA": "3.83"
+                    }
+                }
+            },
+            "courseInfoLink": "https://web.archive.org/web/20230327065628/https://www.tudublin.ie/study/undergraduate/courses/computing-dig-forensics-and-cyber-sec-tu863/",
+            "the program was changed, so the real link show not what I studies": "https://www.tudublin.ie/study/undergraduate/courses/computing-dig-forensics-and-cyber-sec-tu863/"
+        },
+        {
+            "institution": "Bray Institute of Further Education (BIFE)",
+            "degree": "Computer and Software Developer $ Certificate Grade - Distinction",
+            "date": "September 2022 - 2023",
+            "location": "Ireland",
+            "subjects": {
+                "One Year": {
+                    "Both Semesters": {
+                        "subject": [
+                            "Fundamentals of Object Orientated Programming",
+                            "Mobile Technologies",
+                            "Communications",
+                            "Multimedia Authoring",
+                            "Work Experience",
+                            "Maths for Information Technology",
+                            "Software Architecture",
+                            "Program Design and Principles"
+                        ],
+                        "grades": [
+                            "Distinction",
+                            "Distinction",
+                            "Distinction",
+                            "Distinction",
+                            "Merit",
+                            "Distinction",
+                            "Pass",
+                            "Distinction"
+                        ]
+                    }
+                }
+            },
+            "courseInfoLink": "https://web.archive.org/web/20230206072039/https://www.bife.ie/full-time-courses/computing-and-engineering/computer-software-development",
+            "page not found, the real link": "https://www.bife.ie/full-time-courses/computing-and-engineering/computer-software-development"
+        },
+        {
+            "institution": "Secondary School",
+            "degree": "In-depth study of computer science $ Certificate Grade - A",
+            "date": "September 2011 - June 2022",
+            "location": "Ukraine",
+            "subjects": {
+                "For the Last Year": {
+                    "Both Semesters": {
+                        "subject": [
+                            "Computer Science - (JAVA / PYTHON / HTML5 / CSS3 / JavaScript)",
+                            "Math"
+                        ],
+                        "grades": [
+                            "A",
+                            "A"
+                        ]
+                    }
+                }
+            },
+            "courseInfoLink": "https://liceum3.kyiv.ua",
+            "old link, it wasn't liceum when I studied there": "https://school3.kyiv.ua"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Personal Portfolio",
+            "link": "https://danyilt.github.io/WebDev/PersonalPortfolio",
+            "technologies": "HTML5 &amp; CSS3 &amp; JavaScript"
+        },
+        {
+            "name": "My WebSites",
+            "link": "https://danyilt.github.io/WebDev/",
+            "technologies": "HTML5 &amp; CSS3 &amp; JavaScript",
+            "more links": {
+                "Blockchain Visualization": "https://danyt-spherechain.online",
+                "Coffee shop Website (Online Shop)": "https://espressoempire.000webhostapp.com",
+                "Website like Windows 95 (Landing page)": "https://project-win95.danytyma.repl.co/#"
+            }
+        },
+        {
+            "name": "'ChillZone' - WebSite",
+            "link": "https://danyilt.github.io/WebDev/ChillZone/",
+            "technologies": "HTML5 &amp; CSS3 &amp; JavaScript",
+            "more links": {
+                "Website for my AR Game (Landing page)": "https://danyt-chillzone.com"
+            }
+        },
+        {
+            "name": "'Chill Zone' - AR Game (Play Marker)",
+            "link": "https://play.google.com/store/apps/details?id=com.DanyT.ChillZone",
+            "technologies": "Unity 3d &amp; AR Core",
+            "more links": {
+                "Website for my AR Game (Landing page)": "https://danyt-chillzone.com"
+            }
+        },
+        {
+            "name": "A collection of my projects (Git Hub)",
+            "link": "https://github.com/DanyilT?tab=repositories",
+            "technologies": "Java &amp; Python &amp; etc"
+        }
+    ],
+    "experience": [
+        {
+            "title": "Work Experience",
+            "place": "Practice for Institute",
+            "date": "60 hours in 2023",
+            "location": "Ireland",
+            "details": [
+                "Improved my soft skills.",
+                "Improved my hard skills."
+            ]
+        },
+        {
+            "title": "Service Specialist",
+            "place": "Restaurant",
+            "date": "June 2021 - August 2021",
+            "location": "Ukraine",
+            "details": [
+                "Improved and acquired interpersonal skills.",
+                "Learned to work under stressful conditions.",
+                "Used to multitasking."
+            ]
+        }
+    ],
+    "hobbies-and-interests": [
+        "I play musical instruments",
+        "I like rock climbing",
+        "Do some CTFs and Programing competioions",
+        "Participated and placed in the top three in mathematics, physics and computer science olympiads",
+        "idk why I'm writing this, but someone needs it 🤷"
+    ],
+    "contacts": {
+        "phone": {
+            "WhatsApp": "https://wa.me/+353852882289",
+            "Telegram": "https://telegram.me/dany_tymchuk"
+        },
+        "email": {
+            "danytymchuk@gmail.com": "mailto:danytymchuk@gmail.com"
+        }
+    },
+    "skills": {
+        "hard": [
+            "Java",
+            "Python",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Unity 3d (& AR Core & C#)",
+            "SQL",
+            "Git"
+            ],
+        "soft": [
+            "Problem-solving",
+            "Teamwork",
+            "Time management",
+            "Communication",
+            "Adaptability",
+            "Creativity",
+            "Leadership",
+            "Critical thinking",
+            "Conflict resolution"
+        ]
+    },
+    "languages": [
+        {
+            "language": "Ukrainian",
+            "level": "Native"
+        },
+        {
+            "language": "English",
+            "level": "Intermediate"
+        }
+    ],
+    "links":{
+        "GitHub": "https://github.com/DanyilT",
+        "LinkedIn": "https://linkedin.com/in/danyil-tymchuk"
+    }
+}

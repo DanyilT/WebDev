@@ -10,7 +10,7 @@ body {
         margin-bottom: 12px;
     }
 
-    .sub_title {
+    .subtitle {
         font-size: 16px;
         line-height: 20px;
         margin-bottom: 8px;
@@ -79,7 +79,7 @@ main {
         line-height: 24px;
     }
 
-    #about p {
+    #about {
         margin-left: 20px;
     }
 }
@@ -154,8 +154,8 @@ main {
 }
 
 /* work styles */
-.work {
-    .sub_title span {
+.experience {
+    .subtitle span {
         color: #000318;
     }
 
@@ -181,7 +181,7 @@ main {
         color: #595959;
     }
 
-    li span {
+    li {
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
@@ -190,7 +190,7 @@ main {
 }
 
 /* description */
-.hobbies_and_interests {
+.hobbies-and-interests {
     dd {
         font-weight: 400;
         font-size: 12px;
@@ -213,7 +213,7 @@ main {
         margin-bottom: 32px;
     }
 
-    .sidebar_text {
+    .sidebar-text {
         color: #f3f3f3;
         margin-left: 40px;
         margin-bottom: 50px;
@@ -223,7 +223,7 @@ main {
         margin-bottom: 40px;
     }
 
-    .tech_skills, .soft_skills {
+    .hard-skills, .soft-skills {
         margin-bottom: 24px;
     }
 
@@ -244,16 +244,6 @@ main {
 
     span {
         color: #f3f3f3;
-    }
-
-    .techSkills_descr {
-        margin-left: 10px;
-        font-size: 8px;
-        color: #565E6A;
-    }
-
-    .techSkills_descr span {
-        color: #565E6A;
     }
 }
 
