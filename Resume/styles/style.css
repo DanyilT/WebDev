@@ -210,6 +210,11 @@ main {
         color: #6F00FF;
     }
 
+    p, a {
+        font-size: 0.9rem;
+        line-height: 1.5em;
+    }
+
     span {
         color: #f3f3f3;
     }
