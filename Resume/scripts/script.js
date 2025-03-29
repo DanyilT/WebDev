@@ -29,13 +29,13 @@ function toggleVisibility(elementId) {
     if (element.style.display === "none" || element.style.display === "") {
         element.style.display = "block";
         element.classList.add("fade-in");
-        element.classList.remove("slide-out");
+        element.classList.remove("fade-out");
     } else {
-        element.classList.add("slide-out");
+        element.classList.add("fade-out");
         setTimeout(() => {
             element.style.display = "none";
             element.classList.remove("fade-in");
-            element.classList.remove("slide-out");
+            element.classList.remove("fade-out");
         }, 500);
     }
 }
@@ -46,7 +46,7 @@ function hideElement(elementId) {
 }
 
 function ButtonActivity(index) {
-    const elementsToHide = ["about-container", "1", "2", "3"];
+    const elementsToHide = ["about", "1", "2", "3"];
     elementsToHide.forEach(id => {
         if (id !== index) {
             hideElement(id);

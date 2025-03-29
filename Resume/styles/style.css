@@ -4,42 +4,74 @@
 body {
     font-family: 'Montserrat', sans-serif;
 
-    .title {
-        font-size: 22px;
-        line-height: 27px;
-        margin-bottom: 12px;
+    h1, h2, h3, h4, h5, h6, p {
+        line-height: 1.5em;
+        margin-bottom: 0.5em;
     }
 
+    /* h3 */
+    .title {
+        font-size: 1.5rem;
+    }
+
+    /* h4 */
     .subtitle {
-        font-size: 16px;
-        line-height: 20px;
-        margin-bottom: 8px;
-        color: #9747FF;
+        font-size: 1.2rem;
+        color: #6F00FF;
+    }
+
+    .subtitle span {
+        color: #090018;
+    }
+
+    .date-location {
+        font-size: 0.8rem;
+        color: #A8A8A8;
+    }
+
+    .date-location span {
+        color: #787285;
+    }
+
+    h5 {
+        font-size: 1rem;
+        margin-top: 1em;
+    }
+
+    h6 {
+        font-size: 0.7rem;
+        margin-top: 1em;
+    }
+
+    p {
+        font-size: 1rem;
     }
 
     a {
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 1rem;
+        line-height: 1.5em;
         color: #333333;
     }
 
     /* Buttons */
     button {
-        border: 2px solid #9747FF;
-        border-radius: 10px;
-        color: #333333;
-        padding: 8px 16px;
-        text-align: center;
+        font-size: 1rem;
         text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        transition-duration: 0.4s;
+        color: #333333;
+        background-color: #F4F4F4;
+        padding: 0.4em 1em;
+        margin: auto 0;
+        border: 2px solid #6F00FF;
+        border-radius: 10px;
         cursor: pointer;
+        transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+        transition-duration: 0.4s;
     }
 
     button:hover {
-        background-color: #9747FF;
         color: #F4F4F4;
+        background-color: #6F00FF;
+        box-shadow: 0 0 0.5em #6F00FF, 0 0 1em #6F00FF, 0 0 2em #6F00FF;
     }
 }
 
@@ -63,24 +95,19 @@ main {
 /* about styles */
 .about {
     h2 {
-        font-size: 14px;
-        line-height: 17px;
-        margin-bottom: 24px;
+        font-size: 0.9rem;
+        line-height: 1.5em;
+        margin-bottom: 0.5em;
     }
 
     h1 {
-        font-size: 45px;
-        line-height: 55px;
-        margin-bottom: 32px;
-    }
-
-    p {
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 3rem;
+        line-height: 1.5em;
+        margin: 10px 0 0.5em 0;
     }
 
     #about {
-        margin-left: 20px;
+        margin-left: 1.5em;
     }
 }
 
@@ -91,30 +118,12 @@ main {
         justify-content: space-between;
     }
 
-    .topic button {
-        margin: auto 0;
-    }
-
-    h5 {
-        font-size: 14px;
-        line-height: 17px;
-        margin-bottom: 12px;
-    }
-
-    h6, p {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 15px;
-    }
-
     dt {
-        margin-left: 5px;
+        font-size: 1rem;
+        margin-left: 10px;
     }
 
     dd {
-        font-size: 12px;
-        line-height: 22px;
-        margin-top: 12px;
         margin-left: 20px;
     }
 
@@ -124,122 +133,81 @@ main {
         white-space: nowrap;
         content: '';
         flex-grow: 1;
-        border-bottom: 1px dotted #333333;
-        margin: 0 10px;
+        border-bottom: 1px dotted #A8A8A8;
     }
 }
 
 /* projects styles */
 .projects {
     ol {
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 1rem;
+        line-height: 1.5em;
         padding: 0;
-        margin-left: 20px;
-        margin-right: 13px;
+        margin: 0 1em 0 20px;
     }
 
     span {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
+        display: flex;
+        align-items: center;
         color: #595959;
     }
 
-    span span {
+    span span span {
         font-weight: 700;
-        font-size: 14px;
-        line-height: 24px;
+    }
+
+    .dots {
+        flex-grow: 1;
+        border-bottom: 2px dotted #A8A8A8;
+        margin: 0 10px;
     }
 }
 
 /* work styles */
 .experience {
-    .subtitle span {
-        color: #000318;
-    }
-
-    p {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 15px;
-        color: #A8A8A8;
-        margin-bottom: 8px;
-    }
-
-    p span {
-        color: #000318;
-    }
-
     ul {
-        padding: 0;
-        margin-left: 20px;
-        margin-right: 10px;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 24px;
-        color: #595959;
-    }
-
-    li {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 0.9rem;
+        line-height: 1.5em;
         color: #595959;
     }
 }
 
-/* description */
+/* hobbies and interests styles */
 .hobbies-and-interests {
     dd {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 22px;
-        color: #595959;
-        margin-top: 12px;
+        font-size: 0.9rem;
+        line-height: 1.5em;
+        margin-bottom: 0.5em;
         margin-left: 20px;
+        color: #595959;
     }
 }
 
 /* sidebar styles */
 .sidebar {
-    padding-top: 40px;
+    padding: 40px 0;
     background-color: #54545480;
     width: 370px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     transition: background-color 0.5s;
 
     .photo {
         width: 370px;
-        margin-bottom: 32px;
     }
 
     .sidebar-text {
         color: #f3f3f3;
         margin-left: 40px;
-        margin-bottom: 50px;
-    }
-
-    .contacts, .language {
-        margin-bottom: 40px;
-    }
-
-    .hard-skills, .soft-skills {
-        margin-bottom: 24px;
-    }
-
-    .contacts span {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 24px;
-        margin-right: 10px;
     }
 
     ul {
-        color: #9747FFbc;
+        font-size: 0.9rem;
+        line-height: 1.5em;
         padding: 0;
         margin-left: 20px;
-        font-size: 14px;
-        line-height: 24px;
+        color: #6F00FF;
     }
 
     span {
@@ -266,12 +234,12 @@ footer {
     animation: fadeIn 0.5s ease-in-out;
 }
 
-/* Slide-Out Animation */
-@keyframes slideOut {
-    from { transform: translateX(0); }
-    to { transform: translateX(-100%); }
+/* Fade-Out Animation */
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
 }
 
-.slide-out {
-    animation: slideOut 0.5s ease-in-out;
+.fade-out {
+    animation: fadeOut 0.5s ease-in-out;
 }

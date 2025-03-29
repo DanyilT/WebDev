@@ -8,7 +8,9 @@
     "education": [
         {
             "institution": "Technological University Dublin (TUDublin)",
-            "degree": "Bachelor of Science (Honours) in Digital Forensics and Cyber Security",
+            "bachelor": "Bachelor of Science (Honours) in Digital Forensics and Cyber Security",
+            "degree": "Digital Forensics and Cyber Security",
+            "GPA": "3.83",
             "date": "September 2023 - 2027",
             "location": "Ireland",
             "subjects": {
@@ -46,8 +48,7 @@
                             "A",
                             "A"
                         ]
-                    },
-                    "GPA": "3.83"
+                    }
                 },
                 "Second Year": {
                     "First Semester": {
@@ -66,8 +67,7 @@
                             "B+",
                             "A",
                             "A"
-                        ],
-                        "GPA": "3.83"
+                        ]
                     }
                 }
             },
@@ -76,7 +76,8 @@
         },
         {
             "institution": "Bray Institute of Further Education (BIFE)",
-            "degree": "Computer and Software Developer $ Certificate Grade - Distinction",
+            "degree": "Computer and Software Developer",
+            "GPA": "Distinction",
             "date": "September 2022 - 2023",
             "location": "Ireland",
             "subjects": {
@@ -110,7 +111,8 @@
         },
         {
             "institution": "Secondary School",
-            "degree": "In-depth study of computer science $ Certificate Grade - A",
+            "degree": "In-depth study of computer science",
+            "GPA": "A (10.125 out of 12)",
             "date": "September 2011 - June 2022",
             "location": "Ukraine",
             "subjects": {

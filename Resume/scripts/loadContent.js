@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", async function() {
             const topicDiv = document.createElement('div');
             topicDiv.classList.add('topic');
             const h5 = document.createElement('h5');
-            h5.textContent = edu.degree;
+            h5.textContent = `${edu.degree} | GPA: ${edu.GPA}`;
             topicDiv.appendChild(h5);
 
             // Toggle button
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", async function() {
             // Date & location
             const pElement = document.createElement('p');
             pElement.classList.add('date-location');
-            pElement.textContent = `${edu.date} | ${edu.location}`;
+            pElement.innerHTML = `${edu.date} <span>|</span> ${edu.location}`;
             article.appendChild(pElement);
 
             // Hidden container for subjects
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", async function() {
 
         data.projects.forEach((project) => {
             const li = document.createElement('li');
-            li.innerHTML = `<span><a href="${project.link}">${project.name}</a> ... <span>[</span> ${project.technologies} <span>]</span></span>`;
+            li.innerHTML = `<span><a href="${project.link}">${project.name}</a> <div class="dots"></div> <span><span>[</span> ${project.technologies} <span>]</span></span></span>`;
             projectList.appendChild(li);
         });
 
@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", async function() {
         const langList = document.createElement('ul');
         data.languages.forEach(lang => {
             const li = document.createElement('li');
-            li.innerHTML = `<span>${lang.language} ‒ ${lang.level}</span>`;
+            li.innerHTML = `<span>${lang.language} – ${lang.level}</span>`;
             langList.appendChild(li);
         });
         languageSection.appendChild(langList);
