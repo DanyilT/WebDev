@@ -83,8 +83,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
                     }
                 }
+                let imgSrc = page === 'projects.html' ? project.img : project.img.replace('../', '');
                 return `<div class="project">
-                  <img src="${project.img}" alt="${project.title}">
+                  <img src="${imgSrc}" alt="${project.title}">
                   <p>${project.description.join('<br>')}</p>
                   <div class="main-text">
                     <h3>${project.title}</h3>
