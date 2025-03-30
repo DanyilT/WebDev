@@ -4,13 +4,11 @@
     "footer": "&copy; 2023-2025 Dany"
   },
   "index": {
-    "siteTitle": "Dany's Personal Portfolio",
     "title": "Welcome to My Portfolio",
     "description": "I&#39;m Dany, a Software &amp; Web &amp; Game Developer, and this is where I showcase my work.",
     "currently working on": "CS50"
   },
   "about": {
-    "siteTitle": "About Me",
     "title": "About Me",
     "subtitle": "~$ Who am I?",
     "body": [
