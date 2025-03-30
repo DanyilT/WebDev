@@ -1,0 +1,198 @@
+{
+  "site": {
+    "title": "Dany's Personal Portfolio",
+    "footer": "&copy; 2023-2025 Dany"
+  },
+  "index": {
+    "siteTitle": "Dany's Personal Portfolio",
+    "title": "Welcome to My Portfolio",
+    "description": "I&#39;m Dany, a Software &amp; Web &amp; Game Developer, and this is where I showcase my work.",
+    "currently working on": "CS50"
+  },
+  "about": {
+    "siteTitle": "About Me",
+    "title": "About Me",
+    "subtitle": "~$ Who am I?",
+    "body": [
+      "Hello, i’m Dany!<br> It’s my nickname, I usually use this name, but if you don’t like it, you can call me Danyil, more formally.",
+      "I’m a self-taught front-end and software developer based in Ireland, but I’m not an Irish.",
+      "I am interested in Game Design and Blockchain technology. I have my own AR Game for Android and IOS.<br> I'm learning blockchain and I plan to create my own project based on this in the future "
+    ],
+    "skills": [
+      {
+        "hard": {
+          "Lang &amp; Another": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "Java",
+            "C#",
+            "Swift",
+            "Python",
+            "PHP",
+            "SQL",
+            "GIT"
+          ],
+          "Engines &amp; IDEs I have exp with": [
+            "Unity 3d",
+            "Android Studio",
+            "XCode",
+            "JetBrains IDEs"
+          ]
+        },
+        "soft": {
+          "Skills": [
+            "Multitasking",
+            "Setting Priorities",
+            "Time Management",
+            "Teamwork",
+            "Responsibility"
+          ],
+          "Languages": [
+            "Ukrainian – Native",
+            "Ukrainian - Intermediate"
+          ]
+        }
+      }
+    ]
+  },
+  "projects": {
+    "projects": [
+      {
+        "img": "../images/projects/ChillZone.png",
+        "description": [
+          "WebPage - landing &amp;",
+          "Unity 3d (with AR Kit &amp; Core) for game"
+        ],
+        "title": "ChillZone",
+        "details": [
+          "AR Game for killing time",
+          "Landing Website presents the game"
+        ],
+        "buttons": {
+          "old link": "https://danyt-chillzone.com",
+          "Visit website": "https://danyilt.github.io/WebDev/ChillZone/",
+          "other-links": {
+            "GooglePlay": "https://play.google.com/store/apps/details?id=com.DanyT.ChillZone",
+            "AppStore": "https://apps.apple.com/us/app/chillzone-danyt/id6448560219"
+          }
+        }
+      },
+      {
+        "img": "../images/projects/SphereChain.png",
+        "description": [
+          "Front-end &amp;",
+          "WebGL"
+        ],
+        "title": "Blockchain Visualization",
+        "details": [
+          "Just the simple Blockchain visualization",
+          "I use JavaScript and WebGL for this"
+        ],
+        "buttons": {
+          "old link": "https://danyt-spherechain.online",
+          "Visit website": "https://danyilt.github.io/WebDev/SphereChain/"
+        }
+      },
+      {
+        "img": "../images/projects/Win95.png",
+        "description": [
+          "Front-end &amp;",
+          "HTML CSS JavaScript"
+        ],
+        "title": "Windows 95",
+        "details": [
+          "Fun Project",
+          "Page in Windows 95 style"
+        ],
+        "buttons": {
+          "old link": "https://project-win95.danytyma.repl.co",
+          "Visit website": "https://danyilt.github.io/WebDev/win95/"
+        }
+      },
+      {
+        "img": "../images/projects/ATB-Market.png",
+        "description": [
+          "Front-end &amp;",
+          "HTML CSS JavaScript"
+        ],
+        "title": "ATB Market",
+        "details": [
+          "Fun Project",
+          "My parody of the site"
+        ],
+        "buttons": {
+          "Visit website": "https://danyilt.github.io/WebDev/ATB-Market/"
+        }
+      },
+      {
+        "img": "../images/projects/PersonalPortfolio.png",
+        "description": [
+          "Front-end &amp;",
+          "HTML CSS JavaScript"
+        ],
+        "title": "Personal Portfolio",
+        "details": [
+          "My Skills",
+          "My Works"
+        ],
+        "buttons": {
+          "Visit website": "https://danyilt.github.io/WebDev/PersonalPortfolio/"
+        }
+      },
+      {
+        "img": "../images/projects/GitHub.png",
+        "description": [
+          "Java &amp; Python &amp; etc &amp;",
+          "HTML CSS JavaScript"
+        ],
+        "title": "GitHub",
+        "details": [
+          "More Projects here &amp;",
+          "My small projects"
+        ],
+        "buttons": {
+          "Visit website": "https://github.com/DanyilT?tab=repositories"
+        }
+      }
+    ],
+    "github": [
+      {
+        "title": "Web Dev",
+        "buttons": {
+          "Visit website": "https://github.com/DanyilT/WebDev"
+        }
+      },
+      {
+        "title": "Python",
+        "buttons": {
+          "Visit website": "https://github.com/DanyilT/Python"
+        }
+      },
+      {
+        "title": "Java and Other",
+        "button": {
+          "Visit website": "https://github.com/DanyilT/my_projects"
+        }
+      },
+      {
+        "title": "Projects in University",
+        "buttons": {
+          "Visit website": "https://github.com/DanyilT/projects-in-university"
+        }
+      },
+      {
+        "title": "Projects in Institute",
+        "buttons": {
+          "Visit website": "https://github.com/DanyilT/projects-in-bife"
+        }
+      },
+      {
+        "title": "Projects in School",
+        "buttons": {
+          "Visit website": "https://github.com/DanyilT/projects-in-school"
+        }
+      }
+    ]
+  }
+}
