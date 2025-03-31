@@ -2,7 +2,7 @@
     "about": {
         "subtitle": "Software & Web & Game Developer",
         "name": "Danyil Tymchuk",
-        "description": "Welcome, I am a Software & Web & Game Developer, and this is my resume. You can see some of my project in Projects section and on my Portfolio Page. I am currently studying at Technological University Dublin (TUDublin) for a Bachelor of Science (Honours) in Digital Forensics and Cyber Security. I am also a Computer and Software Developer graduate from Bray Institute of Further Education (BIFE).",
+        "description": "Welcome, I am a Developer, and this is my resume. You can see some of my project below and more on my Portfolio Page. I am currently studying at TUDublin for Digital Forensics and Cyber Security. I am also a Computer and Software Developer graduate from BIFE.",
         "about": "I am resourceful, goal-oriented, and excel at setting clear targets while effectively managing time, people, and materials. With a knack for problem-solving, I identify root causes and actively seek effective resolutions. I am adept at conducting research using valid sources, and thrive both independently and as a team player, often taking the initiative to make decisions and influence events."
     },
     "education": [
@@ -135,19 +135,14 @@
     ],
     "projects": [
         {
+            "name": "Social Media: 'QWERTY'",
+            "link": "https://github.com/DanyilT/WebDev-Project",
+            "technologies": "PHP &amp; SQL &amp; JavaScript &amp; HTML5 &amp; CSS3 &amp; JavaScript"
+        },
+        {
             "name": "Personal Portfolio",
             "link": "https://danyilt.github.io/WebDev/PersonalPortfolio",
             "technologies": "HTML5 &amp; CSS3 &amp; JavaScript"
-        },
-        {
-            "name": "My WebSites",
-            "link": "https://danyilt.github.io/WebDev/",
-            "technologies": "HTML5 &amp; CSS3 &amp; JavaScript",
-            "more links": {
-                "Blockchain Visualization": "https://danyt-spherechain.online",
-                "Coffee shop Website (Online Shop)": "https://espressoempire.000webhostapp.com",
-                "Website like Windows 95 (Landing page)": "https://project-win95.danytyma.repl.co/#"
-            }
         },
         {
             "name": "'ChillZone' - WebSite",
@@ -163,6 +158,16 @@
             "technologies": "Unity 3d &amp; AR Core",
             "more links": {
                 "Website for my AR Game (Landing page)": "https://danyt-chillzone.com"
+            }
+        },
+        {
+            "name": "My WebSites",
+            "link": "https://danyilt.github.io/WebDev/",
+            "technologies": "HTML5 &amp; CSS3 &amp; JavaScript",
+            "more links": {
+                "Blockchain Visualization": "https://danyt-spherechain.online",
+                "Coffee shop Website (Online Shop)": "https://espressoempire.000webhostapp.com",
+                "Website like Windows 95 (Landing page)": "https://project-win95.danytyma.repl.co/#"
             }
         },
         {
@@ -195,11 +200,8 @@
         }
     ],
     "hobbies-and-interests": [
-        "I play musical instruments",
-        "I like rock climbing",
-        "Do some CTFs and Programing competioions",
-        "Participated and placed in the top three in mathematics, physics and computer science olympiads",
-        "idk why I'm writing this, but someone needs it 🤷"
+        "I love music, playing and listening...",
+        "I like to do CTFs and programming competitions"
     ],
     "contacts": {
         "phone": {
@@ -214,11 +216,13 @@
         "hard": [
             "Java",
             "Python",
+            "PHP",
+            "SQL",
             "HTML",
             "CSS",
             "JavaScript",
-            "Unity 3d (& AR Core & C#)",
-            "SQL",
+            "Basic (C / C++ / C#)",
+            "Unity 3d (& AR Core)",
             "Git"
             ],
         "soft": [
