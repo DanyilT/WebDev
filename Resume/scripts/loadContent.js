@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", async function() {
         const pPhones = document.createElement('p');
         pPhones.innerHTML = '<span>C:</span>';
         Object.keys(data.contacts.phone).forEach((phoneKey) => {
-            pPhones.innerHTML += ` <a href="${data.contacts.phone[phoneKey]}">[${phoneKey}]</a>`;
+            pPhones.innerHTML += ` <a href="${data.contacts.phone[phoneKey]}">${phoneKey}</a>`;
         });
         contactsDiv.appendChild(pPhones);
         // Email
