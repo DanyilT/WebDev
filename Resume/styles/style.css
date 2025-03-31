@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+:root {
+    --background-color: #f4f4f4;
+    --text-color: #333333;
+    --second-text-color: #595959;
+    --sidebar-background-color: #54545480;
+    --sidebar-hover-background-color: #545454;
+    --sidebar-text-color: #f3f3f3;
+    --primary-color: #6F00FF;
+    --secondary-color: #090018;
+    --accent-color: #A8A8A8;
+
+    font-size: 14px;
+}
+
 /* defaults */
 body {
     font-family: 'Montserrat', sans-serif;
@@ -17,20 +31,21 @@ body {
     /* h4 */
     .subtitle {
         font-size: 1.2rem;
-        color: #6F00FF;
+        color: var(--primary-color);
     }
 
     .subtitle span {
-        color: #090018;
+        color: var(--secondary-color);
     }
 
     .date-location {
         font-size: 0.8rem;
-        color: #A8A8A8;
+        margin-top: 0;
+        color: var(--accent-color);
     }
 
     .date-location span {
-        color: #787285;
+        color: var(--second-text-color)
     }
 
     h5 {
@@ -50,18 +65,18 @@ body {
     a {
         font-size: 1rem;
         line-height: 1.5em;
-        color: #333333;
+        color: var(--text-color);
     }
 
     /* Buttons */
     button {
         font-size: 1rem;
         text-decoration: none;
-        color: #333333;
-        background-color: #F4F4F4;
+        color: var(--text-color);
+        background-color: var(--background-color);
         padding: 0.4em 1em;
         margin: auto 0;
-        border: 2px solid #6F00FF;
+        border: 2px solid var(--primary-color);
         border-radius: 10px;
         cursor: pointer;
         transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
@@ -69,9 +84,9 @@ body {
     }
 
     button:hover {
-        color: #F4F4F4;
-        background-color: #6F00FF;
-        box-shadow: 0 0 0.5em #6F00FF, 0 0 1em #6F00FF, 0 0 2em #6F00FF;
+        color: var(--background-color);
+        background-color: var(--primary-color);
+        box-shadow: 0 0 0.5em var(--primary-color), 0 0 1em var(--primary-color), 0 0 2em var(--primary-color);
     }
 }
 
@@ -86,8 +101,8 @@ body {
 /* main content */
 main {
     width: 830px;
-    color: #333333;
-    background-color: #f4f4f4;
+    color: var(--text-color);
+    background-color: var(--background-color);
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
     padding: 40px 80px;
 }
@@ -104,6 +119,13 @@ main {
         font-size: 3rem;
         line-height: 1.5em;
         margin: 10px 0 0.5em 0;
+    }
+
+    hr {
+        border: 0;
+        height: 1px;
+        background-color: var(--accent-color);
+        margin: 0.5em 0.5em;
     }
 
     #about {
@@ -133,7 +155,7 @@ main {
         white-space: nowrap;
         content: '';
         flex-grow: 1;
-        border-bottom: 1px dotted #A8A8A8;
+        border-bottom: 1px dotted var(--accent-color);
     }
 }
 
@@ -149,7 +171,7 @@ main {
     span {
         display: flex;
         align-items: center;
-        color: #595959;
+        color: var(--second-text-color);
     }
 
     span span span {
@@ -158,7 +180,7 @@ main {
 
     .dots {
         flex-grow: 1;
-        border-bottom: 2px dotted #A8A8A8;
+        border-bottom: 2px dotted var(--accent-color);
         margin: 0 10px;
     }
 }
@@ -168,7 +190,7 @@ main {
     ul {
         font-size: 0.9rem;
         line-height: 1.5em;
-        color: #595959;
+        color: var(--second-text-color);
     }
 }
 
@@ -179,18 +201,18 @@ main {
         line-height: 1.5em;
         margin-bottom: 0.5em;
         margin-left: 20px;
-        color: #595959;
+        color: var(--second-text-color);
     }
 }
 
 /* sidebar styles */
 .sidebar {
     padding: 40px 0;
-    background-color: #54545480;
+    background-color: var(--sidebar-background-color);
     width: 370px;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     transition: background-color 0.5s;
 
     .photo {
@@ -198,7 +220,7 @@ main {
     }
 
     .sidebar-text {
-        color: #f3f3f3;
+        color: var(--sidebar-text-color);
         margin-left: 40px;
     }
 
@@ -207,7 +229,7 @@ main {
         line-height: 1.5em;
         padding: 0;
         margin-left: 20px;
-        color: #6F00FF;
+        color: var(--primary-color);
     }
 
     p, a {
@@ -216,12 +238,12 @@ main {
     }
 
     span {
-        color: #f3f3f3;
+        color: var(--sidebar-text-color);
     }
 }
 
 .sidebar:hover {
-    background-color: #545454;
+    background-color: var(--sidebar-hover-background-color);
 }
 
 /* Footer */
