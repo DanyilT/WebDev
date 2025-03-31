@@ -50,7 +50,7 @@ body {
 
     h5 {
         font-size: 1rem;
-        margin-top: 0.5em;
+        margin-top: 0;
     }
 
     h6 {
@@ -135,9 +135,17 @@ main {
 
 /* education styles */
 .education {
+    > *:not(:first-child) {
+        margin-top: 1em;
+    }
+
     .topic {
         display: flex;
         justify-content: space-between;
+    }
+
+    .topic h4 {
+        margin-top: 0.5em;
     }
 
     dt {
