@@ -15,17 +15,13 @@ document.addEventListener("DOMContentLoaded", async function() {
         data.education.forEach((edu, index) => {
             const article = document.createElement('article');
 
-            // Institution and degree
+            // Institution
+            const topicDiv = document.createElement('div');
+            topicDiv.classList.add('topic');
             const h4 = document.createElement('h4');
             h4.classList.add('subtitle');
             h4.textContent = edu.institution;
-            article.appendChild(h4);
-
-            const topicDiv = document.createElement('div');
-            topicDiv.classList.add('topic');
-            const h5 = document.createElement('h5');
-            h5.textContent = `${edu.degree} | GPA: ${edu.GPA}`;
-            topicDiv.appendChild(h5);
+            topicDiv.appendChild(h4);
 
             // Toggle button
             const eduButton = document.createElement('button');
@@ -35,6 +31,11 @@ document.addEventListener("DOMContentLoaded", async function() {
             topicDiv.appendChild(eduButton);
 
             article.appendChild(topicDiv);
+
+            // Degree
+            const h5 = document.createElement('h5');
+            h5.textContent = `${edu.degree} | GPA: ${edu.GPA}`;
+            article.appendChild(h5);
 
             // Date & location
             const pElement = document.createElement('p');
