@@ -182,6 +182,10 @@ main {
         color: var(--second-text-color);
     }
 
+    a {
+        font-size: 1.1rem;
+    }
+
     span span span {
         font-weight: 700;
     }
@@ -233,16 +237,15 @@ main {
     }
 
     ul {
-        font-size: 0.9rem;
+        font-size: 1rem;
         line-height: 1.5em;
         padding: 0;
         margin-left: 20px;
         color: var(--primary-color);
     }
 
-    p, a {
-        font-size: 0.9rem;
-        line-height: 1.5em;
+    a {
+        transition: color 0.5s;
     }
 
     span {
@@ -252,6 +255,10 @@ main {
 
 .sidebar:hover {
     background-color: var(--sidebar-hover-background-color);
+}
+
+.sidebar:hover .sidebar-text a {
+    color: var(--sidebar-text-color);
 }
 
 /* Footer */
