@@ -1,3 +1,38 @@
+/**
+ * Snake Game
+ *
+ * A simple implementation of the classic Snake game using JavaScript and HTML5 Canvas.
+ * The game features a snake that grows longer as it eats food, and the player must avoid colliding with the walls or itself.
+ * The game can be controlled using arrow keys or (if use extend-controls.js) WASD keys, and it also supports touch gestures for mobile devices.
+ *
+ * Features:
+ * - Snake movement and growth
+ * - Food spawning
+ * - Collision detection
+ * - Score tracking
+ * - Game over and restart functionality
+ * - Pause functionality
+ * - High score tracking
+ * - Instructions and controls
+ * - Responsive design for different screen sizes
+ * - Touch controls for mobile devices (with use extend-controls.js)
+ * - Customizable game parameters (speed and tile count)
+ * - Cheat code to set score
+ *
+ * Instructions:
+ * - Use arrow keys to control the snake's direction.
+ * - Press the spacebar to pause or resume the game.
+ * - Press 'r' to restart the game.
+ * - Use the 'i' key to toggle instructions. (in index.html, see buttons-handler.js)
+ *
+ * Parameters - call the setGameParameters function to set:
+ * - Game speed: Adjust the speed of the game by changing the `gameSpeed` variable.
+ * - Tile count: Change the number of tiles on the canvas by modifying the `tileCount` variable.
+ *
+ * Cheat code:
+ * - You can set the score directly by calling the `setScore` function with a new score value.
+ */
+
 // Game variables
 let canvas;
 let ctx;
