@@ -13,6 +13,10 @@ This repository contains various website projects. Below is a list of the projec
 
 ## Features / WebSites
 
+### [Snake Game](SnakeGame)
+Snake game, can be played from pc or phone. Writed on js.
+- **URL:** [Snake Game](https://danyilt.github.io/WebDev/SnakeGame/)
+
 ### [Portfolio Website](PersonalPortfolio)
 A portfolio showcasing my projects and skills.
 - **URL:** [Portfolio Website](https://danyilt.github.io/WebDev/PersonalPortfolio/)
