@@ -31,6 +31,9 @@
  *
  * Cheat code:
  * - You can set the score directly by calling the `setScore` function with a new score value.
+ *
+ * Easter Egg:
+ * - `qwerty.js`
  */
 
 // Game variables
