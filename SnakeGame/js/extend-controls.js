@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Remap WASD keys to arrow keys
     document.addEventListener('keydown', function(e) {
-        switch (e.key.toLowerCase()) {
+        switch (!e.shiftKey && e.key.toLowerCase()) {
             case 'w':
                 document.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowUp' }));
                 e.preventDefault();
