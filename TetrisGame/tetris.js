@@ -1,3 +1,30 @@
+/**
+ * TETRIS Game
+ *
+ * This is a simple implementation of the classic Tetris game using HTML5 Canvas and JavaScript.
+ * The game features tetrominoes that fall from the top of the screen, and the player must rotate and move them to fit into complete lines.
+ * The game ends when the tetrominoes stack up to the top of the screen.
+ *
+ * Features:
+ * - Tetromino shapes and colors
+ * - Piece rotation and movement
+ * - Line clearing and scoring
+ * - Game over detection
+ * - Pause and resume functionality
+ *
+ * Instructions:
+ * - Use the arrow keys to move and rotate the tetrominoes.
+ * - Use wasd / touch controls / control buttons to move and rotate the tetrominoes. (in extend-controls.js / buttons-handler.js)
+ * - Press the spacebar to hard drop the tetromino.
+ * - Long tap (touch control) / 's' key / drop button to hard drop the tetromino.
+ *
+ * Cheat code:
+ * - You can set the score directly by calling the `setScore` function with a new score value. *
+ *
+ * Easter Egg:
+ * - `qwerty.js`
+ */
+
 // Canvas setup
 const canvas = document.getElementById('tetris');
 const ctx = canvas.getContext('2d');
