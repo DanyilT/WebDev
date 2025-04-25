@@ -17,6 +17,10 @@ This repository contains various website projects. Below is a list of the projec
 Snake game, can be played from pc or phone. Writed on js.
 - **URL:** [Snake Game](https://danyilt.github.io/WebDev/SnakeGame/)
 
+### [TETRIS Game](TetrisGame)
+Tetris game, can be played from pc or phone. Writed on js.
+- **URL:** [TETRIS Game](https://danyilt.github.io/WebDev/TetrisGame/)
+
 ### [Portfolio Website](PersonalPortfolio)
 A portfolio showcasing my projects and skills.
 - **URL:** [Portfolio Website](https://danyilt.github.io/WebDev/PersonalPortfolio/)
