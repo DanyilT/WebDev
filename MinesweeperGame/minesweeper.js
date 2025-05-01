@@ -1,3 +1,33 @@
+/**
+ * Minesweeper Game
+ *
+ * A simple implementation of the classic Minesweeper game using JavaScript, HTML, and CSS.
+ * This game allows players to select difficulty levels, plant mines, reveal cells, and flag potential mines.
+ * It also includes a timer and mine counter.
+ *
+ * Features:
+ * - Three difficulty levels: Beginner, Intermediate, and Expert
+ * - Timer to track the time taken to complete the game
+ * - Mine counter to show the number of remaining mines
+ * - Ability to flag cells as potential mines
+ * - Auto-reveal of empty cells
+ * - Win condition check
+ * - Game over condition when clicking on a mine
+ *
+ * Instructions:
+ * - Click on a cell to reveal it.
+ * - Right-click (or long-press on mobile) to flag/unflag a cell.
+ * - Use the reset button to restart the game.
+ * - Select a difficulty level to change the game settings.
+ * - Use the keyboard arrow keys to navigate the board. (extend controls)
+ *
+ * Cheat code:
+ * - You can reveal all mines by running the function `revealAllMines()`, but the board must be initialized first.
+ *
+ * Easter Egg:
+ * - `qwerty.js`
+ */
+
 // Game settings
 let gameSettings = {
     beginner: { rows: 9, cols: 9, mines: 10 },
