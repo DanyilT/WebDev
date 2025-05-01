@@ -21,6 +21,10 @@ Snake game, can be played from pc or phone. Writed on js.
 Tetris game, can be played from pc or phone. Writed on js.
 - **URL:** [TETRIS Game](https://danyilt.github.io/WebDev/TetrisGame/)
 
+### [Minesweeper Game](MinesweeperGame)
+Minesweeper game, can be played from pc or phone. Writed on js.
+- **URL:** [Minesweeper Game](https://danyilt.github.io/WebDev/MinesweeperGame/)
+
 ### [Portfolio Website](PersonalPortfolio)
 A portfolio showcasing my projects and skills.
 - **URL:** [Portfolio Website](https://danyilt.github.io/WebDev/PersonalPortfolio/)
