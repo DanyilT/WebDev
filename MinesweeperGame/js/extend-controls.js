@@ -94,22 +94,27 @@ document.addEventListener('DOMContentLoaded', function() {
                 e.preventDefault();
                 break;
             case 'ArrowUp':
+            case 'w':
                 moveSelection(-1, 0);
                 e.preventDefault();
                 break;
             case 'ArrowDown':
+            case 's':
                 moveSelection(1, 0);
                 e.preventDefault();
                 break;
             case 'ArrowLeft':
+            case 'a':
                 moveSelection(0, -1);
                 e.preventDefault();
                 break;
             case 'ArrowRight':
+            case 'd':
                 moveSelection(0, 1);
                 e.preventDefault();
                 break;
             case ' ': // Space
+            case 'Enter':
                 activateCell(e.shiftKey);
                 e.preventDefault();
                 break;
