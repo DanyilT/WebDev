@@ -18,6 +18,7 @@
 .cell {
     width: 40px;
     height: 40px;
+    padding: 1px;
     caret-color: transparent;
     cursor: default;
 }
@@ -40,16 +41,17 @@
 
 .cell.initial {
     font-weight: 600;
+    background-color: oldlace;
 }
 
 .cell.valid {
-    background-color: #c0c0c0;
+    background-color: silver;
 }
 
 .cell.invalid {
-    background-color: #ffcccc;
+    background-color: lightpink;
 }
 
 .cell.same-number {
-    background-color: #e6f7ff;
+    background-color: aliceblue;
 }
