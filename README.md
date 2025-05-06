@@ -25,6 +25,10 @@ Tetris game, can be played from pc or phone. Writed on js.
 Minesweeper game, can be played from pc or phone. Writed on js.
 - **URL:** [Minesweeper Game](https://danyilt.github.io/WebDev/MinesweeperGame/)
 
+### [Sudoku Game](SudokuGame)
+Sudoku game, can be played from pc or phone. Writed on js.
+- **URL:** [Sudoku Game](https://danyilt.github.io/WebDev/SudokuGame/)
+
 ### [Portfolio Website](PersonalPortfolio)
 A portfolio showcasing my projects and skills.
 - **URL:** [Portfolio Website](https://danyilt.github.io/WebDev/PersonalPortfolio/)
