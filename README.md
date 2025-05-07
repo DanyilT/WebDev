@@ -13,21 +13,25 @@ This repository contains various website projects. Below is a list of the projec
 
 ## Features / WebSites
 
-### [Snake Game](SnakeGame)
+### [Snake Game](Game/Snake)
 Snake game, can be played from pc or phone. Writed on js.
-- **URL:** [Snake Game](https://danyilt.github.io/WebDev/SnakeGame/)
+- **Repo Link**: [Game/Snake](https://github.com/DanyilT/WebDev/blob/main/Game/Snake)
+- **URL:** [Snake Game](https://danyilt.github.io/WebDev/Game/Snake/)
 
-### [TETRIS Game](TetrisGame)
+### [TETRIS Game](Game/Tetris)
 Tetris game, can be played from pc or phone. Writed on js.
-- **URL:** [TETRIS Game](https://danyilt.github.io/WebDev/TetrisGame/)
+- **Repo Link**: [Game/Tetris](https://github.com/DanyilT/WebDev/blob/main/Game/Tetris)
+- **URL:** [TETRIS Game](https://danyilt.github.io/WebDev/Game/Tetris/)
 
-### [Minesweeper Game](MinesweeperGame)
+### [Minesweeper Game](Game/Minesweeper)
 Minesweeper game, can be played from pc or phone. Writed on js.
-- **URL:** [Minesweeper Game](https://danyilt.github.io/WebDev/MinesweeperGame/)
+- **Repo Link**: [Game/Minesweeper](https://github.com/DanyilT/WebDev/blob/main/Game/Minesweeper)
+- **URL:** [Minesweeper Game](https://danyilt.github.io/WebDev/Game/Minesweeper/)
 
-### [Sudoku Game](SudokuGame)
+### [Sudoku Game](Game/Sudoku)
 Sudoku game, can be played from pc or phone. Writed on js.
-- **URL:** [Sudoku Game](https://danyilt.github.io/WebDev/SudokuGame/)
+- **Repo Link**: [Game/Sudoku](https://github.com/DanyilT/WebDev/blob/main/Game/Sudoku)
+- **URL:** [Sudoku Game](https://danyilt.github.io/WebDev/Game/Sudoku/)
 
 ### [Portfolio Website](PersonalPortfolio)
 A portfolio showcasing my projects and skills.
