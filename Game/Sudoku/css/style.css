@@ -344,11 +344,51 @@ select {
     }
 }
 
-/* Responsive adjustments */
+/* Responsive styles */
 @media (max-width: 600px) {
     .cell {
         width: 35px;
         height: 35px;
         font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .game-container {
+        gap: 15px;
+    }
+
+    .sudoku-grid {
+        gap: 3px;
+        padding: 5px;
+    }
+
+    .subgrid {
+        gap: 0;
+    }
+
+    .cell {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .number-pad {
+        gap: 8px;
+        padding: 8px;
+        max-width: 300px;
+    }
+
+    .num-btn {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 0.8rem;
     }
 }
