@@ -205,29 +205,32 @@ document.addEventListener('DOMContentLoaded', function() {
         cells.forEach(cell => {
             cell.setAttribute('inputmode', 'none');
 
-            // Prevent keyboard from showing on focus
-            cell.addEventListener('focus', function(e) {
-                // For iOS, which might ignore inputmode
-                if (!this.readOnly) {
-                    const isInitialCell = this.classList.contains('initial');
-                    if (!isInitialCell) {
-                        // Save the current value and temporarily set readonly
-                        const currentValue = this.value;
-                        const row = parseInt(this.dataset.row);
-                        const col = parseInt(this.dataset.col);
+            // Prevent keyboard from showing on touch events and focus
+            ['touchstart', 'touchend', 'mousedown', 'mouseup', 'click', 'focus'].forEach(eventType => {
+                cell.addEventListener(eventType, function(e) {
+                    e.preventDefault();
+                    // For iOS, which might ignore inputmode
+                    if (!this.readOnly) {
+                        const isInitialCell = this.classList.contains('initial');
+                        if (!isInitialCell) {
+                            // Save the current value and temporarily set readonly
+                            const currentValue = this.value;
+                            const row = parseInt(this.dataset.row);
+                            const col = parseInt(this.dataset.col);
 
-                        // Temporarily set readonly to prevent keyboard
-                        this.readOnly = true;
+                            // Temporarily set readonly to prevent keyboard
+                            this.readOnly = true; // Only first touch, and then it again not readonly
 
-                        // Reset readonly status after a short delay
-                        setTimeout(() => {
-                            if (!initialBoard[row][col]) {
-                                this.readOnly = false;
-                                this.value = currentValue;
-                            }
-                        }, 100);
+                            // Reset readonly status after a short delay
+                            setTimeout(() => {
+                                if (!initialBoard[row][col]) {
+                                    this.readOnly = false;
+                                    this.value = currentValue;
+                                }
+                            }, 100);
+                        }
                     }
-                }
+                });
             });
 
             // Also prevent keyboard on touch events
