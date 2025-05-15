@@ -351,6 +351,13 @@ select {
         height: 35px;
         font-size: 18px;
     }
+
+    .notification {
+        min-width: 200px;
+        max-width: 300px;
+        padding: 10px 15px;
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 400px) {
@@ -390,5 +397,12 @@ select {
     button {
         padding: 6px 12px;
         font-size: 0.8rem;
+    }
+
+    .notification {
+        min-width: 150px;
+        max-width: 250px;
+        padding: 5px 10px;
+        font-size: 0.7rem;
     }
 }
