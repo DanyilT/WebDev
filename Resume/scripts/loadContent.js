@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", async function() {
 
             // Degree
             const h5 = document.createElement('h5');
-            h5.textContent = `${edu.degree} | GPA: ${edu.GPA}`;
+            h5.innerHTML = `${edu.degree} <span>(${edu.degreeLevel})</span> | GPA: ${edu.GPA}`
             article.appendChild(h5);
 
             // Date & location

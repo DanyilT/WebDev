@@ -148,6 +148,10 @@ main {
         margin-top: 0.5em;
     }
 
+    h5 span {
+        color: var(--second-text-color);
+    }
+
     dt {
         font-size: 1rem;
         margin-left: 10px;
