@@ -2,16 +2,17 @@
     "about": {
         "subtitle": "Software & Web & Game Developer",
         "name": "Danyil Tymchuk",
-        "description": "Welcome, I am a Developer, and this is my resume. You can see some of my project below and more on my Portfolio Page. I am currently studying at TUDublin for Digital Forensics and Cyber Security. I am also a Computer and Software Developer graduate from BIFE.",
-        "about": "I am resourceful, goal-oriented, and excel at setting clear targets while effectively managing time, people, and materials. With a knack for problem-solving, I identify root causes and actively seek effective resolutions. I am adept at conducting research using valid sources, and thrive both independently and as a team player, often taking the initiative to make decisions and influence events."
+        "description": "Welcome, to my resume. I am a Software Developer and I specialise in Digital Forensics & Cyber Security, I’m also interested in Game Design & Development. I am currently studying at TUDublin for Digital Forensics and Cyber Security, I am also a Computer and Software Developer level 5 graduate from Bray institute of further education. You can see some of my project below and more on my Portfolio Page or my GitHub.",
+        "about": "I am resourceful, goal-oriented, and excel at setting clear targets while effectively managing time, people, and materials. With efficient problem-solving, I identify root causes and actively look for effective resolutions. I am skilled at conducting research using valid sources, and thrive both independently and as a team player, often taking the initiative to make decisions and influence events."
     },
     "education": [
         {
             "institution": "Technological University Dublin (TUDublin)",
             "bachelor": "Bachelor of Science (Honours) in Digital Forensics and Cyber Security",
             "degree": "Digital Forensics and Cyber Security",
+            "degreeLevel": "Bachelor",
             "GPA": "3.83",
-            "date": "September 2023 - 2027",
+            "date": "2023 - 2027",
             "location": "Ireland",
             "subjects": {
                 "First Year": {
@@ -77,8 +78,9 @@
         {
             "institution": "Bray Institute of Further Education (BIFE)",
             "degree": "Computer and Software Developer",
+            "degreeLevel": "Level 5",
             "GPA": "Distinction",
-            "date": "September 2022 - 2023",
+            "date": "2022 - 2023",
             "location": "Ireland",
             "subjects": {
                 "One Year": {
@@ -112,8 +114,9 @@
         {
             "institution": "Secondary School",
             "degree": "In-depth study of computer science",
+            "degreeLevel": "Secondary School",
             "GPA": "A (10.125 out of 12)",
-            "date": "September 2011 - June 2022",
+            "date": "2011 - 2022",
             "location": "Ukraine",
             "subjects": {
                 "For the Last Year": {
@@ -200,8 +203,8 @@
         }
     ],
     "hobbies-and-interests": [
-        "I love music, playing and listening...",
-        "I like to do CTFs and programming competitions"
+        "I enjoy participating in CTFs, programming competitions, and university programming/cyber security events.",
+        "I also like attending various IT events and conferences."
     ],
     "contacts": {
         "phone": {
@@ -220,6 +223,7 @@
             "HTML",
             "CSS",
             "JavaScript",
+            "React.js",
             "Basic (C / C++ / C#)",
             "Unity 3d (& AR Core)",
             "Git"
