@@ -1,4 +1,8 @@
 # Absolutely not real ATB website
+> [!IMPORTANT]
+> The website was created as a final project for WebDev course module (Year 1, Sem 2), and I remove it from this folder.  
+> It is currently storing at [DanyilT/projects-in-university/tree/project/year01/module-web_development_client_side/atb-market](https://github.com/DanyilT/projects-in-university/tree/project/year01/module-web_development_client_side/atb-market)
+> And the preview of this website are on [Cloudflare Pages](https://web-development-client-side--atb-market.pages.dev/)
 
 This is a fake website for the ATB Store. It is a simple e-commerce web application that allows users to browse products, add them to a cart, and proceed to checkout. The application uses JavaScript for client-side functionality and fetches product data from a JSON file.
 
@@ -79,9 +83,9 @@ Ok, you don't really need a local host server to run this project. Without a ser
 
 - Double-click the `index.html` file to open it in your web browser.
 
-#### Using GitHub Pages
+#### Using Cloudflare Pages
 
-- Go to the [ATB Market website](https://danyilt.github.io/WebDev/ATB-Market/).
+- Go to the [ATB Market website](https://web-development-client-side--atb-market.pages.dev/).
 
 ## File Structure
 - `design/Figma.png`: The Figma design for the website.
