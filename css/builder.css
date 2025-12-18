@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* ==================== Variables ==================== */
+:root {
+    --font-family: 'Montserrat', sans-serif;
+    --primary-color: #6F00FF;
+    --primary-hover: #5a00cc;
+    --secondary-color: #090018;
+    --secondary-hover: #1a0033;
+    --background-color: #f4f4f4;
+    --section-background: #ffffff;
+    --card-background: #f4f4f4;
+    --text-color: #333333;
+    --text-muted: #6c757d;
+    --border-color: #dee2e6;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --border-radius: 8px;
+    --border-radius-sm: 4px;
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --transition: 0.3s ease;
+}
+
+/* ==================== Reset ==================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family), sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* ==================== Layout ==================== */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* ==================== Typography ==================== */
+.builder-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.builder-header h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.builder-header p {
+    color: var(--text-muted);
+}
+
+/* ==================== Sections ==================== */
+section {
+    background: var(--section-background);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+/* ==================== Form Elements (Base) ==================== */
+label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    background: var(--section-background);
+    transition: border-color var(--transition);
+}
+
+input:hover,
+textarea:hover,
+select:hover {
+    border-color: var(--secondary-color);
+}
+
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+textarea {
+    min-height: 5rem;
+    resize: vertical;
+}
+
+input[type="color"] {
+    width: 60px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* ==================== Buttons (Base) ==================== */
+button {
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.5rem 1rem;
+    background: none;
+    transition: all var(--transition);
+}
+
+/* ==================== Button Variants ==================== */
+
+/* Default Button */
+.btn-default {
+    border: 1px solid var(--border-color);
+}
+.btn-default:hover {
+    border-color: var(--secondary-hover);
+}
+
+.btn-default:active {
+    border-color: var(--primary-color);
+}
+
+/* Base Button (for btn-primary, btn-secondary, btn-outline) */
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+}
+
+/* Primary Button */
+.btn-primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--primary-hover);
+}
+
+/* Secondary Button */
+.btn-secondary {
+    background: var(--secondary-color);
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: var(--secondary-hover);
+}
+
+/* Outline Button */
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Add Button (Dashed) */
+.add-btn {
+    background: none;
+    border: 2px dashed var(--border-color);
+    color: var(--text-muted);
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+.add-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* Remove Button */
+.remove-btn {
+    background: var(--danger-color);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+    border-radius: var(--border-radius-sm);
+}
+
+.remove-btn:hover {
+    background: var(--secondary-hover);
+}
+
+/* ==================== Sections Container ==================== */
+.sections-container {
+    margin-top: 1.5rem;
+}
+
+.sections-container h3 {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* ==================== Section Type Label ==================== */
+.section-type-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    background: rgba(111, 0, 255, 0.1);
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--border-radius-sm);
+    display: inline-block;
+    margin-bottom: 0.75rem;
+}
+
+/* ==================== Form Group Enhancement ==================== */
+.form-group {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: var(--border-radius-sm);
+    transition: box-shadow var(--transition);
+}
+
+.form-group:hover {
+    box-shadow: var(--shadow);
+}
+
+.category-group {
+    padding: 0.5rem;
+}
+
+/* ==================== Fieldsets ==================== */
+.form-fieldset {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-fieldset legend {
+    font-weight: 600;
+    color: var(--primary-color);
+    padding: 0 0.5rem;
+}
+
+.dynamic-fieldset {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* ==================== Entry Cards ==================== */
+.entry-card {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: var(--card-background);
+}
+
+/* ==================== Upload Area ==================== */
+.upload-area {
+    border: 2px dashed var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all var(--transition);
+}
+
+.upload-area:hover,
+.upload-area.dragover {
+    border-color: var(--primary-color);
+    background-color: rgba(111, 0, 255, 0.05);  /* primary color */
+}
+
+.upload-area label {
+    cursor: pointer;
+    display: block;
+    margin-bottom: 0;
+}
+
+.upload-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* JSON URL Input Row */
+.json-url-input {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.json-url-input input {
+    flex: 1;
+}
+
+/* ==================== Customization Panel ==================== */
+.customization-panel {
+    background: linear-gradient(135deg, rgba(111, 0, 255, 0.1), rgba(9, 0, 24, 0.05));  /* primary and secondary colors */
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+}
+
+.customization-panel h3 {
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.photo-url-row {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.photo-preview {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+}
+
+/* ==================== Custom Section Builder ==================== */
+.custom-section-builder {
+    display: block;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border: 2px dashed var(--primary-color);
+}
+
+.custom-section-builder .toggle-legend {
+    cursor: pointer;
+    user-select: none;
+    transition: color var(--transition);
+}
+
+.custom-section-builder .toggle-legend:hover {
+    color: var(--secondary-color);
+}
+
+.custom-section-builder.collapsed {
+    background: transparent;
+}
+
+.custom-section-builder.collapsed .custom-builder-content {
+    display: none;
+}
+
+.custom-section-builder.collapsed .toggle-legend::before {
+    content: '➕ ';
+}
+
+.custom-section-builder:not(.collapsed) .toggle-legend::before {
+    content: '➖ ';
+}
+
+.custom-field-entry {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    align-items: center;
+}
+
+.custom-field-entry input {
+    flex: 1;
+}
+
+.custom-field-entry select {
+    max-height: 36px;
+    width: 120px;
+}
+
+#customFieldsContainer {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: var(--border-radius-sm);
+}
+
+#customFieldsContainer > label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+#customFieldsList {
+    margin-bottom: 0.5rem;
+}
+
+/* ==================== Actions Section ==================== */
+.actions-section {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*background: transparent;*/
+    /*box-shadow: none;*/
+    /*padding: 1rem 0;*/
+}
+
+/* ==================== Dropdown Button ==================== */
+.dropdown-btn-container {
+    position: relative;
+    display: inline-flex;
+}
+
+.dropdown-main-btn {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.dropdown-toggle {
+    font-size: 14px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0.75rem 0.5rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-toggle:hover {
+    background: var(--secondary-hover);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 4px;
+    background: var(--section-background);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    min-width: 150px;
+}
+
+.dropdown-menu.show {
+    display: block;
+    animation: fadeIn 0.2s ease;
+}
+
+.dropdown-menu button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    background: none;
+    border: none;
+    border-radius: 0;
+    color: var(--text-color);
+}
+
+.dropdown-menu button:hover {
+    background: var(--card-background);
+}
+
+.dropdown-menu button:first-child {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.dropdown-menu button:last-child {
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+/* ==================== Footer ==================== */
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--background-color);
+    color: var(--text-muted);
+    border-top: 1px solid var(--border-color);
+    margin-top: 2rem;
+}
+
+footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ==================== Animations ==================== */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==================== Responsive ==================== */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .actions-section {
+        flex-direction: column;
+    }
+
+    .actions-section button {
+        width: 100%;
+    }
+}

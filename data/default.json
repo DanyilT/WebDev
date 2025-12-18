@@ -1,0 +1,95 @@
+{
+    "customization": {
+        "primaryColor": "#6F00FF",
+        "fontFamily": "Montserrat",
+        "fontSize": "10pt",
+        "photoUrl": ""
+    },
+    "about": {
+        "subtitle": "",
+        "name": "",
+        "about": ""
+    },
+    "sections": {
+        "main": {
+            "education": {
+                "type": "list",
+                "items": [
+                    {
+                        "institution": "",
+                        "degree": "",
+                        "degreeLevel": "",
+                        "GPA": "",
+                        "date": "",
+                        "location": "",
+                        "description": "",
+                        "courseInfoLink": ""
+                    }
+                ]
+            },
+            "experience": {
+                "type": "list",
+                "items": [
+                    {
+                        "title": "",
+                        "company": "",
+                        "date": "",
+                        "location": "",
+                        "details": []
+                    }
+                ]
+            },
+            "projects": {
+                "type": "list",
+                "items": [
+                    {
+                        "name": "",
+                        "link": "",
+                        "tech": "",
+                        "desc": ""
+                    }
+                ]
+            },
+            "hobbies-and-interests": {
+                "type": "text-list",
+                "items": []
+            }
+        },
+        "side": {
+            "contacts": {
+                "type": "links",
+                "items": {
+                    "phone": "",
+                    "email": ""
+                }
+            },
+            "skills": {
+                "type": "categorized-list",
+                "items": {
+                    "hard": [],
+                    "soft": []
+                }
+            },
+            "languages": {
+                "type": "list",
+                "items": [
+                    {
+                        "language": "",
+                        "level": ""
+                    }
+                ]
+            },
+            "links": {
+                "type": "links",
+                "items": {}
+            }
+        }
+    },
+    "sectionTypes": {
+        "list": "Array of objects with custom fields",
+        "text-list": "Array of strings",
+        "text": "Single text block",
+        "links": "Key-value pairs (label: url)",
+        "categorized-list": "Object with category keys and array values"
+    }
+}

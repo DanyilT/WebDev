@@ -1,0 +1,17 @@
+{
+    "customization": {
+        "primaryColor": "",
+        "fontFamily": "",
+        "fontSize": "",
+        "photoUrl": ""
+    },
+    "about": {
+        "subtitle": "",
+        "name": "",
+        "about": ""
+    },
+    "sections": {
+        "main": {},
+        "side": {}
+    }
+}

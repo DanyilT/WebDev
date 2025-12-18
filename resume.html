@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/resume.css">
+</head>
+<body>
+    <div class="main">
+        <main>
+            <section class="about">
+                <h2 id="subtitle"></h2>
+                <h1 id="name"></h1>
+                <p id="about"></p>
+            </section>
+        </main>
+        <aside class="sidebar">
+            <img class="photo" id="photo" src="" alt="Profile Photo">
+        </aside>
+    </div>
+
+    <footer class="resume-footer" style="display: none">
+        <a href="index.html" class="back-btn">← Back to Builder</a>
+        <button onclick="window.print()" class="print-btn">Print / Save PDF</button>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            if (new URLSearchParams(window.location.search).has('preview')) {
+                document.querySelector('footer').style.display = 'flex';
+            }
+        });
+    </script>
+
+    <script type="module" src="js/resume.js"></script>
+</body>
+</html>

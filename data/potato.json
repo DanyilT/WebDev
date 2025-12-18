@@ -1,0 +1,106 @@
+{
+    "customization": {
+        "primaryColor": "#FCBA03",
+        "fontFamily": "Roboto",
+        "fontSize": "10pt",
+        "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Patata_expresiva.jpg"
+    },
+    "about": {
+        "subtitle": "Master of Mash",
+        "name": "Potato",
+        "about": "A humble potato with big dreams of becoming the world's best mashed potato. Skilled in soaking up butter and cream, and always ready to be the star of the dinner table."
+    },
+    "sections": {
+        "main": {
+            "education": {
+                "type": "list",
+                "items": [
+                    {
+                        "institution": "Self Consumption University",
+                        "degree": "How to be a good potato",
+                        "degreeLevel": "PhD",
+                        "GPA": "95% (-5% — skin)",
+                        "date": "8900 BC - Present",
+                        "location": "everywhere",
+                        "description": "years of experience in being a versatile and delicious food staple, mastering various cooking techniques from boiling to frying.",
+                        "courseInfoLink": "https://en.wikipedia.org/wiki/Potato"
+                    }
+                ]
+            },
+            "experience": {
+                "type": "list",
+                "items": [
+                    {
+                        "title": "Actor in Gordon Ramsay's Kitchen Nightmares",
+                        "date": "2007",
+                        "location": "USA"
+                    },
+                    {
+                        "title": "Mcdonald's Menu Star",
+                        "date": "May 15, 1940 - Present",
+                        "location": "India"
+                    },
+                    {
+                        "title": "In your soup... literally",
+                        "date": "1930 - Present",
+                        "location": "Worldwide"
+                    }
+                ]
+            },
+            "hobbies-and-interests": {
+                "type": "text-list",
+                "items": [
+                    "being the best",
+                    "be your best friend",
+                    "hate sweet potatoes (because they are not real potatoes)",
+                    "enjoy long walks to the dinner table",
+                    "dream of becoming mashed potatoes with extra butter",
+                    "love to be in your mouth",
+                    "enjoy soaking up gravy",
+                    "like being inside of you...",
+                    "really like it...",
+                    "please put me inside of you...",
+                    "I want to be inside of you...",
+                    "I'll do anything to be inside of you..."
+                ]
+            }
+        },
+        "side": {
+            "contacts": {
+                "type": "links",
+                "items": {
+                    "phone": "you can call me daddy",
+                    "email": "potato.official.yes.it.is.me.com"
+                }
+            },
+            "skills": {
+                "type": "categorized-list",
+                "items": {
+                    "potatoSkills": [
+                        "Absorbing Butter",
+                        "Cream Soaking",
+                        "Crispy Frying",
+                        "Golden Roasting",
+                        "Versatile Cooking"
+                    ]
+                }
+            },
+            "languages": {
+                "type": "list",
+                "items": [
+                    {
+                        "language": "1860s Potato Dialect"
+                    }
+                ]
+            },
+            "links": {
+                "type": "links",
+                "items": {
+                    "Wikipedia": "https://en.wikipedia.org/wiki/Potato",
+                    "YouTube Channel": "https://www.youtube.com/results?search_query=potato",
+                    "Potato Recipes": "https://www.allrecipes.com/search?q=potato"
+                }
+            }
+        }
+    }
+}

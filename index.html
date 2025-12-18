@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/builder.css">
+</head>
+<body>
+    <div class="container">
+        <header class="builder-header">
+            <h1>Resume Builder</h1>
+            <p>Create your professional resume in minutes</p>
+        </header>
+
+        <main class="builder-main">
+            <!-- Option 1: Upload existing JSON -->
+            <section class="upload-section">
+                <h2>Option 1: Upload Your Data</h2>
+                <div class="upload-area" id="dropZone">
+                    <input type="file" id="jsonUpload" accept=".json" hidden>
+                    <label for="jsonUpload">
+                        <span class="upload-icon">📄</span>
+                        <span>Drop your data.json here or click to upload</span>
+                    </label>
+                </div>
+                <div class="json-url-input">
+                    <label for="jsonUrl">Or paste JSON URL:</label>
+                    <input type="url" id="jsonUrl" placeholder="https://jsonbin.io/your-bin-id">
+                    <button class="btn-default" id="loadJsonUrl">Load</button>
+                </div>
+            </section>
+
+            <!-- Option 2: Build from scratch -->
+            <section class="form-section">
+                <h2>Option 2: Build From Scratch</h2>
+
+                <!-- Customization -->
+                <div class="customization-panel">
+                    <h3>Customization</h3>
+                    <div class="form-group">
+                        <label for="primaryColor">Primary Color:</label>
+                        <input type="color" id="primaryColor" value="#6f00ff">
+                    </div>
+                    <div class="form-group">
+                        <label for="fontFamily">Font Family:</label>
+                        <select id="fontFamily">
+                            <option value="Montserrat">Montserrat</option>
+                            <option value="Roboto">Roboto</option>
+                            <option value="Open Sans">Open Sans</option>
+                            <option value="Lato">Lato</option>
+                            <option value="Poppins">Poppins</option>
+                            <option value="Inter">Inter</option>
+                            <option value="Raleway">Raleway</option>
+                            <option value="Nunito">Nunito</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fontSize">Base Font Size:</label>
+                        <select id="fontSize">
+                            <option value="8pt">Small (8pt)</option>
+                            <option value="10pt">Medium (10pt)</option>
+                            <option value="12pt">Large (12pt)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="photoUrl">Photo URL (optional):</label>
+                        <div class="photo-url-row">
+                            <input type="url" id="photoUrl" placeholder="https://linkedin.com/photo.jpg" style="flex:1;">
+                            <a href=""><img id="photoPreview" src="" alt="Photo Preview" class="photo-preview" style="display:none;"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Section -->
+                <fieldset class="form-fieldset">
+                    <legend>About</legend>
+                    <div class="form-group">
+                        <label for="subtitle">Subtitle:</label>
+                        <input type="text" id="subtitle" placeholder="Software Developer">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Full Name: *</label>
+                        <input type="text" id="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="about">About:</label>
+                        <textarea id="about" rows="3" placeholder="Brief introduction..."></textarea>
+                    </div>
+                </fieldset>
+            </section>
+
+            <!-- Actions -->
+            <section class="actions-section">
+                <button id="infoBtn" class="btn btn-default" title="Instructions">ℹ</button>
+                <div class="dropdown-btn-container">
+                    <button id="saveCacheBtn" class="btn btn-secondary dropdown-main-btn">Save</button>
+                    <button class="btn btn-secondary dropdown-toggle" aria-label="Cache options">▼</button>
+                    <div class="dropdown-menu">
+                        <button id="loadCacheBtn">Load Cache</button>
+                        <button id="clearCacheBtn">Clear Cache</button>
+                    </div>
+                </div>
+                <button id="previewBtn" class="btn btn-secondary">Preview</button>
+                <button id="generateBtn" class="btn btn-primary">Generate</button>
+                <button id="exportJsonBtn" class="btn btn-outline">Export</button>
+                <button id="saveOnlineBtn" class="btn btn-outline">Save Online</button>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Dany</p>
+        <a href="https://github.com/DanyilT/WebDev/tree/page/resume-builder" target="_blank">Source Code</a>
+    </footer>
+
+    <script type="module" src="js/builder.js"></script>
+</body>
+</html>

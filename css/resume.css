@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+    --font-family: 'Montserrat', sans-serif;
+    --font-size: 10pt;
+    --transition: 0.2s ease;
+
+    --primary-color: #6f00ff;
+    --secondary-color: #090018;
+    --sidebar-background-color: #f8f8f8;
+    --text-color: #333333;
+    --text-muted: #666666;
+    --text-white: #f3f3f3;
+    --border-color: #dee2e6;
+
+    /* Viewer Background */
+    --viewer-bg: #525659;
+    --paper-bg: #ffffff;
+}
+
+/* Reset & Base */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family), sans-serif;
+    font-size: var(--font-size);
+    background-color: var(--viewer-bg);
+    color: var(--text-color);
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    -webkit-print-color-adjust: exact;
+    /*text-align: justify;*/
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* The Paper Sheet */
+.main {
+    background-color: var(--paper-bg);
+    width: 210mm;
+    min-height: 297mm;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: row-reverse; /* Sidebar on right */
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+/* ==================== Main Content Area ==================== */
+main {
+    flex: 1;
+    padding: 3em; /* em scales with font size */
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+/* Typography - Using em for scaling */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    line-height: 1.2;
+}
+
+p {
+    margin: 0 0 0.8em 0;
+}
+
+/* Section Titles */
+.title {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--primary-color);
+    padding-bottom: 0.5em;
+    margin-bottom: 1.2em;
+    font-weight: 700;
+}
+
+/* About Section */
+.about {
+    margin-bottom: 2.5em;
+    text-align: justify;
+}
+
+.about h1 {
+    font-size: 2.8em;
+    color: var(--primary-color);
+    padding-bottom: 0.4em;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 0.8em;
+    font-weight: 400;
+}
+
+.about h2 {
+    font-size: 1.2em;
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+.about p {
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* Generic List Items (Education, Experience) */
+article {
+    margin-bottom: 1.5em;
+}
+
+.topic {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.2em;
+}
+
+.subtitle {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: var(--text-color);
+
+    span {
+        color: var(--primary-color);
+    }
+}
+
+.date-location {
+    font-size: 0.9em;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.date-location span {
+    margin: 0 0.3em;
+    color: var(--border-color);
+}
+
+/* Education Specifics */
+.degree-line {
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 0.3em;
+}
+
+.gpa {
+    color: var(--text-muted);
+}
+
+.edu-description, .exp-description {
+    font-size: 0.9em;
+    color: var(--text-muted);
+    margin-top: 0.5em;
+}
+
+/* Lists inside articles */
+article ul {
+    margin: 0.5em 0 0 1.2em;
+    padding: 0;
+    font-size: 0.9em;
+    color: var(--text-muted);
+}
+
+article ul li {
+    margin-bottom: 0.3em;
+}
+
+dd {
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin: 0 0 0.5em 0;
+}
+
+/* Projects Section (Dots Leader) */
+.project-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-item {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0.6em;
+    position: relative;
+}
+
+.project-name a {
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.project-dots {
+    flex: 1;
+    border-bottom: 2px dotted var(--border-color);
+    margin: 0 0.5em;
+    position: relative;
+    top: -2px;
+}
+
+.project-tech {
+    font-size: 0.9em;
+    color: var(--text-muted);
+}
+
+/* Tooltip for projects */
+.project-desc {
+    display: none;
+    position: absolute;
+    background: var(--secondary-color);
+    color: var(--text-white);
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    font-size: 0.8em;
+    z-index: 10;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.project-item:hover .project-desc {
+    display: block;
+}
+
+/* ==================== Sidebar ==================== */
+.sidebar {
+    width: 32%;
+    background-color: var(--sidebar-background-color);
+    padding: 2.5em 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.sidebar .photo {
+    width: calc(100% + 4em);
+    object-fit: cover;
+    margin: 0 -2em 1em -2em;
+    display: block;
+}
+
+.sidebar-text {
+    font-size: 1em;
+}
+
+.sidebar .title {
+    font-size: 1em;
+    border-bottom-color: var(--border-color);
+    margin-bottom: 1em;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 0.6em;
+    line-height: 1.4;
+}
+
+/* Contact Section */
+.sidebar .contacts p {
+    margin-bottom: 0.5em;
+    word-break: break-all;
+}
+
+.sidebar .contacts span {
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+/* Skills / Categorized Lists */
+.category-group {
+    margin-bottom: 1.2em;
+}
+
+.category-group h4 {
+    font-size: 0.95em;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 0.4em;
+}
+
+/* ==================== Footer (UI Only) ==================== */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+footer .back-btn,
+footer .print-btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+footer .back-btn {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+footer .print-btn {
+    background: var(--primary-color);
+    color: var(--text-white);
+    border: none;
+}
+
+/* ==================== Print ==================== */
+@media print {
+    body {
+        background: none;
+        padding: 0;
+    }
+
+    .main {
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+        min-height: auto;
+    }
+
+    footer {
+        display: none !important;
+    }
+
+    .project-desc {
+        display: none !important;
+    }
+
+    /* Ensure background colors print if user enables it, but mostly keep it clean */
+    .sidebar {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
