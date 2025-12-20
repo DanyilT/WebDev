@@ -1,0 +1,95 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh; /* vh is 100% of the viewport height, dvh is good for phones */
+    font-family: Arial, sans-serif;
+    background: #222;
+}
+
+body.centered {
+    justify-content: center;
+}
+
+body.fullscreen {
+    justify-content: normal;
+}
+
+h1 {
+    cursor: alias;
+    color: #f3f3f3;
+    font-size: 2em;
+    margin: 0;
+}
+
+p {
+    cursor: not-allowed;
+    color: #f3f3f3;
+    font-size: 1em;
+    margin: 0.5em;
+}
+
+#canvas-holder {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.16);
+    border-radius: 10px;
+}
+
+#button-holder {
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px; 
+    border: none; 
+    background: #333; 
+    color: #f3f3f3; 
+    border-radius: 5px; 
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+}
+
+button:hover {
+    background: #444;
+}
+
+#slider-holder {
+    display: flex;
+    justify-content: center; 
+    width: 80%;
+}
+
+input[type=range] {
+    width: 100%;
+    background: #333;
+    border-radius: 10px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    background: #333;
+    border-radius: 10px;
+}
+
+#exit-fullscreen-button {
+    position: absolute;
+    bottom: 20px;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+}
