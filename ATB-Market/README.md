@@ -1,7 +1,9 @@
 # Absolutely not real ATB website
-> [!IMPORTANT]
+> [!IMPORTANT]  
+> **THIS PROJECT IS NO LONGER HERE**
+> 
 > The website was created as a final project for WebDev course module (Year 1, Sem 2), and I remove it from this folder.  
-> It is currently storing at [DanyilT/projects-in-university/tree/project/year01/module-web_development_client_side/atb-market](https://github.com/DanyilT/projects-in-university/tree/project/year01/module-web_development_client_side/atb-market)
+> It is currently storing at [DanyilT/projects-in-university/tree/project/year01/module-web_development_client_side/atb-market](https://github.com/DanyilT/projects-in-university/tree/project/year01/module-web_development_client_side/atb-market)  
 > And the preview of this website are on [Cloudflare Pages](https://web-development-client-side--atb-market.pages.dev/)
 
 This is a fake website for the ATB Store. It is a simple e-commerce web application that allows users to browse products, add them to a cart, and proceed to checkout. The application uses JavaScript for client-side functionality and fetches product data from a JSON file.

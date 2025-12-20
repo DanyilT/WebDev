@@ -1,4 +1,10 @@
 # Coffee Shop
+> [!IMPORTANT]  
+> **THIS PROJECT IS NO LONGER HERE**
+>
+> The website was created as a final project for WebDev course module (Software Development – bife), and I remove it from this folder.  
+> It is currently storing at [DanyilT/projects-in-institute](https://github.com/DanyilT/projects-in-institute) repo, [`webdev/coffeeshop`](https://github.com/DanyilT/projects-in-institute/tree/webdev/coffeeshop) branch  
+> And the preview of this website are on [GiHub Pages](https://danyilt.github.io/projects-in-institute/CoffeeShop/)
 
 This is not correctly working shop. You can just look at into assortment of coffee and dream about it.
 
@@ -29,25 +35,18 @@ Ask Google... Oh wait, you don't have a browser...
 
 #### Using Git
 
-1. Clone the repository:
-    ```sh
-    git clone https://github.com/DanyilT/WebDev.git
-    ```
-
-2. Navigate to the project folder:
-   - For Windows:
-       ```sh
-       cd WebDev\CoffeeShop
-       ```
-   - For macOS and Linux:
-       ```sh
-       cd WebDev/CoffeeShop
-       ```
+**Clone the repository and navigate to `CoffeeShop` folder:**
+```sh
+git clone https://github.com/DanyilT/projects-in-institute.git --single-branch --branch webdev/coffeeshop coffeeshop
+```
+```sh
+cd coffeeshop/CoffeeShop
+```
 
 #### Downloading the ZIP File
 
-1. Download the ZIP file from the [GitHub repository](https://github.com/DanyilT/WebDev.git) and extract it.
-2. Navigate to the project folder in the extracted directory (`WebDev/CoffeeShop`).
+1. Download the ZIP file – [`coffeeshop.zip`](https://github.com/DanyilT/projects-in-institute/archive/refs/heads/webdev/coffeeshop.zip) from the [GitHub repository](https://github.com/DanyilT/projects-in-institute/tree/webdev/coffeeshop) and extract it.
+2. Navigate to the project folder in the extracted directory (`coffeeshop/CoffeeShop`).
 
 ### Running the Project
 
@@ -64,7 +63,7 @@ Ask Google... Oh wait, you don't have a browser...
 
 #### Using GitHub Pages
 
-- Go to the [ChillZone website](https://danyilt.github.io/WebDev/CoffeeShop/).
+- Go to the [CoffeeShop website](https://danyilt.github.io/projects-in-institute/CoffeeShop/).
 
 ## File Structure
 

@@ -1,4 +1,9 @@
 # My CV
+> [!IMPORTANT]  
+> **THIS PROJECT IS NO LONGER NEEDED**
+>
+> Created **Resume Builder** on [`page/resume-builder`](https://github.com/DanyilT/WebDev/tree/page/resume-builder) branch  
+> And the preview of this website are on [Cloudflare Pages](https://danyilt-personal-resume-builder.pages.dev/)
 
 This project is a personal CV webpage that showcases my work experience, skills, and interests. The webpage is designed to be responsive and adjusts its layout based on the viewport size.
 

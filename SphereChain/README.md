@@ -1,4 +1,9 @@
 # 3D Blockchain Visualization
+> [!IMPORTANT]  
+> **THIS PROJECT IS NO LONGER HERE**
+>
+> It is currently storing at [`page/spherechain`](https://github.com/DanyilT/WebDev/tree/page/spherechain) branch  
+> And the preview of this website are on [Cloudflare Pages](https://danyilt-spherechain.pages.dev/)
 
 Simple Blockchain Visualization in 3D using p5.js. Each block in the blockchain is represented as a sphere, and lines can be drawn between blocks to show their connections.
 

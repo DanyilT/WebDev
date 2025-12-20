@@ -1,4 +1,9 @@
 # Games
+> [!IMPORTANT]  
+> **THIS PROJECT IS NO LONGER HERE**
+> 
+> It is currently storing at [`page/games`](https://github.com/DanyilT/WebDev/tree/page/games) branch  
+> And the preview of this website are on [Cloudflare Pages](https://danyilt-games.pages.dev/)
 
 ## [game-hub](https://github.com/DanyilT/game-hub)
 

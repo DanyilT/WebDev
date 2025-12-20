@@ -1,4 +1,9 @@
 # ChillZone Game's WebSite
+> [!IMPORTANT]  
+> **THIS PROJECT IS NO LONGER HERE**
+> 
+> It is currently storing at [`page/chillzone`](https://github.com/DanyilT/WebDev/tree/page/chillzone) branch  
+> And the preview of this website are on [Cloudflare Pages](https://danyilt-chillzone.pages.dev/)
 
 This is a website for the ChillZone game. You can also download the game from the website.
 
