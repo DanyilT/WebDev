@@ -1,0 +1,108 @@
+/* Contacts Page */
+
+/* Contacts */
+.contacts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1130px;
+    gap: 2rem;
+}
+
+.contacts .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contacts .main .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1130px;
+}
+
+.contacts .main .items .contact-form,
+.contacts .main .items .media-links {
+    display: flex;
+    width: 100%;
+    max-width: 32rem;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid var(--gray);
+    transition: 0.5s;
+}
+
+.contacts .main .items .media-links {
+    max-width: 10rem;
+}
+
+.contacts .main .items .contact-form:hover,
+.contacts .main .items .media-links:hover {
+    border: 1px solid var(--black);
+}
+
+/* Contact Form */
+.contacts .main .items .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.contacts .main .items .contact-form form input,
+.contacts .main .items .contact-form form textarea {
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding-left: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--gray);
+    background: none;
+    transition: 300ms;
+}
+
+.contacts .main .items .contact-form form input:hover,
+.contacts .main .items .contact-form form textarea:hover {
+    border: 1px solid var(--purple);
+}
+
+.contacts .main .items .contact-form form button {
+    font-size: 1rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--purple);
+    color: var(--black);
+    transition: 300ms;
+}
+
+.contacts .main .items .contact-form form button:hover {
+    background: var(--purple);
+    border: 1px solid var(--purple);
+    color: var(--white);
+}
+
+/* Media Links */
+.media-links aside {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: transparent;
+    position: relative;
+    left: 0;
+}
+
+.media-links aside svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.media-links aside svg path {
+    fill: var(--gray);
+}

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&display=swap');
+@import "assets.css";
+
+/* Default css */
+:root {
+    --black: #333333;
+    --white: #f4f4f4;
+    --gray: #d9d9d9;
+    --purple: #9747ff;
+}
+
+.black-background {
+    background: var(--black);
+}
+
+.white-background {
+    background: var(--white);
+}
+
+.gray-background {
+    background: var(--gray);
+}
+
+.black-color {
+    color: var(--black);
+}
+
+.white-color {
+    color: var(--white);
+}
+
+.gray-color {
+    color: var(--gray);
+}
+
+body {
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 400;
+    background: var(--black);
+}
+
+header, aside, footer {
+    background: var(--black);
+    color: var(--white);
+}
+
+.icon-link {
+    line-height: 0;
+}
+
+main {
+    background: var(--white);
+    color: var(--black);
+}
+
+body, h1, h2, h3, h4, p, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    line-height: normal;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4, a, span, .copy {
+    font-weight: 500;
+}
+
+h1, h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    min-height: 70vh;
+    height: 100%;
+    padding: 10vh 10vw;
+}
+
+/* Button */
+button {
+    font-family: 'Baloo 2', sans-serif;
+}
+
+.button-purple, .button-gray {
+    display: flex;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: 300ms;
+}
+
+.button-purple {
+    border: 1px solid var(--purple);
+    color: var(--black);
+
+}
+
+.button-gray {
+    border: 1px solid var(--gray);
+    color: var(--black);
+}
+
+.button-purple:hover {
+    background: var(--purple);
+    border: 1px solid var(--purple);
+    color: var(--white);
+}
+
+.button-gray:hover {
+    background: var(--gray);
+    border: 1px solid var(--gray);
+    color: var(--black);
+}
