@@ -34,13 +34,13 @@
     position: relative;
     width: 32rem;
     height: 32rem;
-    background-image: url(../../images/venus-de-milo/VenusDeMilo.png);
+    background-image: url(../../img/venus-de-milo/venus-de-milo.png);
     background-size: cover;
     transition: background-image 10s ease-in-out;
 }
 
 .intro .photo-block .under-photo:hover ~ .photo {
-    background-image: url(../../images/venus-de-milo/VenusDeMilo-pink.png);
+    background-image: url(../../img/venus-de-milo/venus-de-milo.pink.png);
     background-size: cover;
 }
 

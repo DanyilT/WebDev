@@ -77,13 +77,13 @@
 .git-hub .items .project img {
     height: 12rem;
     width: 100%;
-    background-image: url("../../images/GitHub-IconlyPro/GitHub-white.svg");
+    background-image: url("../../img/github.iconlypro/github-white.svg");
     opacity: 80%;
     transition: background-image 0.5s;
 }
 
 .git-hub .items .project:hover img {
-    background-image: url("../../images/GitHub-IconlyPro/GitHub-black.svg");
+    background-image: url("../../img/github.iconlypro/github-black.svg");
 }
 
 .git-hub .items .project:hover {

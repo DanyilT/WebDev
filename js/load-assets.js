@@ -1,7 +1,20 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+/**
+ * js/load-assets.js
+ *
+ * This script dynamically loads the header, footer, and sidebar content for a webpage.
+ * It uses the Fetch API to retrieve HTML fragments and inserts them into the DOM.
+ * The script also adjusts links based on whether the page is the homepage or a subpage.
+ * If the local fetch fails, it attempts to fetch the content from a GitHub Pages URL.
+ */
+
+document.addEventListener('DOMContentLoaded', () => {
     const isHomePage = window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/');
 
-    // Load the header
+    /**
+     * Load the header content.
+     * Adjusts links in the header based on the current page's location.
+     * If the local fetch fails, it fetches the header from GitHub Pages.
+     */
     fetch(isHomePage ? 'pages/assets/header.html' : 'assets/header.html')
         .then(response => response.text())
         .then(data => {
@@ -40,7 +53,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 });
         });
 
-    // Load the footer
+    /**
+     * Load the footer content.
+     * Adjusts the sitemap link in the footer based on the current page's location.
+     * If the local fetch fails, it fetches the footer from GitHub Pages.
+     */
     fetch(isHomePage ? 'pages/assets/footer.html' : 'assets/footer.html')
         .then(response => response.text())
         .then(data => {
@@ -69,7 +86,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 });
         });
 
-    // Load the sidebar
+    /**
+     * Load the sidebar content.
+     * Inserts the sidebar content into the DOM and removes the placeholder element.
+     * If the local fetch fails, it fetches the sidebar from GitHub Pages.
+     */
     fetch(isHomePage ? 'pages/assets/sidebar.html' : 'assets/sidebar.html')
         .then(response => response.text())
         .then(data => {
@@ -81,8 +102,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 link.remove();
             });
         })
-        // Catch Sidebar from the GitHub Pages
         .catch(() => {
+            // Fallback: Fetch sidebar from GitHub Pages
             fetch('https://danyilt.github.io/WebDev/PersonalPortfolio/pages/assets/sidebar.html')
                 .then(response => response.text())
                 .then(data => {

@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (container && githubArray && githubArray.length) {
             container.innerHTML = githubArray.map(project => {
                 return `<div class="project">
-                  <img src="../images/GitHub-IconlyPro/GitHub-black.svg" alt="GitHub Logo">
+                  <img src="../img/github.iconlypro/github-black.svg" alt="GitHub Logo">
                   <h3>${project.title}</h3>
                   <a class="button-purple" href="${project.button}">Visit GitHub</a>
                 </div>`;

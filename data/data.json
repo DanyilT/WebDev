@@ -1,12 +1,27 @@
 {
   "site": {
     "title": "Dany's Personal Portfolio",
-    "footer": "&copy; 2023-2025 Dany"
+    "footer": "&copy; 2023-2025 Dany",
+    "links": {
+      "github": "https://github.com/DanyilT",
+      "linkedin": "https://linkedin.com/in/danyil-tymchuk",
+      "instagram": "https://instagram.com/dany_tymchuk",
+      "twitter": "https://twitter.com/dany_tymchuk",
+      "telegram": "https://telegram.me/dany_tymchuk",
+      "email": "mailto:danyt.incorporation@gmail.com"
+    },
+    "resume": {
+      "url": "https://danyilt-resume-builder.pages.dev/resume?bin=6943979cd0ea881f403178e7"
+    }
+
   },
   "index": {
     "title": "Welcome to My Portfolio",
-    "description": "I&#39;m Dany, a Software &amp; Web &amp; Game Developer, and this is where I showcase my work.",
-    "currently-working-on": "CS50"
+    "description": "I&#39;m Dany, a Soft &amp; Web &amp; Game Developer (and also Cybersecurity Specialist), and this is where I showcase my work.",
+    "currently-working-on": {
+      "title": "CS50",
+      "link": "https://cs50.harvard.edu/x/2025/"
+    }
   },
   "about": {
     "body": [
@@ -52,7 +67,7 @@
   "projects": {
     "projects": [
       {
-        "img": "../images/projects/ChillZone.png",
+        "img": "../img/projects/ChillZone.png",
         "description": [
           "WebPage - landing &amp;",
           "Unity 3d (with AR Kit &amp; Core) for game"
@@ -71,7 +86,7 @@
         }
       },
       {
-        "img": "../images/projects/SphereChain.png",
+        "img": "../img/projects/SphereChain.png",
         "description": [
           "Front-end &amp;",
           "WebGL"
@@ -86,7 +101,7 @@
         }
       },
       {
-        "img": "../images/projects/Win95.png",
+        "img": "../img/projects/Win95.png",
         "description": [
           "Front-end &amp;",
           "HTML CSS JavaScript"
@@ -101,7 +116,7 @@
         }
       },
       {
-        "img": "../images/projects/ATB-Market.png",
+        "img": "../img/projects/ATB-Market.png",
         "description": [
           "Front-end &amp;",
           "HTML CSS JavaScript"
@@ -116,7 +131,7 @@
         }
       },
       {
-        "img": "../images/projects/PersonalPortfolio.png",
+        "img": "../img/projects/PersonalPortfolio.png",
         "description": [
           "Front-end &amp;",
           "HTML CSS JavaScript"
@@ -131,7 +146,7 @@
         }
       },
       {
-        "img": "../images/projects/GitHub.png",
+        "img": "../img/projects/GitHub.png",
         "description": [
           "Java &amp; Python &amp; etc &amp;",
           "HTML CSS JavaScript"
