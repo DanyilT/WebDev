@@ -83,8 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
             .catch(error => console.error('Error loading about:', error));
     }
 
-    // Call the functions to load and insert the skills
-    loadSkills();
+    // Call the functions to load and insert the skills (if on the index page)
+    if (window.location.pathname.split('/').pop() === 'index.html' || window.location.pathname.split('/').pop() === '') loadSkills();
 
     // TODO: Need a better easter egg...
     const form = document.getElementById('contact-form');

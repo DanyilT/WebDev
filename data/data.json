@@ -1,19 +1,22 @@
 {
   "site": {
     "title": "Dany's Personal Portfolio",
-    "footer": "&copy; 2023-2025 Dany",
+    "footer": {
+      "copy": "&copy; 2023-2025 Dany | Personal Portfolio. All rights reserved.",
+      "source": "https://github.com/DanyilT/WebDev/tree/page/personal-portfolio",
+      "page": "https://danyilt-personal-portfolio.pages.dev"
+    },
     "links": {
       "github": "https://github.com/DanyilT",
       "linkedin": "https://linkedin.com/in/danyil-tymchuk",
       "instagram": "https://instagram.com/dany_tymchuk",
       "twitter": "https://twitter.com/dany_tymchuk",
-      "telegram": "https://telegram.me/dany_tymchuk",
+      "telegram": "",
       "email": "mailto:danyt.incorporation@gmail.com"
     },
     "resume": {
       "url": "https://danyilt-resume-builder.pages.dev/resume?bin=6943979cd0ea881f403178e7"
     }
-
   },
   "index": {
     "title": "Welcome to My Portfolio",

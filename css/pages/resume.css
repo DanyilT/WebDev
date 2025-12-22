@@ -1,0 +1,33 @@
+/* Resume Page */
+
+/* Resume iframe */
+.resume-sheet-wrap{
+    display:flex;
+    justify-content:center;
+    padding:20px;
+}
+
+.resume-sheet{
+    width:210mm;
+    min-height:297mm;
+    background:#fff;
+    overflow:hidden;
+}
+
+.resume-frame{
+    width:100%;
+    height:100%;
+    border:0;
+}
+
+@media (max-width: 800px) {
+    .resume-sheet-wrap{
+        padding: 12px 8px;
+    }
+
+    /* allow the sheet to shrink to the viewport width on small phones */
+    .resume-sheet{
+        width:calc(100vw - 16px);
+        min-height:calc(100vh - 24px);
+    }
+}

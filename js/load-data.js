@@ -1,6 +1,31 @@
+/**
+ * js/load-data.js
+ *
+ * Load JSON data and populate HTML elements based on the current page.
+ * This script fetches data from `data/data.json` and updates various parts of the webpage
+ * depending on whether the user is on the index, about, projects, or resume page.
+ */
+
 document.addEventListener('DOMContentLoaded', () => {
     const page = window.location.pathname.split('/').pop();
 
+    // Load sidebar links for all pages
+    fetch((page === 'index.html' || page === '') ? 'data/data.json' : '../data/data.json')
+        .then(response => response.json())
+        .then(data => {
+            loadSidebarLinks(data.site.links);
+        })
+        .catch(error => console.error('Error loading sidebar links:', error));
+
+    // Load footer copy for all pages
+    fetch((page === 'index.html' || page === '') ? 'data/data.json' : '../data/data.json')
+        .then(response => response.json())
+        .then(data => {
+            loadFooterCopy(data.site.footer);
+        })
+        .catch(error => console.error('Error loading sidebar links:', error));
+
+    // Load page-specific data based on the current page.
     if (page === 'index.html' || page === '') {
         // Load data for the index page
         fetch('data/data.json')
@@ -9,14 +34,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Update index page text
                 document.getElementById('setText-title').textContent = data.index.title;
                 document.getElementById('setText-description').innerHTML = data.index.description;
-                document.getElementById('setText-currently-working-on').textContent = data.index['currently-working-on'];
+                document.getElementById('setText-currently-working-on').textContent = data.index['currently-working-on'].title || data.index['currently-working-on'];
+                data.index['currently-working-on'].link ? document.getElementById('setText-currently-working-on').onclick = () => { window.open(data.index['currently-working-on'].link, '_blank') } : null;
 
                 // Load first three projects from projects data
                 loadProjects(data.projects.projects.slice(0, 3));
                 loadSkills(data);
             })
             .catch(error => console.error('Error loading JSON data:', error));
-    } else if (page === 'about.html') {
+    } else if (page === 'about.html' || page === 'about') {
         // Load data for the about page
         fetch('../data/data.json')
             .then(response => response.json())
@@ -27,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 loadSkills(data);
             })
             .catch(error => console.error('Error loading JSON data:', error));
-    } else if (page === 'projects.html') {
+    } else if (page === 'projects.html' || page === 'projects') {
         // Load data for the projects page
         fetch('../data/data.json')
             .then(response => response.json())
@@ -36,8 +62,57 @@ document.addEventListener('DOMContentLoaded', () => {
                 loadGithubProjects(data.projects.github);
             })
             .catch(error => console.error('Error loading JSON data:', error));
+    } else if (page === 'resume.html' || page === 'resume') {
+        // Load data (resume link) for the resume page
+        fetch('../data/data.json')
+            .then(response => response.json())
+            .then(data => {
+                const resume = data.site.resume.url;
+                console.log(resume);
+                const resumeIframe = document.getElementById('resume');
+                if (resumeIframe) resumeIframe.setAttribute('src', resume);
+            })
+            .catch(error => console.error('Error loading JSON data:', error));
     }
 
+    /**
+     * Load social links into all aside/sidebar elements.
+     * @param {Object} links - Object containing social link URLs.
+     */
+    function loadSidebarLinks(links) {
+        const asides = document.querySelectorAll('aside');
+        asides.forEach(aside => {
+            const githubLink = aside.querySelector('a[href*="github"]');
+            const linkedinLink = aside.querySelector('a[href*="linkedin"]');
+            const instagramLink = aside.querySelector('a[href*="instagram"]');
+            const twitterLink = aside.querySelector('a[href*="twitter"]');
+            const telegramLink = aside.querySelector('a[href*="telegram"]');
+            const emailLink = aside.querySelector('a[href*="mailto"]');
+
+            if (githubLink && links.github) githubLink.setAttribute('href', links.github);
+            if (linkedinLink && links.linkedin) linkedinLink.setAttribute('href', links.linkedin);
+            if (instagramLink && links.instagram) instagramLink.setAttribute('href', links.instagram);
+            if (twitterLink && links.twitter) twitterLink.setAttribute('href', links.twitter);
+            if (telegramLink && links.telegram) telegramLink.setAttribute('href', links.telegram);
+            if (emailLink && links.email) emailLink.setAttribute('href', links.email);
+        });
+    }
+
+    /**
+     * Load footer copy into the footer element.
+     * @param footerData
+     */
+    function loadFooterCopy(footerData) {
+        const footer = document.querySelector('footer .copy');
+        if (footer) {
+            footer.innerHTML = `${footerData.copy} ${footerData.source ? `[ <a href="${footerData.source}">source</a> ]` : ''}`;
+        }
+    }
+
+    /**
+     * Load skills into the about page.
+     * @param data
+     */
     function loadSkills(data) {
         // Update Hard Skills
         const hardSkills = data.about.skills.hard;
@@ -64,6 +139,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    /**
+     * Load projects into the '.projects' section.
+     * @param projectsArray
+     */
     function loadProjects(projectsArray) {
         // Select the container for normal projects (exclude the GitHub projects section)
         const container = document.querySelector('section.projects:not(.git-hub) .items');
@@ -99,6 +178,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    /**
+     * Load GitHub projects into the '.projects.git-hub' section.
+     * @param githubArray
+     */
     function loadGithubProjects(githubArray) {
         // Select the container for GitHub projects within the '.projects.git-hub' section
         const container = document.querySelector('section.projects.git-hub .items');

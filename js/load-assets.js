@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /**
      * Load the header content.
      * Adjusts links in the header based on the current page's location.
-     * If the local fetch fails, it fetches the header from GitHub Pages.
+     * If the local fetch fails, it fetches the header from Cloudflare Pages (where the project is hosted).
      */
     fetch(isHomePage ? 'pages/assets/header.html' : 'assets/header.html')
         .then(response => response.text())
@@ -32,9 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('header').insertAdjacentHTML('beforebegin', header.outerHTML);
             document.getElementById('header').remove();
         })
-        // Catch Header from the GitHub Pages
+        // Catch Header from the Cloudflare Pages
         .catch(() => {
-            fetch('https://danyilt.github.io/WebDev/PersonalPortfolio/pages/assets/header.html')
+            fetch('https://danyilt-personal-portfolio.pages.dev/pages/assets/header.html')
                 .then(response => response.text())
                 .then(data => {
                     const header = new DOMParser().parseFromString(data, 'text/html').querySelector('header');
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /**
      * Load the footer content.
      * Adjusts the sitemap link in the footer based on the current page's location.
-     * If the local fetch fails, it fetches the footer from GitHub Pages.
+     * If the local fetch fails, it fetches the footer from Cloudflare Pages (where the project is hosted).
      */
     fetch(isHomePage ? 'pages/assets/footer.html' : 'assets/footer.html')
         .then(response => response.text())
@@ -70,9 +70,9 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('footer').insertAdjacentHTML('beforebegin', footer.outerHTML);
             document.getElementById('footer').remove();
         })
-        // Catch Footer from the GitHub Pages
+        // Catch Footer from the Cloudflare Pages
         .catch(() => {
-            fetch('https://danyilt.github.io/WebDev/PersonalPortfolio/pages/assets/footer.html')
+            fetch('https://danyilt-personal-portfolio.pages.dev/pages/assets/footer.html')
                 .then(response => response.text())
                 .then(data => {
                     const footer = new DOMParser().parseFromString(data, 'text/html').querySelector('footer');
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /**
      * Load the sidebar content.
      * Inserts the sidebar content into the DOM and removes the placeholder element.
-     * If the local fetch fails, it fetches the sidebar from GitHub Pages.
+     * If the local fetch fails, it fetches the sidebar from Cloudflare Pages (where the project is hosted).
      */
     fetch(isHomePage ? 'pages/assets/sidebar.html' : 'assets/sidebar.html')
         .then(response => response.text())
@@ -103,8 +103,8 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         })
         .catch(() => {
-            // Fallback: Fetch sidebar from GitHub Pages
-            fetch('https://danyilt.github.io/WebDev/PersonalPortfolio/pages/assets/sidebar.html')
+            // Fallback: Fetch sidebar from Cloudflare Pages
+            fetch('https://danyilt-personal-portfolio.pages.dev/pages/assets/sidebar.html')
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('sidebar').insertAdjacentHTML('beforebegin', data);
