@@ -70,7 +70,7 @@
   "projects": {
     "projects": [
       {
-        "img": "../img/projects/ChillZone.png",
+        "img": "/img/projects/ChillZone.png",
         "description": [
           "WebPage - landing &amp;",
           "Unity 3d (with AR Kit &amp; Core) for game"
@@ -81,7 +81,7 @@
           "Landing Website presents the game"
         ],
         "buttons": {
-          "Visit website": "https://danyilt.github.io/WebDev/ChillZone/",
+          "Visit website": "https://danyilt-chillzone.pages.dev",
           "other-links": {
             "GooglePlay": "https://play.google.com/store/apps/details?id=com.DanyT.ChillZone",
             "AppStore": "https://apps.apple.com/us/app/chillzone-danyt/id6448560219"
@@ -89,7 +89,7 @@
         }
       },
       {
-        "img": "../img/projects/SphereChain.png",
+        "img": "/img/projects/SphereChain.png",
         "description": [
           "Front-end &amp;",
           "WebGL"
@@ -100,11 +100,11 @@
           "I use JavaScript and WebGL for this"
         ],
         "buttons": {
-          "Visit website": "https://danyilt.github.io/WebDev/SphereChain/"
+          "Visit website": "https://danyilt-spherechain.pages.dev"
         }
       },
       {
-        "img": "../img/projects/Win95.png",
+        "img": "/img/projects/Win95.png",
         "description": [
           "Front-end &amp;",
           "HTML CSS JavaScript"
@@ -115,11 +115,11 @@
           "Page in Windows 95 style"
         ],
         "buttons": {
-          "Visit website": "https://danyilt.github.io/WebDev/win95/"
+          "Visit website": "https://danyilt.github.io/projects-in-school/win95"
         }
       },
       {
-        "img": "../img/projects/ATB-Market.png",
+        "img": "/img/projects/ATB-Market.png",
         "description": [
           "Front-end &amp;",
           "HTML CSS JavaScript"
@@ -130,11 +130,11 @@
           "My parody of the site"
         ],
         "buttons": {
-          "Visit website": "https://danyilt.github.io/WebDev/ATB-Market/"
+          "Visit website": "https://web-development-client-side--atb-market.pages.dev"
         }
       },
       {
-        "img": "../img/projects/PersonalPortfolio.png",
+        "img": "/img/projects/PersonalPortfolio.png",
         "description": [
           "Front-end &amp;",
           "HTML CSS JavaScript"
@@ -145,11 +145,11 @@
           "My Works"
         ],
         "buttons": {
-          "Visit website": "https://danyilt.github.io/WebDev/PersonalPortfolio/"
+          "Visit website": "https://danyilt-personal-portfolio.pages.dev"
         }
       },
       {
-        "img": "../img/projects/GitHub.png",
+        "img": "/img/projects/GitHub.png",
         "description": [
           "Java &amp; Python &amp; etc &amp;",
           "HTML CSS JavaScript"

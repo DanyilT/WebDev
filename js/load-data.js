@@ -80,22 +80,32 @@ document.addEventListener('DOMContentLoaded', () => {
      * @param {Object} links - Object containing social link URLs.
      */
     function loadSidebarLinks(links) {
-        const asides = document.querySelectorAll('aside');
-        asides.forEach(aside => {
-            const githubLink = aside.querySelector('a[href*="github"]');
-            const linkedinLink = aside.querySelector('a[href*="linkedin"]');
-            const instagramLink = aside.querySelector('a[href*="instagram"]');
-            const twitterLink = aside.querySelector('a[href*="twitter"]');
-            const telegramLink = aside.querySelector('a[href*="telegram"]');
-            const emailLink = aside.querySelector('a[href*="mailto"]');
+        const applyLinks = () => {
+            const asides = document.querySelectorAll('aside');
+            if (!asides.length) {
+                // Defer until next frame if asides are not yet in the DOM
+                requestAnimationFrame(applyLinks);
+                return;
+            }
 
-            if (githubLink && links.github) githubLink.setAttribute('href', links.github);
-            if (linkedinLink && links.linkedin) linkedinLink.setAttribute('href', links.linkedin);
-            if (instagramLink && links.instagram) instagramLink.setAttribute('href', links.instagram);
-            if (twitterLink && links.twitter) twitterLink.setAttribute('href', links.twitter);
-            if (telegramLink && links.telegram) telegramLink.setAttribute('href', links.telegram);
-            if (emailLink && links.email) emailLink.setAttribute('href', links.email);
-        });
+            asides.forEach(aside => {
+                const githubLink = aside.querySelector('a[href*="github"]');
+                const linkedinLink = aside.querySelector('a[href*="linkedin"]');
+                const instagramLink = aside.querySelector('a[href*="instagram"]');
+                const twitterLink = aside.querySelector('a[href*="twitter"]');
+                const telegramLink = aside.querySelector('a[href*="telegram"]');
+                const emailLink = aside.querySelector('a[href*="mailto"]');
+
+                if (githubLink && links?.github) githubLink.setAttribute('href', links.github);
+                if (linkedinLink && links?.linkedin) linkedinLink.setAttribute('href', links.linkedin);
+                if (instagramLink && links?.instagram) instagramLink.setAttribute('href', links.instagram);
+                if (twitterLink && links?.twitter) twitterLink.setAttribute('href', links.twitter);
+                if (telegramLink && links?.telegram) telegramLink.setAttribute('href', links.telegram);
+                if (emailLink && links?.email) emailLink.setAttribute('href', links.email);
+            });
+        };
+
+        applyLinks();
     }
 
     /**
